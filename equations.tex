@@ -1,0 +1,192 @@
+\documentclass[leqno,a4paper,twoside,aps,pra,preprint,10pt,notitlepage]{revtex4-2}
+\usepackage[active,tightpage]{preview}
+\usepackage[margin=0mm,paperwidth=480pt]{geometry}
+\usepackage{parskip}
+\usepackage[utf8]{inputenc}
+\usepackage{environ}
+\usepackage{xargs}
+\usepackage{chemfig}
+\usetikzlibrary{decorations.pathmorphing}
+\usepackage{longtable}
+\usepackage{amssymb}
+\usepackage{multirow}
+\usepackage[verbose]{wrapfig}
+\usepackage{textpos}
+\usepackage{makecell}
+\usepackage{array}
+\usepackage{amsmath}
+\usepackage{ifthen}
+\usepackage{cleveref}
+\usepackage{color}
+\usepackage{microtype}
+
+
+\pagestyle{empty}
+\setlength{\parindent}{0em}
+\DisableLigatures{encoding = *, family = *}
+
+\counterwithin*{equation}{section}
+\renewcommand{\baselinestretch}{1.0}
+\renewcommand{\theequation}{{{\bf{{\color{red}\arabic{section}.\arabic{equation}}}}}}
+\renewcommand{\thesection}{}
+\renewcommand{\thesubsection}{}
+\renewcommand{\thesubsubsection}{}
+\makeatletter
+\def\@seccntformat#1{\csname #1ignore\expandafter\endcsname\csname the#1\endcsname{}}
+\let\sectionignore\@gobbletwo
+\let\latex@numberline\numberline
+\def\numberline#1{\if\relax#1\relax\else\latex@numberline{#1}\fi}
+\makeatother
+
+\makeatletter
+\let\oldtagform@\tagform@
+\renewcommand\tagform@[1]{\maketag@@@{\ignorespaces#1\unskip\@@italiccorr}}
+\renewcommand{\eqref}[1]{\textup{\oldtagform@{\ref{#1}}}}
+\makeatother
+
+
+\newcommand{\vpha}{\vphantom{A}}
+\newcommand{\degree}{\ensuremath{^\circ}}
+\newcommand{\chemar}[2][]{
+  \schemestart[{},#1]
+  \vpha\arrow{#2}\vpha
+  \schemestop
+}
+\newcommand{\chemeq}[3][]{
+  \chemnameinit{}
+  \noindent
+  \begin{equation}
+    \schemestart[][base]
+    #3
+    \schemestop
+    %\hskip \textwidth minus \textwidth
+    \ifthenelse{\equal{#1}{}}{}{\hskip 10mm\rm{also\ }\cref{#1}}
+    \ifthenelse{\equal{#2}{}}{}{\label{#2}}
+  \end{equation}
+  \vskip 1ex
+}
+\newcommand{\precyc}{\vpha-[,0.1,,,draw=none]}
+
+\newcommand{\grn}[1]{\vpha{\color{green}#1}}
+\newcommand{\blu}[1]{\vpha{\color{blue}#1}}
+\newcommand{\blk}[1]{\vpha{\color{black}#1}}
+
+\newcommand{\X}{H}
+\newcommand{\M}{\chemabove{\N}{\X}}
+\newcommand{\K}{\chembelow{\N}{\X}}
+
+\definesubmol\no{\vpha-[,0.1,,,draw=none]}
+\definesubmol\Me[H_3C]{CH_3}
+\definesubmol\Ammonia{\Lewis{4:,N}H_3}
+\definesubmol\Cyanide{\quad\llap{${}^-$}\Lewis{4:,C}~\Lewis{0:,N}}
+\definesubmol\Hydroxide{\quad\llap{${}^-$}OH}
+\definesubmol\Water{H_2O}
+\definesubmol\Alkene{C([:120]-)([:-120]-)=C([:-60]-)([:60]-)}
+\definesubmol\R{ \chemskipalign{\mbox{\scriptsize R}} }
+\definesubmol{x}{(<[4]H)(<[0]O|H)}
+\definesubmol{y}{(<[0]H)(<[4]H|O)}
+\definesubmol{z}{CHOH}
+\definesubmol{Z}{{(}CHOH{)}_n}
+
+
+
+\makeatletter
+\definearrow1{s>}{%
+\ifx\@empty#1\@empty
+\expandafter\draw\expandafter[\CF@arrow@current@style,-CF](\CF@arrow@start@node)--(\CF@arrow@end@node);%
+\else
+\def\curvedarrow@style{shorten <=\CF@arrow@offset,shorten >=\CF@arrow@offset,}%
+\CF@expadd@tocs\curvedarrow@style\CF@arrow@current@style
+\expandafter\draw\expandafter[\curvedarrow@style,-CF](\CF@arrow@start@name)..controls#1..(\CF@arrow@end@name);
+\fi
+}
+\makeatother
+
+
+
+\let\origsection\section
+\makeatletter
+\renewcommand{\section}[1]{%
+
+    \vphantom{.}
+
+    \vspace{-5.5ex}
+    \color[rgb]{0.36, 0.54, 0.66}
+    \origsection{\large #1}
+    \color[gray]{0}
+    \vspace{-3ex}
+}
+\makeatother
+
+\let\origsubsection\subsection
+\makeatletter
+\renewcommand{\subsection}[1]{%
+
+    \vphantom{.}
+
+    \vspace{-6ex}
+    \origsubsection{\large #1}
+    \vspace{-3ex}
+}
+\makeatother
+
+\let\origsubsubsection\subsubsection
+\makeatletter
+\renewcommand{\subsubsection}[1]{%
+
+    \vphantom{.}
+
+    \vspace{-6.5ex}
+    \origsubsubsection{\large #1}
+    \vspace{-3ex}
+}
+\makeatother
+
+
+
+
+
+
+\begin{document}
+
+\abovedisplayskip=0ex
+\abovedisplayshortskip=0pt
+\belowdisplayskip=0ex
+\belowdisplayshortskip=0ex
+
+\setchemfig{atom sep=2em}
+%\setcrambond{2pt}{0.75pt}{0.75pt}
+\setchemfig{cram width = 2pt}
+\setchemfig{cram dash width = 0.75pt}
+\setchemfig{cram dash sep = 0.75pt}
+\setchemfig{arrow label sep = 1.5pt}
+\setchemfig{bond join=true}
+
+
+
+
+
+
+
+
+\begin{preview}
+\input{body}
+%\input{samp}
+\end{preview}
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

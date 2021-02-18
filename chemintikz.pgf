@@ -1,0 +1,1314 @@
+
+% Node: halide
+\def\halide{2014.000000bp,378.000000bp}
+\begin{scope}
+  \draw (\halide) ellipse (72.000000bp and 72.000000bp);
+  \draw (\halide) node {halide};
+\end{scope}
+
+% Node: organom
+\def\organom{875.000000bp,572.000000bp}
+\begin{scope}
+  \draw (\organom) ellipse (54.000000bp and 54.000000bp);
+  \draw (\organom) node {organom};
+\end{scope}
+
+% Node: alkane
+\def\alkane{1459.000000bp,72.000000bp}
+\begin{scope}
+  \draw (\alkane) ellipse (72.000000bp and 72.000000bp);
+  \draw (\alkane) node {alkane};
+\end{scope}
+
+% Node: aldehyde
+\def\aldehyde{833.000000bp,2372.000000bp}
+\begin{scope}
+  \draw (\aldehyde) ellipse (72.000000bp and 72.000000bp);
+  \draw (\aldehyde) node {aldehyde};
+\end{scope}
+
+% Node: ketone
+\def\ketone{1517.000000bp,2372.000000bp}
+\begin{scope}
+  \draw (\ketone) ellipse (72.000000bp and 72.000000bp);
+  \draw (\ketone) node {ketone};
+\end{scope}
+
+% Node: acid
+\def\acid{1940.000000bp,1260.000000bp}
+\begin{scope}
+  \draw (\acid) ellipse (72.000000bp and 72.000000bp);
+  \draw (\acid) node {acid};
+\end{scope}
+
+% Node: alkyne
+\def\alkyne{283.000000bp,378.000000bp}
+\begin{scope}
+  \draw (\alkyne) ellipse (72.000000bp and 72.000000bp);
+  \draw (\alkyne) node {alkyne};
+\end{scope}
+
+% Node: aldket
+\def\aldket{1174.000000bp,2334.000000bp}
+\begin{scope}
+  \draw (\aldket) ellipse (72.000000bp and 72.000000bp);
+  \draw (\aldket) node {aldket};
+\end{scope}
+
+% Node: epoxide
+\def\epoxide{1143.000000bp,752.000000bp}
+\begin{scope}
+  \draw (\epoxide) ellipse (54.000000bp and 54.000000bp);
+  \draw (\epoxide) node {epoxide};
+\end{scope}
+
+% Node: acidh
+\def\acidh{1393.000000bp,1644.000000bp}
+\begin{scope}
+  \draw (\acidh) ellipse (54.000000bp and 54.000000bp);
+  \draw (\acidh) node {acidh};
+\end{scope}
+
+% Node: ester
+\def\ester{2223.000000bp,915.000000bp}
+\begin{scope}
+  \draw (\ester) ellipse (54.000000bp and 54.000000bp);
+  \draw (\ester) node {ester};
+\end{scope}
+
+% Node: alcohol
+\def\alcohol{88.000000bp,912.000000bp}
+\begin{scope}
+  \draw (\alcohol) ellipse (72.000000bp and 72.000000bp);
+  \draw (\alcohol) node {alcohol};
+\end{scope}
+
+% Node: alcoxid
+\def\alcoxid{614.000000bp,1352.000000bp}
+\begin{scope}
+  \draw (\alcoxid) ellipse (36.000000bp and 36.000000bp);
+  \draw (\alcoxid) node {alcoxid};
+\end{scope}
+
+% Node: amine
+\def\amine{2089.000000bp,2065.000000bp}
+\begin{scope}
+  \draw (\amine) ellipse (72.000000bp and 72.000000bp);
+  \draw (\amine) node {amine};
+\end{scope}
+
+% Node: ArX
+\def\ArX{495.000000bp,1912.000000bp}
+\begin{scope}
+  \draw (\ArX) ellipse (36.000000bp and 36.000000bp);
+  \draw (\ArX) node {ArX};
+\end{scope}
+
+% Node: alkene
+\def\alkene{828.000000bp,72.000000bp}
+\begin{scope}
+  \draw (\alkene) ellipse (72.000000bp and 72.000000bp);
+  \draw (\alkene) node {alkene};
+\end{scope}
+
+% Node: ether
+\def\ether{72.000000bp,1532.000000bp}
+\begin{scope}
+  \draw (\ether) ellipse (72.000000bp and 72.000000bp);
+  \draw (\ether) node {ether};
+\end{scope}
+
+% Node: nitrile
+\def\nitrile{1532.000000bp,1802.000000bp}
+\begin{scope}
+  \draw (\nitrile) ellipse (36.000000bp and 36.000000bp);
+  \draw (\nitrile) node {nitrile};
+\end{scope}
+
+% Node: jntWT
+\def\jntWT{1286.000000bp,472.000000bp}
+
+% Node: jntEPQ
+\def\jntEPQ{271.000000bp,532.000000bp}
+
+% Node: jntQW
+\def\jntQW{263.000000bp,1472.000000bp}
+
+% Node: cntQT
+\def\cntQT{2103.000000bp,1835.000000bp}
+
+% Node: cntWQ
+\def\cntWQ{1557.000000bp,2027.000000bp}
+
+% Node: jntWW
+\def\jntWW{1631.000000bp,1912.000000bp}
+
+% Node: jntWU
+\def\jntWU{2005.000000bp,1012.000000bp}
+
+% Node: polymer
+\def\polymer{421.000000bp,202.000000bp}
+\begin{scope}
+  \draw (\polymer) ellipse (36.000000bp and 36.000000bp);
+  \draw (\polymer) node {polymer};
+\end{scope}
+
+% Node: cycprop
+\def\cycprop{286.000000bp,172.000000bp}
+\begin{scope}
+  \draw (\cycprop) ellipse (36.000000bp and 36.000000bp);
+  \draw (\cycprop) node {cycprop};
+\end{scope}
+
+% Node: hlhdrn
+\def\hlhdrn{1100.000000bp,232.000000bp}
+\begin{scope}
+  \draw (\hlhdrn) ellipse (36.000000bp and 36.000000bp);
+  \draw (\hlhdrn) node {hlhdrn};
+\end{scope}
+
+% Node: jntQ
+\def\jntQ{1321.000000bp,1822.000000bp}
+
+% Node: jntW
+\def\jntW{1207.000000bp,1272.000000bp}
+
+% Node: alkinide
+\def\alkinide{108.000000bp,72.000000bp}
+\begin{scope}
+  \draw (\alkinide) ellipse (36.000000bp and 36.000000bp);
+  \draw (\alkinide) node {alkinide};
+\end{scope}
+
+% Node: jntEPW
+\def\jntEPW{406.000000bp,682.000000bp}
+
+% Node: alcoTs
+\def\alcoTs{97.000000bp,532.000000bp}
+\begin{scope}
+  \draw (\alcoTs) ellipse (36.000000bp and 36.000000bp);
+  \draw (\alcoTs) node {alcoTs};
+\end{scope}
+
+% Node: jntQQ
+\def\jntQQ{1759.000000bp,927.000000bp}
+
+% Node: jntWI
+\def\jntWI{803.000000bp,1759.000000bp}
+
+% Node: jntQO
+\def\jntQO{1946.000000bp,942.000000bp}
+
+% Node: perxde
+\def\perxde{67.000000bp,1759.000000bp}
+\begin{scope}
+  \draw (\perxde) ellipse (36.000000bp and 36.000000bp);
+  \draw (\perxde) node {perxde};
+\end{scope}
+
+% Node: sugar
+\def\sugar{1136.000000bp,1644.000000bp}
+\begin{scope}
+  \draw (\sugar) ellipse (54.000000bp and 54.000000bp);
+  \draw (\sugar) node {sugar};
+\end{scope}
+
+% Node: jntR
+\def\jntR{765.000000bp,792.000000bp}
+
+% Node: cntQE
+\def\cntQE{1803.000000bp,2180.000000bp}
+
+% Node: jntQR
+\def\jntQR{1773.000000bp,2142.000000bp}
+
+% Node: diazonium
+\def\diazonium{1222.000000bp,1022.000000bp}
+\begin{scope}
+  \draw (\diazonium) ellipse (36.000000bp and 36.000000bp);
+  \draw (\diazonium) node {diazonium};
+\end{scope}
+
+% Node: ammsalt
+\def\ammsalt{2299.000000bp,2372.000000bp}
+\begin{scope}
+  \draw (\ammsalt) ellipse (36.000000bp and 36.000000bp);
+  \draw (\ammsalt) node {ammsalt};
+\end{scope}
+
+% Node: sulfonide
+\def\sulfonide{2291.000000bp,2219.000000bp}
+\begin{scope}
+  \draw (\sulfonide) ellipse (36.000000bp and 36.000000bp);
+  \draw (\sulfonide) node {sulfonide};
+\end{scope}
+
+% Node: ammhox
+\def\ammhox{2153.000000bp,2372.000000bp}
+\begin{scope}
+  \draw (\ammhox) ellipse (36.000000bp and 36.000000bp);
+  \draw (\ammhox) node {ammhox};
+\end{scope}
+
+% Node: hoxamn
+\def\hoxamn{2006.000000bp,2372.000000bp}
+\begin{scope}
+  \draw (\hoxamn) ellipse (36.000000bp and 36.000000bp);
+  \draw (\hoxamn) node {hoxamn};
+\end{scope}
+
+% Node: amnox
+\def\amnox{2275.000000bp,1912.000000bp}
+\begin{scope}
+  \draw (\amnox) ellipse (36.000000bp and 36.000000bp);
+  \draw (\amnox) node {amnox};
+\end{scope}
+
+% Node: jntWR
+\def\jntWR{638.000000bp,2142.000000bp}
+
+% Node: jntQU
+\def\jntQU{1960.000000bp,1720.000000bp}
+
+% Node: cntQY
+\def\cntQY{1890.000000bp,1912.000000bp}
+
+% Node: jntQI
+\def\jntQI{2002.000000bp,1602.000000bp}
+
+% Node: benzene
+\def\benzene{252.000000bp,2065.000000bp}
+\begin{scope}
+  \draw (\benzene) ellipse (72.000000bp and 72.000000bp);
+  \draw (\benzene) node {benzene};
+\end{scope}
+
+% Node: bzslfcd
+\def\bzslfcd{55.000000bp,2219.000000bp}
+\begin{scope}
+  \draw (\bzslfcd) ellipse (36.000000bp and 36.000000bp);
+  \draw (\bzslfcd) node {bzslfcd};
+\end{scope}
+
+% Node: ArR
+\def\ArR{419.000000bp,2219.000000bp}
+\begin{scope}
+  \draw (\ArR) ellipse (36.000000bp and 36.000000bp);
+  \draw (\ArR) node {ArR};
+\end{scope}
+
+% Node: ArKet
+\def\ArKet{345.000000bp,2372.000000bp}
+\begin{scope}
+  \draw (\ArKet) ellipse (36.000000bp and 36.000000bp);
+  \draw (\ArKet) node {ArKet};
+\end{scope}
+
+% Node: ArAld
+\def\ArAld{198.000000bp,2372.000000bp}
+\begin{scope}
+  \draw (\ArAld) ellipse (36.000000bp and 36.000000bp);
+  \draw (\ArAld) node {ArAld};
+\end{scope}
+
+% Node: BzHxCl
+\def\BzHxCl{52.000000bp,2372.000000bp}
+\begin{scope}
+  \draw (\BzHxCl) ellipse (36.000000bp and 36.000000bp);
+  \draw (\BzHxCl) node {BzHxCl};
+\end{scope}
+
+% Node: nitrobz
+\def\nitrobz{63.000000bp,1912.000000bp}
+\begin{scope}
+  \draw (\nitrobz) ellipse (36.000000bp and 36.000000bp);
+  \draw (\nitrobz) node {nitrobz};
+\end{scope}
+
+% Node: ama
+\def\ama{1397.000000bp,1372.000000bp}
+\begin{scope}
+  \draw (\ama) ellipse (54.000000bp and 54.000000bp);
+  \draw (\ama) node {ama};
+\end{scope}
+
+% Node: jntWP
+\def\jntWP{1800.000000bp,772.000000bp}
+
+% Node: jntT
+\def\jntT{811.000000bp,812.000000bp}
+
+% Node: jntY
+\def\jntY{867.000000bp,822.000000bp}
+
+% Node: cntWE
+\def\cntWE{2237.000000bp,1172.000000bp}
+
+% Node: amide
+\def\amide{2255.000000bp,1529.000000bp}
+\begin{scope}
+  \draw (\amide) ellipse (54.000000bp and 54.000000bp);
+  \draw (\amide) node {amide};
+\end{scope}
+
+% Node: jntU
+\def\jntU{719.000000bp,782.000000bp}
+
+% Node: jntO
+\def\jntO{420.000000bp,1072.000000bp}
+
+% Node: jntQP
+\def\jntQP{364.000000bp,1062.000000bp}
+
+% Node: acetal
+\def\acetal{946.000000bp,1672.000000bp}
+\begin{scope}
+  \draw (\acetal) ellipse (36.000000bp and 36.000000bp);
+  \draw (\acetal) node {acetal};
+\end{scope}
+
+% Node: osazone
+\def\osazone{804.000000bp,2042.000000bp}
+\begin{scope}
+  \draw (\osazone) ellipse (36.000000bp and 36.000000bp);
+  \draw (\osazone) node {osazone};
+\end{scope}
+
+% Node: peptide
+\def\peptide{1604.000000bp,1022.000000bp}
+\begin{scope}
+  \draw (\peptide) ellipse (36.000000bp and 36.000000bp);
+  \draw (\peptide) node {peptide};
+\end{scope}
+
+% Node: BzAcid
+\def\BzAcid{445.000000bp,2065.000000bp}
+\begin{scope}
+  \draw (\BzAcid) ellipse (36.000000bp and 36.000000bp);
+  \draw (\BzAcid) node {BzAcid};
+\end{scope}
+
+% Node: ArRX
+\def\ArRX{491.000000bp,2372.000000bp}
+\begin{scope}
+  \draw (\ArRX) ellipse (36.000000bp and 36.000000bp);
+  \draw (\ArRX) node {ArRX};
+\end{scope}
+
+% Node: phenol
+\def\phenol{402.000000bp,1722.000000bp}
+\begin{scope}
+  \draw (\phenol) ellipse (36.000000bp and 36.000000bp);
+  \draw (\phenol) node {phenol};
+\end{scope}
+
+% Node: quin
+\def\quin{236.000000bp,1897.000000bp}
+\begin{scope}
+  \draw (\quin) ellipse (36.000000bp and 36.000000bp);
+  \draw (\quin) node {quin};
+\end{scope}
+
+% Node: aniline
+\def\aniline{210.000000bp,1759.000000bp}
+\begin{scope}
+  \draw (\aniline) ellipse (36.000000bp and 36.000000bp);
+  \draw (\aniline) node {aniline};
+\end{scope}
+
+% Node: ArNR
+\def\ArNR{637.000000bp,2334.000000bp}
+\begin{scope}
+  \draw (\ArNR) ellipse (36.000000bp and 36.000000bp);
+  \draw (\ArNR) node {ArNR};
+\end{scope}
+
+% Node: dithiane
+\def\dithiane{842.000000bp,2192.000000bp}
+\begin{scope}
+  \draw (\dithiane) ellipse (36.000000bp and 36.000000bp);
+  \draw (\dithiane) node {dithiane};
+\end{scope}
+
+% Node: imine
+\def\imine{1798.000000bp,2022.000000bp}
+\begin{scope}
+  \draw (\imine) ellipse (36.000000bp and 36.000000bp);
+  \draw (\imine) node {imine};
+\end{scope}
+
+% Node: azide
+\def\azide{1859.000000bp,2372.000000bp}
+\begin{scope}
+  \draw (\azide) ellipse (36.000000bp and 36.000000bp);
+  \draw (\azide) node {azide};
+\end{scope}
+
+% Node: nitro
+\def\nitro{1758.000000bp,2272.000000bp}
+\begin{scope}
+  \draw (\nitro) ellipse (36.000000bp and 36.000000bp);
+  \draw (\nitro) node {nitro};
+\end{scope}
+
+% Node: anhydride
+\def\anhydride{1833.000000bp,672.000000bp}
+\begin{scope}
+  \draw (\anhydride) ellipse (36.000000bp and 36.000000bp);
+  \draw (\anhydride) node {anhydride};
+\end{scope}
+
+% Node: jntWY
+\def\jntWY{1238.000000bp,292.000000bp}
+
+% Node: pntE
+\def\pntE{185.000000bp,647.000000bp}
+
+% Node: pntI
+\def\pntI{80.000000bp,1222.000000bp}
+
+% Edge: halide - halide
+\draw [->] (\halide)  .. controls (2092.0bp,433.5bp) and (2104.0bp,433.5bp)  .. (2104.0bp,378.0bp) .. controls (2104.0bp,329.87bp) and (2095.0bp,323.48bp)  .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{ah2ah_1,ah2ah_2}}  (\halide);
+
+% Edge: halide - halide
+\draw [->] (\halide)  .. controls (2098.0bp,438.0bp) and (2171.0bp,438.0bp)  .. (2171.0bp,378.0bp) .. controls (2171.0bp,323.39bp) and (2110.5bp,318.48bp)  .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{ah2ah_3}}  (\halide);
+
+% Edge: halide - alkane
+\draw [->] (\halide) .. controls (1868.169853bp,254.902005bp) and (1644.757295bp,164.408104bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{ah2kan_2}}  (\alkane);
+
+% Edge: halide - alkene
+\draw [->] (\halide) .. controls (1768.337262bp,232.316407bp) and (1135.651107bp,96.018580bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{ah2ken_1,ah2ken_2}}  (\alkene);
+
+% Edge: halide - alkene
+\draw [->] (\halide) .. controls (1733.533006bp,324.119784bp) and (1097.721276bp,221.893748bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{ah2ken_3,ah2ken_4}}  (\alkene);
+
+% Edge: halide - alkyne
+\draw [->] (\halide) .. controls (1666.737268bp,332.600427bp) and (657.081881bp,328.751186bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{ah2kyn_1,ah2kyn_2,ah2kyn_3}}  (\alkyne);
+
+% Edge: halide - alkyne
+\draw [->] (\halide) .. controls (1664.044993bp,391.565384bp) and (657.081881bp,427.248814bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{ah2kyn_4}}  (\alkyne);
+
+% Edge: halide - alcohol
+\draw [->] (\halide) .. controls (1652.123412bp,495.474920bp) and (449.616636bp,718.599050bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{ah2al_1,ah2al_2}}  (\alcohol);
+
+% Edge: halide - ether
+\draw [->] (\halide) .. controls (1655.010825bp,572.295326bp) and (428.624895bp,1275.908710bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{ah2ther_1,ah2ther_2}}  (\ether);
+
+% Edge: halide - amine
+\draw [->] (\halide) .. controls (2010.167487bp,723.218043bp) and (2046.077642bp,1694.967946bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{ah2amn_1,ah2amn_2}}  (\amine);
+
+% Edge: halide - amine
+\draw [->] (\halide) .. controls (2040.269641bp,722.236254bp) and (2078.491848bp,1692.651254bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{ah2amn_3}}  (\amine);
+
+% Edge: halide - organom
+\draw [->] (\halide) .. controls (1737.042804bp,434.671307bp) and (1133.945867bp,521.228277bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{ah2gr}}  (\organom);
+
+% Edge: halide - organom
+\draw [->] (\halide) .. controls (1740.652121bp,449.902890bp) and (1137.354634bp,543.993399bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{ah2om_1}}  (\organom);
+
+% Edge: halide - nitrile
+\draw [->] (\halide) .. controls (1894.226474bp,691.218330bp) and (1615.800000bp,1554.400000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{ah2trile}}  (\nitrile);
+
+% Edge: halide - jntWT
+\draw [->] (\halide) .. controls (1794.674104bp,410.538000bp) and (1455.800000bp,450.070000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{ah2kan_1}}  (1322.000000bp,467.350000bp);
+
+% Edge: halide - jntEPQ
+\draw [->] (\halide) .. controls (1650.063788bp,411.972818bp) and (555.090000bp,506.900000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{ah2kyn_1,ah2kyn_2,ah2kyn_3}}  (306.870000bp,528.830000bp);
+
+% Edge: halide - jntQW
+\draw [->] (\halide) .. controls (1708.521033bp,637.804467bp) and (529.270000bp,1305.600000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{al2est_1,al2est_2}}  (293.640000bp,1452.900000bp);
+
+% Edge: halide - cntQT
+\draw [->] (\halide) .. controls (2067.798050bp,704.241645bp) and (2087.300000bp,1578.300000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{amn2aamn_1}}  (\cntQT);
+
+% Edge: halide - cntWQ
+\draw [->] (\halide) .. controls (1914.971090bp,725.030558bp) and (1632.500000bp,1754.700000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{ket2ket_1}}  (\cntWQ);
+
+% Edge: halide - jntWW
+\draw [->] (\halide) .. controls (1948.602162bp,716.756927bp) and (1696.300000bp,1650.300000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{ah2ket_1}}  (1639.800000bp,1876.800000bp);
+
+% Edge: halide - jntWU
+\draw [->] (\halide) .. controls (1994.009460bp,580.566654bp) and (2007.200000bp,856.540000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{est2ama_1}}  (2005.500000bp,975.850000bp);
+
+% Edge: alkane - halide
+\draw [->] (\alkane) .. controls (1621.806048bp,171.567760bp) and (1844.661169bp,258.127607bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{kan2ah_1}}  (\halide);
+
+% Edge: alkane - alkene
+\draw [->] (\alkane) .. controls (1269.666095bp,55.165939bp) and (1031.744061bp,34.619019bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{kan2ken_1}}  (\alkene);
+
+% Edge: alkene - halide
+\draw [->] (\alkene) .. controls (1089.094970bp,188.853185bp) and (1714.797778bp,300.912516bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{ken2ah_1,ken2ah_2}}  (\halide);
+
+% Edge: alkene - halide
+\draw [->] (\alkene) .. controls (1098.138210bp,165.993498bp) and (1720.811137bp,281.646054bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{ken2ah_1,ken2ah_3}}  (\halide);
+
+% Edge: alkene - halide
+\draw [->] (\alkene) .. controls (1105.191740bp,142.532500bp) and (1728.184342bp,261.755879bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{ken2ah_4,ken2ah_5}}  (\halide);
+
+% Edge: alkene - halide
+\draw [->] (\alkene) .. controls (1110.234458bp,118.587182bp) and (1736.976031bp,241.173432bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{ken2ah_6}}  (\halide);
+
+% Edge: alkene - alkane
+\draw [->] (\alkene) .. controls (1018.074635bp,70.468270bp) and (1252.618127bp,89.762390bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{ken2kan_1}}  (\alkane);
+
+% Edge: alkene - alkane
+\draw [->] (\alkene) .. controls (1017.351734bp,54.056736bp) and (1252.200206bp,71.707921bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{ken2kan_2}}  (\alkane);
+
+% Edge: alkene - alkene
+\draw [->] (\alkene)  .. controls (750.0bp,81.0bp) and (738.0bp,81.0bp)  .. (738.0bp,46.5bp) .. controls (738.0bp,16.447bp) and (747.11bp,12.573bp)  .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{ken2ken_1}}  (\alkene);
+
+% Edge: alkene - alcohol
+\draw [->] (\alkene) .. controls (602.253828bp,221.155559bp) and (211.575758bp,647.510413bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{ken2col_1,ken2col_2}}  (\alcohol);
+
+% Edge: alkene - alcohol
+\draw [->] (\alkene) .. controls (705.246732bp,313.013355bp) and (322.390014bp,737.053299bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{ken2col_3,ken2col_4}}  (\alcohol);
+
+% Edge: alkene - alcohol
+\draw [->] (\alkene) .. controls (684.706322bp,301.804126bp) and (308.595108bp,718.942321bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{ken2col_5,ken2col_6}}  (\alcohol);
+
+% Edge: alkene - alcohol
+\draw [->] (\alkene) .. controls (665.509569bp,288.604509bp) and (292.640644bp,701.936035bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{ken2col_10,ken2col_11}}  (\alcohol);
+
+% Edge: alkene - alcohol
+\draw [->] (\alkene) .. controls (647.371014bp,274.085335bp) and (274.861114bp,686.049748bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{ken2col_7,ken2col_9}}  (\alcohol);
+
+% Edge: alkene - alcohol
+\draw [->] (\alkene) .. controls (630.933561bp,257.701609bp) and (255.505104bp,671.273529bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{ken2col_8,ken2col_9}}  (\alcohol);
+
+% Edge: alkene - ether
+\draw [->] (\alkene) .. controls (700.457117bp,387.577725bp) and (240.450000bp,1206.700000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{kenal2est_1,kenal2est_2}}  (\ether);
+
+% Edge: alkene - epoxide
+\draw [->] (\alkene) .. controls (922.047468bp,268.711621bp) and (1057.400000bp,567.150000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{ken2epx_1,ken2epx_2}}  (\epoxide);
+
+% Edge: alkene - polymer
+\draw [->] (\alkene) .. controls (675.090000bp,120.840000bp) and (536.060000bp,165.250000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{ken2pol_1}}  (\polymer);
+
+% Edge: alkene - cycprop
+\draw [->] (\alkene) .. controls (644.160000bp,105.920000bp) and (426.320000bp,146.110000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{ken2cyc_1}}  (\cycprop);
+
+% Edge: alkene - hlhdrn
+\draw [->] (\alkene) .. controls (937.857766bp,146.227475bp) and (1015.400000bp,182.230000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{ken2hal_1}}  (\hlhdrn);
+
+% Edge: alkene - jntQ
+\draw [->] (\alkene) .. controls (896.361820bp,438.972260bp) and (1241.900000bp,1541.100000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{ken2ahket_1,ken2ahket_2}}  (1311.200000bp,1787.200000bp);
+
+% Edge: alkene - jntW
+\draw [->] (\alkene) .. controls (934.541167bp,356.164586bp) and (1135.900000bp,1046.700000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{ken2ket2acid_1,ken2ket2acid_2}}  (1196.100000bp,1237.500000bp);
+
+% Edge: alkyne - halide
+\draw [->] (\alkyne) .. controls (633.326834bp,393.295600bp) and (1636.664181bp,371.880280bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{kyn2ken2ah_1,kyn2ah_1}}  (\halide);
+
+% Edge: alkyne - halide
+\draw [->] (\alkyne) .. controls (633.326834bp,362.704400bp) and (1637.600470bp,350.738958bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{kyn2ken2ah_2,kyn2ah_2}}  (\halide);
+
+% Edge: alkyne - alkane
+\draw [->] (\alkyne) .. controls (558.920000bp,306.210000bp) and (1161.300000bp,149.460000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{kyn2kan_1}}  (\alkane);
+
+% Edge: alkyne - alkene
+\draw [->] (\alkyne) .. controls (451.747694bp,292.713227bp) and (647.166875bp,170.179742bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{kyn2ken_1,kyn2ken_2}}  (\alkene);
+
+% Edge: alkyne - alkene
+\draw [->] (\alkyne) .. controls (443.672092bp,278.330583bp) and (639.323699bp,154.095865bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{kyn2ken_3,kyn2ken_4}}  (\alkene);
+
+% Edge: alkyne - alcohol
+\draw [dashed] (\alkyne) .. controls (220.760000bp,548.430000bp) and (150.195530bp,741.658368bp)   ..  (\alcohol);
+
+% Edge: alkyne - aldehyde
+\draw [->] (\alkyne) .. controls (386.220000bp,752.230000bp) and (721.910000bp,1969.200000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{kyn2ald_1,kyn2ald_2}}  (\aldehyde);
+
+% Edge: alkyne - aldket
+\draw [->] (\alkyne) .. controls (455.924813bp,735.073106bp) and (1036.615803bp,1928.634996bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{kyn2ket_3}}  (\aldket);
+
+% Edge: alkyne - ketone
+\draw [->] (\alkyne) .. controls (502.370000bp,732.480000bp) and (1280.500000bp,1989.900000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{kyn2ket_1,kyn2ket_2}}  (\ketone);
+
+% Edge: alkyne - acid
+\draw [->] (\alkyne) .. controls (607.110000bp,550.520000bp) and (1589.930369bp,1074.307422bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{kyn2acid_1,kyn2acid_2}}  (\acid);
+
+% Edge: alkyne - alkinide
+\draw [->] (\alkyne) .. controls (218.760000bp,250.810000bp) and (166.720000bp,160.360000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{kyn2knd_1}}  (\alkinide);
+
+% Edge: alkyne - alkinide
+\draw [->] (\alkyne) .. controls (205.950000bp,258.140000bp) and (154.380000bp,167.420000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{kyn2knd_2,kyn2knd_3}}  (\alkinide);
+
+% Edge: alkyne - jntEPQ
+\draw [->] (\alkyne) .. controls (276.430000bp,462.270000bp) and (275.470000bp,474.660000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{ah2kyn_1,ah2kyn_2,ah2kyn_3}}  (273.800000bp,496.040000bp);
+
+% Edge: alkyne - jntEPW
+\draw [->] (\alkyne) .. controls (331.443998bp,505.260901bp) and (368.210000bp,588.610000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{cnyl2kyn_1,cnyl2kyn_2,cnyl2kyn_3}}  (392.410000bp,648.400000bp);
+
+% Edge: alcohol - halide
+\draw [->] (\alcohol) .. controls (435.620889bp,757.332248bp) and (1632.045320bp,527.163360bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{al2ah_1,al2ah_2}}  (\halide);
+
+% Edge: alcohol - alkane
+\draw [->] (\alcohol) .. controls (371.722973bp,732.031737bp) and (1150.900000bp,260.760000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{al2kan_1}}  (\alkane);
+
+% Edge: alcohol - alkene
+\draw [->] (\alcohol) .. controls (223.317820bp,677.410780bp) and (598.215101bp,254.022990bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{ken2al_1,ken2al_2}}  (\alkene);
+
+% Edge: alcohol - ether
+\draw [->] (\alcohol) .. controls (74.912012bp,1099.844535bp) and (68.608080bp,1327.716075bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{al2eth_1,al2eth_2}}  (\ether);
+
+% Edge: alcohol - ether
+\draw [dashed] (\alcohol) .. controls (91.392269bp,1103.586992bp) and (85.521161bp,1340.974299bp)   ..  (\ether);
+
+% Edge: alcohol - aldehyde
+\draw [->] (\alcohol) .. controls (203.616608bp,1230.850433bp) and (666.520000bp,2045.700000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{al2ald_1,al2ald_2}}  (\aldehyde);
+
+% Edge: alcohol - ketone
+\draw [->] (\alcohol) .. controls (381.278604bp,1162.001611bp) and (1226.400000bp,2075.100000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{al2ket_1,al2ket_2}}  (\ketone);
+
+% Edge: alcohol - acid
+\draw [->] (\alcohol) .. controls (418.523393bp,1073.146986bp) and (1545.262594bp,1220.988199bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{al2acid_1}}  (\acid);
+
+% Edge: alcohol - acid
+\draw [->] (\alcohol) .. controls (439.968003bp,1018.158652bp) and (1557.471663bp,1152.878006bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{al2acid_2}}  (\acid);
+
+% Edge: alcohol - alcoTs
+\draw [->] (\alcohol) .. controls (91.531000bp,762.930000bp) and (94.346000bp,644.070000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{al2aTs_1}}  (\alcoTs);
+
+% Edge: alcohol - alcoxid
+\draw [->] (\alcohol) .. controls (261.586924bp,1036.163408bp) and (484.090000bp,1253.200000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{al2axd_1}}  (\alcoxid);
+
+% Edge: alcohol - alcoxid
+\draw [->] (\alcohol) .. controls (271.441400bp,1021.133051bp) and (493.760000bp,1241.600000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{al2axd_2}}  (\alcoxid);
+
+% Edge: alcohol - jntQQ
+\draw [->] (\alcohol) .. controls (443.104459bp,936.438249bp) and (1480.600000bp,924.500000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{al2est_3}}  (1722.800000bp,926.680000bp);
+
+% Edge: alcohol - jntWI
+\draw [->] (\alcohol) .. controls (286.410643bp,1112.789629bp) and (660.970000bp,1590.700000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{ket2acl_1}}  (779.440000bp,1731.100000bp);
+
+% Edge: alcohol - jntQO
+\draw [->] (\alcohol) .. controls (462.373824bp,965.230609bp) and (1649.600000bp,937.210000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{acid2est_1}}  (1909.700000bp,941.410000bp);
+
+% Edge: ether - halide
+\draw [->] (\ether) .. controls (439.896596bp,1355.085522bp) and (1659.643761bp,637.286571bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{eth2ah_1}}  (\halide);
+
+% Edge: ether - halide
+\draw [->] (\ether) .. controls (423.385645bp,1323.511616bp) and (1641.672993bp,612.589043bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{eth2ah_2}}  (\halide);
+
+% Edge: ether - perxde
+\draw [->] (\ether) .. controls (69.628000bp,1639.700000bp) and (68.706000bp,1681.600000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{eth2pxde_1}}  (\perxde);
+
+% Edge: aldehyde - acid
+\draw [->] (\aldehyde) .. controls (1071.443004bp,2142.936005bp) and (1687.800000bp,1513.300000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{ald2acid_1}}  (\acid);
+
+% Edge: aldehyde - sugar
+\draw [->] (\aldehyde) .. controls (919.330000bp,2164.600000bp) and (1055.200000bp,1838.100000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{ald2sug_1}}  (\sugar);
+
+% Edge: aldehyde - nitrile
+\draw [->] (\aldehyde) .. controls (1028.229388bp,2214.746904bp) and (1381.800000bp,1924.500000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{ald2ntrl2ama_1}}  (\nitrile);
+
+% Edge: aldket - alkane
+\draw [->] (\aldket) .. controls (1260.613849bp,1932.787661bp) and (1449.962965bp,513.194204bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{ket2kan_1}}  (\alkane);
+
+% Edge: aldket - alkane
+\draw [->] (\aldket) .. controls (1189.626572bp,1923.885308bp) and (1373.487417bp,504.923582bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{ket2kan_2}}  (\alkane);
+
+% Edge: aldket - alkane
+\draw [->] (\aldket) .. controls (1225.375347bp,1926.296893bp) and (1411.516011bp,510.993347bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{ket2kan_3}}  (\alkane);
+
+% Edge: aldket - alcohol
+\draw [->] (\aldket) .. controls (975.748758bp,2036.692374bp) and (333.915176bp,1207.715396bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{ket2al_3,ket2al_5}}  (\alcohol);
+
+% Edge: aldket - alcohol
+\draw [->] (\aldket) .. controls (905.639819bp,2098.058807bp) and (250.041593bp,1260.805574bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{ket2al_4,ket2al_5}}  (\alcohol);
+
+% Edge: aldket - alcohol
+\draw [->] (\aldket) .. controls (926.844824bp,2075.190516bp) and (279.679700bp,1245.611419bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{ket2al_6}}  (\alcohol);
+
+% Edge: aldket - alcohol
+\draw [->] (\aldket) .. controls (950.306097bp,2054.653767bp) and (307.685748bp,1227.834817bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{ket2al_7}}  (\alcohol);
+
+% Edge: aldket - aldket
+\draw [->] (\aldket)  .. controls (1114.0bp,2412.0bp) and (1114.0bp,2424.0bp)  .. (1174.0bp,2424.0bp) .. controls (1226.3bp,2424.0bp) and (1233.0bp,2414.9bp)  .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{ket2ket_3}}  (\aldket);
+
+% Edge: aldket - jntEPW
+\draw [->] (\aldket) .. controls (1023.549986bp,1991.522667bp) and (529.250000bp,947.130000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{cnyl2kyn_1,cnyl2kyn_2,cnyl2kyn_3}}  (421.280000bp,714.860000bp);
+
+% Edge: aldket - jntR
+\draw [->] (\aldket) .. controls (1091.670799bp,1996.900515bp) and (834.570000bp,1054.300000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{ket2al_1,ket2al_2}}  (774.300000bp,827.070000bp);
+
+% Edge: aldket - cntQE
+\draw [->] (\aldket) .. controls (1374.615441bp,2286.729664bp) and (1649.900000bp,2217.500000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{amn2amn_1}}  (\cntQE);
+
+% Edge: aldket - jntWI
+\draw [->] (\aldket) .. controls (1071.610835bp,2147.033081bp) and (891.510000bp,1896.200000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{ket2acl_1}}  (822.660000bp,1789.500000bp);
+
+% Edge: aldket - jntQR
+\draw [->] (\aldket) .. controls (1366.359447bp,2270.537466bp) and (1625.300000bp,2189.300000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{amn2amm_1}}  (1738.600000bp,2153.000000bp);
+
+% Edge: ketone - alkene
+\draw [->] (\ketone) .. controls (1385.684411bp,1970.135712bp) and (949.868369bp,509.886472bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{ket2ken_1}}  (\alkene);
+
+% Edge: ketone - ketone
+\draw [->] (\ketone)  .. controls (1595.0bp,2432.0bp) and (1607.0bp,2432.0bp)  .. (1607.0bp,2372.0bp) .. controls (1607.0bp,2319.7bp) and (1597.9bp,2313.0bp)  .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{ket2ket_2}}  (\ketone);
+
+% Edge: ketone - acid
+\draw [->] (\ketone) .. controls (1628.802028bp,2113.803163bp) and (1844.211658bp,1548.343274bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{ket2acid_1,ket2acid_2}}  (\acid);
+
+% Edge: ketone - cntWQ
+\draw [->] (\ketone) .. controls (1537.662937bp,2232.550034bp) and (1552.000000bp,2132.000000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{ket2ket_1}}  (\cntWQ);
+
+% Edge: amine - alkene
+\draw [->] (\amine) .. controls (1882.086475bp,1701.136834bp) and (1089.997357bp,438.597900bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{amn2ken_1,amn2ken_2}}  (\alkene);
+
+% Edge: amine - alkene
+\draw [->] (\amine) .. controls (1851.176528bp,1720.577518bp) and (1057.044016bp,460.028404bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{amn2ken_3}}  (\alkene);
+
+% Edge: amine - amine
+\draw [->] (\amine)  .. controls (2167.0bp,2125.0bp) and (2179.0bp,2125.0bp)  .. (2179.0bp,2065.0bp) .. controls (2179.0bp,2012.7bp) and (2169.9bp,2006.0bp)  .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{amn2amn_6}}  (\amine);
+
+% Edge: amine - diazonium
+\draw [->] (\amine) .. controls (1886.200000bp,1821.000000bp) and (1379.600000bp,1211.500000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{amn2damn_1}}  (\diazonium);
+
+% Edge: amine - ammsalt
+\draw [->] (\amine) .. controls (2172.000000bp,2186.300000bp) and (2236.800000bp,2281.100000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{amn2amns_1}}  (\ammsalt);
+
+% Edge: amine - sulfonide
+\draw [->] (\amine) .. controls (2180.900000bp,2135.100000bp) and (2223.900000bp,2167.800000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{amn2sfnd_1}}  (\sulfonide);
+
+% Edge: amine - ammhox
+\draw [->] (\amine) .. controls (2108.800000bp,2195.700000bp) and (2126.200000bp,2277.700000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{amn2amnhx_1}}  (\ammhox);
+
+% Edge: amine - ammhox
+\draw [->] (\amine) .. controls (2123.100000bp,2192.700000bp) and (2139.900000bp,2274.900000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{amn2amnhx_2}}  (\ammhox);
+
+% Edge: amine - hoxamn
+\draw [->] (\amine) .. controls (2054.200000bp,2193.700000bp) and (2031.800000bp,2276.600000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{amn2hxamn_1}}  (\hoxamn);
+
+% Edge: amine - amnox
+\draw [->] (\amine) .. controls (2175.400000bp,1994.000000bp) and (2212.300000bp,1963.600000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{amn2amnox_1}}  (\amnox);
+
+% Edge: amine - jntWR
+\draw [->] (\amine) .. controls (1760.500000bp,2082.400000bp) and (894.560000bp,2128.400000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{amn2amn_6}}  (674.210000bp,2140.100000bp);
+
+% Edge: amine - cntQE
+\draw [->] (\amine) .. controls (1965.200000bp,2106.900000bp) and (1890.100000bp,2137.400000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{amn2amn_1}}  (\cntQE);
+
+% Edge: amine - jntQR
+\draw [->] (\amine) .. controls (1957.700000bp,2097.000000bp) and (1870.700000bp,2118.200000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{amn2amm_1}}  (1808.300000bp,2133.400000bp);
+
+% Edge: amine - cntQT
+\draw [->] (\amine) .. controls (2104.886789bp,1957.199676bp) and (2105.100000bp,1913.200000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{amn2aamn_1}}  (\cntQT);
+
+% Edge: amine - jntQU
+\draw [->] (\amine) .. controls (2037.700000bp,1927.900000bp) and (1998.200000bp,1822.200000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{amn2amd_1}}  (1972.700000bp,1754.000000bp);
+
+% Edge: amine - cntQY
+\draw [->] (\amine) .. controls (2002.300000bp,1989.300000bp) and (1960.000000bp,1957.100000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{amn2amn_5}}  (\cntQY);
+
+% Edge: amine - jntQI
+\draw [->] (\amine) .. controls (2054.763755bp,1898.457965bp) and (2025.700000bp,1728.300000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{acid2amd_1}}  (2008.700000bp,1637.500000bp);
+
+% Edge: amine - jntWW
+\draw [->] (\amine) .. controls (1925.100000bp,2010.200000bp) and (1755.100000bp,1953.500000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{ah2ket_1}}  (1665.300000bp,1923.400000bp);
+
+% Edge: benzene - alkane
+\draw [->] (\benzene) .. controls (467.450000bp,1709.300000bp) and (1227.200000bp,454.740000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{bz2kan_1}}  (\alkane);
+
+% Edge: benzene - alkene
+\draw [->] (\benzene) .. controls (359.900000bp,1691.700000bp) and (711.790000bp,474.080000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{bz2ken_1}}  (\alkene);
+
+% Edge: benzene - benzene
+\draw [->] (\benzene)  .. controls (174.0bp,2125.0bp) and (162.0bp,2125.0bp)  .. (162.0bp,2065.0bp) .. controls (162.0bp,2012.7bp) and (171.11bp,2006.0bp)  .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{bz2bz_1}}  (\benzene);
+
+% Edge: benzene - ArX
+\draw [->] (\benzene) .. controls (357.650000bp,1998.500000bp) and (416.920000bp,1961.200000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{bz2arx_1}}  (\ArX);
+
+% Edge: benzene - bzslfcd
+\draw [->] (\benzene) .. controls (161.720000bp,2135.600000bp) and (120.660000bp,2167.700000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{bz2bzsf_1}}  (\bzslfcd);
+
+% Edge: benzene - ArR
+\draw [->] (\benzene) .. controls (331.370000bp,2138.200000bp) and (361.980000bp,2166.400000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{bz2arr_1}}  (\ArR);
+
+% Edge: benzene - ArKet
+\draw [->] (\benzene) .. controls (290.920000bp,2193.500000bp) and (316.180000bp,2276.900000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{ph2ket_1,ph2ket_2}}  (\ArKet);
+
+% Edge: benzene - ArAld
+\draw [->] (\benzene) .. controls (229.160000bp,2194.900000bp) and (214.830000bp,2276.300000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{ph2ald_1,ph2ald_2}}  (\ArAld);
+
+% Edge: benzene - BzHxCl
+\draw [->] (\benzene) .. controls (172.350000bp,2187.300000bp) and (111.380000bp,2280.900000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{bz2bzh_1}}  (\BzHxCl);
+
+% Edge: benzene - nitrobz
+\draw [->] (\benzene) .. controls (164.550000bp,1994.200000bp) and (126.550000bp,1963.400000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{bz2nbz_1}}  (\nitrobz);
+
+% Edge: acid - alcohol
+\draw [->] (\acid) .. controls (1578.296215bp,1192.020136bp) and (457.541385bp,1056.292774bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{acid0est2alco_1,acid0est2alco_2}}  (\alcohol);
+
+% Edge: acid - ketone
+\draw [->] (\acid) .. controls (1828.362571bp,1518.268048bp) and (1612.996892bp,2083.726091bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{acid2ket_1,acid2ket_2}}  (\ketone);
+
+% Edge: acid - acid
+\draw [->] (\acid)  .. controls (2022.7bp,1262.6bp) and (2030.0bp,1261.6bp)  .. (2030.0bp,1260.0bp) .. controls (2030.0bp,1259.0bp) and (2027.0bp,1258.2bp)  .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{acid2acid_1}}  (\acid);
+
+% Edge: acid - acid
+\draw [->] (\acid)  .. controls (2048.4bp,1267.3bp) and (2083.0bp,1265.1bp)  .. (2083.0bp,1260.0bp) .. controls (2083.0bp,1255.4bp) and (2054.6bp,1253.1bp)  .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{hvz_1,hvz_2}}  (\acid);
+
+% Edge: acid - acidh
+\draw [->] (\acid) .. controls (1774.137029bp,1377.561367bp) and (1548.100000bp,1535.100000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{acid2acidh_1}}  (\acidh);
+
+% Edge: acid - ama
+\draw [->] (\acid) .. controls (1761.236299bp,1288.807448bp) and (1560.100000bp,1330.800000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{acid2imn2ama_1}}  (\ama);
+
+% Edge: acid - ama
+\draw [->] (\acid) .. controls (1764.396842bp,1304.285787bp) and (1563.100000bp,1345.300000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{acid2ama_1}}  (\ama);
+
+% Edge: acid - jntQO
+\draw [->] (\acid) .. controls (1942.500000bp,1126.700000bp) and (1944.100000bp,1040.800000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{acid2est_1}}  (1945.300000bp,978.390000bp);
+
+% Edge: acid - jntQI
+\draw [->] (\acid) .. controls (1965.100000bp,1398.600000bp) and (1983.300000bp,1498.700000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{acid2amd_1}}  (1995.500000bp,1566.400000bp);
+
+% Edge: acid - jntWP
+\draw [->] (\acid) .. controls (1890.900000bp,1088.700000bp) and (1837.200000bp,901.550000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{acid2ahdr_1}}  (1810.000000bp,806.720000bp);
+
+% Edge: acidh - aldehyde
+\draw [->] (\acidh) .. controls (1266.000000bp,1809.100000bp) and (990.478494bp,2156.432941bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{ach2ald_1,ach2ald_2}}  (\aldehyde);
+
+% Edge: acidh - ketone
+\draw [->] (\acidh) .. controls (1423.500000bp,1823.200000bp) and (1483.916160bp,2139.413716bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{acid2ket_3}}  (\ketone);
+
+% Edge: acidh - jntT
+\draw [->] (\acidh) .. controls (1259.500000bp,1453.100000bp) and (933.500000bp,987.120000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{om2al_1}}  (831.740000bp,841.650000bp);
+
+% Edge: acidh - jntQQ
+\draw [->] (\acidh) .. controls (1490.087737bp,1465.470643bp) and (1674.200000bp,1093.200000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{al2est_3}}  (1742.500000bp,959.350000bp);
+
+% Edge: acidh - jntQU
+\draw [->] (\acidh) .. controls (1557.400000bp,1666.000000bp) and (1809.800000bp,1699.900000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{amn2amd_1}}  (1924.000000bp,1715.200000bp);
+
+% Edge: acidh - cntQY
+\draw [->] (\acidh) .. controls (1538.000000bp,1722.200000bp) and (1758.200000bp,1841.000000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{amn2amn_5}}  (\cntQY);
+
+% Edge: acidh - jntWP
+\draw [->] (\acidh) .. controls (1483.135679bp,1437.079582bp) and (1712.500000bp,959.430000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{acid2ahdr_1}}  (1784.600000bp,805.030000bp);
+
+% Edge: ester - alcohol
+\draw [->] (\ester) .. controls (1880.161349bp,904.469568bp) and (519.989536bp,911.120760bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{acid0est2alco_1,acid0est2alco_2}}  (\alcohol);
+
+% Edge: ester - ketone
+\draw [->] (\ester) .. controls (2095.300000bp,1178.600000bp) and (1693.167631bp,2046.316940bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{est2ket_1}}  (\ketone);
+
+% Edge: ester - acid
+\draw [->] (\ester) .. controls (2139.600000bp,1016.600000bp) and (2049.600000bp,1126.400000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{malest_1,malest_2}}  (\acid);
+
+% Edge: ester - jntY
+\draw [->] (\ester) .. controls (1949.867104bp,882.627584bp) and (1119.000000bp,839.280000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{om2al_1}}  (903.180000bp,824.480000bp);
+
+% Edge: ester - cntWE
+\draw [->] (\ester) .. controls (2221.300000bp,1015.900000bp) and (2225.000000bp,1082.500000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{est2est_1}}  (\cntWE);
+
+% Edge: ester - jntWU
+\draw [->] (\ester) .. controls (2135.463966bp,953.858929bp) and (2083.500000bp,977.090000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{est2ama_1}}  (2038.000000bp,997.300000bp);
+
+% Edge: amide - amine
+\draw [->] (\amide) .. controls (2209.700000bp,1675.100000bp) and (2147.900000bp,1874.900000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{amd2amn_1}}  (\amine);
+
+% Edge: epoxide - halide
+\draw [->] (\epoxide) .. controls (1338.100000bp,668.220000bp) and (1767.122811bp,492.092504bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{epx2ah_1}}  (\halide);
+
+% Edge: epoxide - alcohol
+\draw [->] (\epoxide) .. controls (917.558163bp,787.044647bp) and (373.171477bp,851.561625bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{pox2al_1,pox2al_2}}  (\alcohol);
+
+% Edge: epoxide - jntU
+\draw [->] (\epoxide) .. controls (1004.764749bp,761.268426bp) and (844.300000bp,773.130000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{epx2al_1}}  (755.150000bp,779.440000bp);
+
+% Edge: epoxide - jntO
+\draw [->] (\epoxide) .. controls (961.271001bp,837.855446bp) and (588.740000bp,997.310000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{epx2eth_1}}  (453.310000bp,1057.300000bp);
+
+% Edge: epoxide - jntQP
+\draw [->] (\epoxide) .. controls (947.822279bp,824.151068bp) and (541.350000bp,991.420000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{epx2eth_2}}  (397.710000bp,1048.600000bp);
+
+% Edge: organom - acid
+\draw [->] (\organom) .. controls (1087.600000bp,709.370000bp) and (1669.953462bp,1085.008236bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{om2acid_1}}  (\acid);
+
+% Edge: organom - organom
+\draw [->] (\organom)  .. controls (815.0bp,581.0bp) and (803.0bp,581.0bp)  .. (803.0bp,552.5bp) .. controls (803.0bp,528.68bp) and (811.39bp,524.77bp)  .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{om2om}}  (\organom);
+
+% Edge: organom - jntWT
+\draw [->] (\organom) .. controls (1007.504102bp,533.771437bp) and (1164.500000bp,501.550000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{ah2kan_1}}  (1251.000000bp,480.530000bp);
+
+% Edge: organom - jntU
+\draw [->] (\organom) .. controls (814.340000bp,653.660000bp) and (773.580000bp,708.530000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{epx2al_1}}  (740.520000bp,753.030000bp);
+
+% Edge: organom - jntR
+\draw [->] (\organom) .. controls (831.240000bp,659.510000bp) and (804.190000bp,713.620000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{ket2al_1,ket2al_2}}  (781.220000bp,759.570000bp);
+
+% Edge: organom - jntT
+\draw [->] (\organom) .. controls (849.640000bp,667.090000bp) and (833.720000bp,726.800000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{om2al_1}}  (820.290000bp,777.160000bp);
+
+% Edge: organom - jntY
+\draw [->] (\organom) .. controls (871.830000bp,670.960000bp) and (869.830000bp,733.670000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{om2al_1}}  (868.150000bp,785.990000bp);
+
+% Edge: organom - jntQP
+\draw [->] (\organom) .. controls (738.570000bp,702.820000bp) and (488.090000bp,943.010000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{epx2eth_2}}  (390.140000bp,1036.900000bp);
+
+% Edge: sugar - ether
+\draw [->] (\sugar) .. controls (908.400000bp,1620.000000bp) and (362.020000bp,1562.500000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{sug2eth_1}}  (\ether);
+
+% Edge: sugar - acid
+\draw [->] (\sugar) .. controls (1327.970515bp,1573.797568bp) and (1713.097533bp,1392.742460bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{sug2acid_1}}  (\acid);
+
+% Edge: sugar - acid
+\draw [->] (\sugar) .. controls (1312.889474bp,1541.513737bp) and (1693.464101bp,1351.335757bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{sug2acid_2}}  (\acid);
+
+% Edge: sugar - acid
+\draw [->] (\sugar) .. controls (1321.167538bp,1557.311807bp) and (1702.601616bp,1372.362126bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{sug2acid_3}}  (\acid);
+
+% Edge: sugar - ester
+\draw [->] (\sugar) .. controls (1351.557528bp,1492.575821bp) and (1982.449310bp,1076.871107bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{sug2est_1}}  (\ester);
+
+% Edge: sugar - sugar
+\draw [->] (\sugar)  .. controls (1076.0bp,1629.0bp) and (1076.0bp,1716.0bp)  .. (1136.0bp,1716.0bp) .. controls (1190.1bp,1716.0bp) and (1195.4bp,1645.2bp)  .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{sug2sug_1}}  (\sugar);
+
+% Edge: sugar - sugar
+\draw [->] (\sugar)  .. controls (1068.0bp,1653.0bp) and (1068.0bp,1788.0bp)  .. (1136.0bp,1788.0bp) .. controls (1200.1bp,1788.0bp) and (1203.8bp,1667.9bp)  .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{sug2sug_2}}  (\sugar);
+
+% Edge: sugar - sugar
+\draw [->] (\sugar)  .. controls (1070.0bp,1647.0bp) and (1070.0bp,1770.0bp)  .. (1136.0bp,1770.0bp) .. controls (1197.7bp,1770.0bp) and (1201.7bp,1662.3bp)  .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{sug2sug_3}}  (\sugar);
+
+% Edge: sugar - sugar
+\draw [->] (\sugar)  .. controls (1072.0bp,1641.0bp) and (1072.0bp,1752.0bp)  .. (1136.0bp,1752.0bp) .. controls (1195.4bp,1752.0bp) and (1199.7bp,1656.5bp)  .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{sug2sug_4}}  (\sugar);
+
+% Edge: sugar - sugar
+\draw [->] (\sugar)  .. controls (1074.0bp,1635.0bp) and (1074.0bp,1734.0bp)  .. (1136.0bp,1734.0bp) .. controls (1192.9bp,1734.0bp) and (1197.6bp,1650.6bp)  .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{sug2sug_5}}  (\sugar);
+
+% Edge: sugar - acetal
+\draw [->] (\sugar) .. controls (1054.000000bp,1656.100000bp) and (1019.100000bp,1661.200000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{sug2acl_1}}  (\acetal);
+
+% Edge: sugar - osazone
+\draw [->] (\sugar) .. controls (1035.600000bp,1764.300000bp) and (895.400000bp,1932.400000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{sug2osz_1}}  (\osazone);
+
+% Edge: ama - aldehyde
+\draw [->] (\ama) .. controls (1279.700000bp,1580.000000bp) and (982.410000bp,2107.100000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{ama2ald_1}}  (\aldehyde);
+
+% Edge: ama - ester
+\draw [->] (\ama) .. controls (1590.079477bp,1272.373871bp) and (2012.764212bp,1031.235294bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{ama2est_1}}  (\ester);
+
+% Edge: ama - amide
+\draw [->] (\ama) .. controls (1601.000000bp,1409.300000bp) and (2029.200000bp,1487.700000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{ama2amd_1}}  (\amide);
+
+% Edge: ama - peptide
+\draw [->] (\ama) .. controls (1465.700000bp,1255.800000bp) and (1542.000000bp,1126.900000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{ama2ppt_1}}  (\peptide);
+
+% Edge: hlhdrn - epoxide
+\draw [->] (\hlhdrn) .. controls (1110.200000bp,355.260000bp) and (1128.600000bp,577.680000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{hdrn2epx_1}}  (\epoxide);
+
+% Edge: alcoxid - jntQW
+\draw [->] (\alcoxid) .. controls (515.530000bp,1385.700000bp) and (377.420000bp,1432.900000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{al2est_1,al2est_2}}  (297.170000bp,1460.300000bp);
+
+% Edge: alcoxid - jntO
+\draw [->] (\alcoxid) .. controls (557.990000bp,1271.200000bp) and (485.510000bp,1166.500000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{epx2eth_1}}  (440.660000bp,1101.800000bp);
+
+% Edge: ArX - jntWR
+\draw [->] (\ArX) .. controls (539.940000bp,1984.300000bp) and (585.330000bp,2057.300000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{amn2amn_6}}  (618.790000bp,2111.100000bp);
+
+% Edge: ArR - BzAcid
+\draw [->] (\ArR) .. controls (428.690000bp,2161.600000bp) and (433.390000bp,2133.700000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{bzkyl2bzacid_1,bzkyl2bzacid_2}}  (\BzAcid);
+
+% Edge: ArR - ArRX
+\draw [->] (\ArR) .. controls (438.810000bp,2277.400000bp) and (453.310000bp,2308.600000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{arr2arr_1}}  (\ArRX);
+
+% Edge: ArKet - ArR
+\draw [->] (\ArKet) .. controls (371.790000bp,2316.600000bp) and (386.770000bp,2285.600000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{bz2arr_2}}  (\ArR);
+
+% Edge: ArRX - ArR
+\draw [->] (\ArRX) .. controls (471.190000bp,2313.600000bp) and (456.690000bp,2282.400000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{bz2bz_2}}  (\ArR);
+
+% Edge: phenol - quin
+\draw [->] (\phenol) .. controls (348.050000bp,1778.900000bp) and (299.800000bp,1829.700000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{ph2qui_1}}  (\quin);
+
+% Edge: nitrobz - aniline
+\draw [->] (\nitrobz) .. controls (113.060000bp,1859.900000bp) and (150.960000bp,1820.400000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{ntro2amn_1}}  (\aniline);
+
+% Edge: aniline - diazonium
+\draw [->] (\aniline) .. controls (383.740000bp,1632.500000bp) and (1017.219794bp,1160.258479bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{amn2damn_1}}  (\diazonium);
+
+% Edge: diazonium - halide
+\draw [->] (\diazonium) .. controls (1372.379745bp,920.151829bp) and (1843.602828bp,615.217903bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{damn2ah_1}}  (\halide);
+
+% Edge: diazonium - halide
+\draw [->] (\diazonium) .. controls (1352.464284bp,895.532751bp) and (1807.118945bp,583.365190bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{damn2ah_2}}  (\halide);
+
+% Edge: diazonium - halide
+\draw [->] (\diazonium) .. controls (1363.495231bp,906.974133bp) and (1823.880799bp,600.052593bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{damn2ah_3}}  (\halide);
+
+% Edge: diazonium - alkane
+\draw [->] (\diazonium) .. controls (1264.800000bp,850.270000bp) and (1379.499938bp,346.115371bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{damn2kan_1}}  (\alkane);
+
+% Edge: diazonium - alcohol
+\draw [->] (\diazonium) .. controls (1028.100000bp,1003.200000bp) and (391.633975bp,978.598567bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{damn2al_1}}  (\alcohol);
+
+% Edge: diazonium - benzene
+\draw [->] (\diazonium) .. controls (1062.043799bp,1176.604895bp) and (491.940000bp,1807.000000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{damn2kan_1}}  (\benzene);
+
+% Edge: diazonium - ArX
+\draw [->] (\diazonium) .. controls (1088.154509bp,1176.109002bp) and (627.168877bp,1717.826686bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{damn2ah_1}}  (\ArX);
+
+% Edge: diazonium - ArX
+\draw [->] (\diazonium) .. controls (1116.925289bp,1197.048094bp) and (658.833638bp,1743.773849bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{damn2ah_2}}  (\ArX);
+
+% Edge: diazonium - ArX
+\draw [->] (\diazonium) .. controls (1101.473604bp,1188.044084bp) and (643.902161bp,1729.701765bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{damn2ah_3}}  (\ArX);
+
+% Edge: diazonium - phenol
+\draw [->] (\diazonium) .. controls (1067.983751bp,1146.833189bp) and (575.120000bp,1574.200000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{damn2al_1}}  (\phenol);
+
+% Edge: dithiane - aldket
+\draw [->] (\dithiane) .. controls (927.130000bp,2228.400000bp) and (1028.200000bp,2271.600000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{dith2ket_1}}  (\aldket);
+
+% Edge: azide - amine
+\draw [->] (\azide) .. controls (1916.800000bp,2294.900000bp) and (1990.300000bp,2196.700000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{azd2amn_1}}  (\amine);
+
+% Edge: nitro - amine
+\draw [->] (\nitro) .. controls (1840.700000bp,2220.300000bp) and (1948.100000bp,2153.100000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{ntro2amn_1}}  (\amine);
+
+% Edge: nitrile - ketone
+\draw [->] (\nitrile) .. controls (1528.700000bp,1927.900000bp) and (1511.296665bp,2163.505463bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{ntrl2ket_1}}  (\ketone);
+
+% Edge: nitrile - amine
+\draw [->] (\nitrile) .. controls (1652.000000bp,1858.700000bp) and (1891.800000bp,1971.900000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{ntrl2amn_1}}  (\amine);
+
+% Edge: nitrile - acid
+\draw [->] (\nitrile) .. controls (1617.200000bp,1688.800000bp) and (1801.300000bp,1444.300000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{ntrl2acid_1}}  (\acid);
+
+% Edge: nitrile - ama
+\draw [->] (\nitrile) .. controls (1498.400000bp,1694.900000bp) and (1445.000000bp,1525.000000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{ald2ntrl2ama_1}}  (\ama);
+
+% Edge: jntWT - jntWY
+\draw [->] (1276.600000bp,436.870000bp) .. controls (1269.000000bp,408.250000bp) and (1258.200000bp,367.660000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{ah2kan_1}}  (1247.300000bp,327.040000bp);
+
+% Edge: jntWY - alkane
+\draw [->] (1263.800000bp,266.330000bp) .. controls (1297.100000bp,233.160000bp) and (1356.100000bp,174.400000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{ah2kan_1}}  (\alkane);
+
+% Edge: jntWY - organom
+\draw [->] (1209.200000bp,314.210000bp) .. controls (1147.800000bp,361.570000bp) and (1003.300000bp,473.030000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{ah2kan_1}}  (\organom);
+
+% Edge: jntQ - aldehyde
+\draw [->] (1296.800000bp,1849.300000bp) .. controls (1222.100000bp,1933.500000bp) and (992.391146bp,2189.603550bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{ken2ahket_1,ken2ahket_2}}  (\aldehyde);
+
+% Edge: jntQ - ketone
+\draw [->] (1333.100000bp,1856.000000bp) .. controls (1364.000000bp,1942.500000bp) and (1434.082319bp,2177.561145bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{ken2ahket_1,ken2ahket_2}}  (\ketone);
+
+% Edge: jntW - ketone
+\draw [->] (1216.800000bp,1306.700000bp) .. controls (1259.800000bp,1459.300000bp) and (1446.447404bp,2068.713549bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{ken2ket2acid_1,ken2ket2acid_2}}  (\ketone);
+
+% Edge: jntW - acid
+\draw [->] (1243.300000bp,1271.400000bp) .. controls (1355.600000bp,1269.600000bp) and (1699.000000bp,1263.900000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{ken2ket2acid_1,ken2ket2acid_2}}  (\acid);
+
+% Edge: jntEPQ - pntE
+\draw [->] (249.300000bp,561.020000bp) .. controls (238.200000bp,575.860000bp) and (224.560000bp,594.100000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{ah2kyn_1,ah2kyn_2,ah2kyn_3}}  (\pntE);
+
+% Edge: jntEPW - pntE
+\draw [->] (370.000000bp,676.300000bp) .. controls (332.000000bp,670.280000bp) and (272.000000bp,660.780000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{cnyl2kyn_1,cnyl2kyn_2,cnyl2kyn_3}}  (\pntE);
+
+% Edge: jntU - alcohol
+\draw [->] (683.720000bp,789.270000bp) .. controls (585.610000bp,809.480000bp) and (298.809441bp,835.615516bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{epx2al_1}}  (\alcohol);
+
+% Edge: jntR - alcohol
+\draw [->] (729.080000bp,798.370000bp) .. controls (624.200000bp,816.960000bp) and (311.153727bp,848.357684bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{ket2al_1,ket2al_2}}  (\alcohol);
+
+% Edge: jntT - alcohol
+\draw [->] (775.150000bp,816.960000bp) .. controls (664.530000bp,832.260000bp) and (326.496361bp,878.329927bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{om2al_1}}  (\alcohol);
+
+% Edge: jntY - alcohol
+\draw [->] (830.990000bp,826.160000bp) .. controls (713.180000bp,839.770000bp) and (338.236377bp,894.077163bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{om2al_1}}  (\alcohol);
+
+% Edge: jntQQ - ester
+\draw [->] (1795.000000bp,926.070000bp) .. controls (1873.300000bp,924.040000bp) and (2059.906708bp,924.234520bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{al2est_3}}  (\ester);
+
+% Edge: jntQW - ether
+\draw [->] (228.410000bp,1482.900000bp) .. controls (206.680000bp,1489.700000bp) and (177.720000bp,1498.800000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{al2est_1,al2est_2}}  (\ether);
+
+% Edge: jntO - pntI
+\draw [->] (386.780000bp,1086.700000bp) .. controls (324.620000bp,1114.100000bp) and (190.840000bp,1173.100000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{epx2eth_1}}  (\pntI);
+
+% Edge: jntQP - pntI
+\draw [->] (332.520000bp,1079.700000bp) .. controls (280.700000bp,1108.900000bp) and (177.500000bp,1167.100000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{epx2eth_2}}  (\pntI);
+
+% Edge: jntWR - ArNR
+\draw [->] (637.810000bp,2178.100000bp) .. controls (637.650000bp,2209.100000bp) and (637.420000bp,2254.000000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{amn2amn_6}}  (\ArNR);
+
+% Edge: cntQE - amine
+\draw [->] (\cntQE) .. controls (1881.900000bp,2155.600000bp) and (1958.100000bp,2125.500000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{amn2amn_1}}  (\amine);
+
+% Edge: jntWI - acetal
+\draw [->] (834.030000bp,1740.100000bp) .. controls (855.200000bp,1727.200000bp) and (883.440000bp,1710.100000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{ket2acl_1}}  (\acetal);
+
+% Edge: jntQR - imine
+\draw [->] (1780.400000bp,2106.600000bp) .. controls (1782.900000bp,2094.400000bp) and (1785.800000bp,2080.600000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{amn2amm_1}}  (\imine);
+
+% Edge: cntQT - amine
+\draw [->] (\cntQT) .. controls (2092.400000bp,1900.500000bp) and (2096.129429bp,1944.410402bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{amn2aamn_1}}  (\amine);
+
+% Edge: jntQU - amide
+\draw [->] (1990.500000bp,1700.300000bp) .. controls (2040.200000bp,1668.100000bp) and (2139.300000bp,1603.900000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{amn2amd_1}}  (\amide);
+
+% Edge: cntQY - amine
+\draw [->] (\cntQY) .. controls (1941.800000bp,1960.300000bp) and (1983.800000bp,1993.200000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{amn2amn_5}}  (\amine);
+
+% Edge: jntQO - ester
+\draw [->] (1981.900000bp,938.500000bp) .. controls (2026.700000bp,934.130000bp) and (2104.769955bp,932.122925bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{acid2est_1}}  (\ester);
+
+% Edge: jntQI - amide
+\draw [->] (2036.600000bp,1592.000000bp) .. controls (2076.800000bp,1580.400000bp) and (2143.700000bp,1561.100000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{acid2amd_1}}  (\amide);
+
+% Edge: jntWP - anhydride
+\draw [->] (1811.400000bp,737.590000bp) .. controls (1813.600000bp,730.670000bp) and (1816.100000bp,723.320000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{acid2ahdr_1}}  (\anhydride);
+
+% Edge: cntWQ - ketone
+\draw [->] (\cntWQ) .. controls (1539.800000bp,2115.200000bp) and (1526.287838bp,2217.122545bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{ket2ket_1}}  (\ketone);
+
+% Edge: jntWW - ketone
+\draw [->] (1622.300000bp,1947.000000bp) .. controls (1604.200000bp,2020.000000bp) and (1560.432991bp,2190.018860bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{ah2ket_1}}  (\ketone);
+
+% Edge: cntWE - ketone
+\draw [->] (\cntWE) .. controls (2123.600000bp,1360.900000bp) and (1709.236387bp,2080.552420bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{est2est_1}}  (\ketone);
+
+% Edge: cntWE - ester
+\draw [->] (\cntWE) .. controls (2239.800000bp,1095.200000bp) and (2236.500000bp,1028.100000bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{est2est_1}}  (\ester);
+
+% Edge: jntWU - ama
+\draw [->] (1974.000000bp,1030.300000bp) .. controls (1876.900000bp,1087.900000bp) and (1574.217225bp,1259.997967bp)   .. node[sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-] {\mcref{est2ama_1}}  (\ama);
+
+% Joint: jntWT
+\draw [-] (1322.000000bp,467.350000bp) .. controls (\jntWT) and (\jntWT) .. (1276.600000bp,436.870000bp);
+
+% Joint: jntWT
+\draw [-] (1251.000000bp,480.530000bp) .. controls (\jntWT) and (\jntWT) .. (1276.600000bp,436.870000bp);
+
+% Joint: jntEPQ
+\draw [-] (306.870000bp,528.830000bp) .. controls (\jntEPQ) and (\jntEPQ) .. (249.300000bp,561.020000bp);
+
+% Joint: jntEPQ
+\draw [-] (273.800000bp,496.040000bp) .. controls (\jntEPQ) and (\jntEPQ) .. (249.300000bp,561.020000bp);
+
+% Joint: jntQW
+\draw [-] (293.640000bp,1452.900000bp) .. controls (\jntQW) and (\jntQW) .. (228.410000bp,1482.900000bp);
+
+% Joint: jntQW
+\draw [-] (297.170000bp,1460.300000bp) .. controls (\jntQW) and (\jntQW) .. (228.410000bp,1482.900000bp);
+
+% Joint: jntWW
+\draw [-] (1639.800000bp,1876.800000bp) .. controls (\jntWW) and (\jntWW) .. (1622.300000bp,1947.000000bp);
+
+% Joint: jntWW
+\draw [-] (1665.300000bp,1923.400000bp) .. controls (\jntWW) and (\jntWW) .. (1622.300000bp,1947.000000bp);
+
+% Joint: jntWU
+\draw [-] (2005.500000bp,975.850000bp) .. controls (\jntWU) and (\jntWU) .. (1974.000000bp,1030.300000bp);
+
+% Joint: jntWU
+\draw [-] (2038.000000bp,997.300000bp) .. controls (\jntWU) and (\jntWU) .. (1974.000000bp,1030.300000bp);
+
+% Joint: jntQ
+\draw [-] (1296.800000bp,1849.300000bp) .. controls (\jntQ) and (\jntQ) .. (1311.200000bp,1787.200000bp);
+
+% Joint: jntQ
+\draw [-] (1333.100000bp,1856.000000bp) .. controls (\jntQ) and (\jntQ) .. (1311.200000bp,1787.200000bp);
+
+% Joint: jntW
+\draw [-] (1216.800000bp,1306.700000bp) .. controls (\jntW) and (\jntW) .. (1196.100000bp,1237.500000bp);
+
+% Joint: jntW
+\draw [-] (1243.300000bp,1271.400000bp) .. controls (\jntW) and (\jntW) .. (1196.100000bp,1237.500000bp);
+
+% Joint: jntEPW
+\draw [-] (392.410000bp,648.400000bp) .. controls (\jntEPW) and (\jntEPW) .. (370.000000bp,676.300000bp);
+
+% Joint: jntEPW
+\draw [-] (421.280000bp,714.860000bp) .. controls (\jntEPW) and (\jntEPW) .. (370.000000bp,676.300000bp);
+
+% Joint: jntQQ
+\draw [-] (1722.800000bp,926.680000bp) .. controls (\jntQQ) and (\jntQQ) .. (1795.000000bp,926.070000bp);
+
+% Joint: jntQQ
+\draw [-] (1742.500000bp,959.350000bp) .. controls (\jntQQ) and (\jntQQ) .. (1795.000000bp,926.070000bp);
+
+% Joint: jntWI
+\draw [-] (779.440000bp,1731.100000bp) .. controls (\jntWI) and (\jntWI) .. (834.030000bp,1740.100000bp);
+
+% Joint: jntWI
+\draw [-] (822.660000bp,1789.500000bp) .. controls (\jntWI) and (\jntWI) .. (834.030000bp,1740.100000bp);
+
+% Joint: jntQO
+\draw [-] (1909.700000bp,941.410000bp) .. controls (\jntQO) and (\jntQO) .. (1981.900000bp,938.500000bp);
+
+% Joint: jntQO
+\draw [-] (1945.300000bp,978.390000bp) .. controls (\jntQO) and (\jntQO) .. (1981.900000bp,938.500000bp);
+
+% Joint: jntR
+\draw [-] (774.300000bp,827.070000bp) .. controls (\jntR) and (\jntR) .. (729.080000bp,798.370000bp);
+
+% Joint: jntR
+\draw [-] (781.220000bp,759.570000bp) .. controls (\jntR) and (\jntR) .. (729.080000bp,798.370000bp);
+
+% Joint: jntQR
+\draw [-] (1738.600000bp,2153.000000bp) .. controls (\jntQR) and (\jntQR) .. (1780.400000bp,2106.600000bp);
+
+% Joint: jntQR
+\draw [-] (1808.300000bp,2133.400000bp) .. controls (\jntQR) and (\jntQR) .. (1780.400000bp,2106.600000bp);
+
+% Joint: jntWR
+\draw [-] (674.210000bp,2140.100000bp) .. controls (\jntWR) and (\jntWR) .. (637.810000bp,2178.100000bp);
+
+% Joint: jntWR
+\draw [-] (618.790000bp,2111.100000bp) .. controls (\jntWR) and (\jntWR) .. (637.810000bp,2178.100000bp);
+
+% Joint: jntQU
+\draw [-] (1972.700000bp,1754.000000bp) .. controls (\jntQU) and (\jntQU) .. (1990.500000bp,1700.300000bp);
+
+% Joint: jntQU
+\draw [-] (1924.000000bp,1715.200000bp) .. controls (\jntQU) and (\jntQU) .. (1990.500000bp,1700.300000bp);
+
+% Joint: jntQI
+\draw [-] (2008.700000bp,1637.500000bp) .. controls (\jntQI) and (\jntQI) .. (2036.600000bp,1592.000000bp);
+
+% Joint: jntQI
+\draw [-] (1995.500000bp,1566.400000bp) .. controls (\jntQI) and (\jntQI) .. (2036.600000bp,1592.000000bp);
+
+% Joint: jntWP
+\draw [-] (1810.000000bp,806.720000bp) .. controls (\jntWP) and (\jntWP) .. (1811.400000bp,737.590000bp);
+
+% Joint: jntWP
+\draw [-] (1784.600000bp,805.030000bp) .. controls (\jntWP) and (\jntWP) .. (1811.400000bp,737.590000bp);
+
+% Joint: jntT
+\draw [-] (831.740000bp,841.650000bp) .. controls (\jntT) and (\jntT) .. (775.150000bp,816.960000bp);
+
+% Joint: jntT
+\draw [-] (820.290000bp,777.160000bp) .. controls (\jntT) and (\jntT) .. (775.150000bp,816.960000bp);
+
+% Joint: jntY
+\draw [-] (903.180000bp,824.480000bp) .. controls (\jntY) and (\jntY) .. (830.990000bp,826.160000bp);
+
+% Joint: jntY
+\draw [-] (868.150000bp,785.990000bp) .. controls (\jntY) and (\jntY) .. (830.990000bp,826.160000bp);
+
+% Joint: jntU
+\draw [-] (755.150000bp,779.440000bp) .. controls (\jntU) and (\jntU) .. (683.720000bp,789.270000bp);
+
+% Joint: jntU
+\draw [-] (740.520000bp,753.030000bp) .. controls (\jntU) and (\jntU) .. (683.720000bp,789.270000bp);
+
+% Joint: jntO
+\draw [-] (453.310000bp,1057.300000bp) .. controls (\jntO) and (\jntO) .. (386.780000bp,1086.700000bp);
+
+% Joint: jntO
+\draw [-] (440.660000bp,1101.800000bp) .. controls (\jntO) and (\jntO) .. (386.780000bp,1086.700000bp);
+
+% Joint: jntQP
+\draw [-] (397.710000bp,1048.600000bp) .. controls (\jntQP) and (\jntQP) .. (332.520000bp,1079.700000bp);
+
+% Joint: jntQP
+\draw [-] (390.140000bp,1036.900000bp) .. controls (\jntQP) and (\jntQP) .. (332.520000bp,1079.700000bp);
+
+% Joint: jntWY
+\draw [-] (1263.800000bp,266.330000bp) .. controls (\jntWY) and (\jntWY) .. (1247.300000bp,327.040000bp);
+
+% Joint: jntWY
+\draw [-] (1209.200000bp,314.210000bp) .. controls (\jntWY) and (\jntWY) .. (1247.300000bp,327.040000bp);

@@ -1,0 +1,253 @@
+\documentclass[leqno,a4paper,twoside,aps,pra,preprint,10pt,notitlepage]{revtex4-2}
+\usepackage[active,tightpage]{preview}
+\usepackage[margin=0mm,paperwidth=480pt]{geometry}
+\usepackage{parskip}
+\usepackage[utf8]{inputenc}
+\usepackage{environ}
+\usepackage{xargs}
+\usepackage{chemfig}
+\usetikzlibrary{decorations.pathmorphing}
+\usepackage{longtable}
+\usepackage{amssymb}
+\usepackage{multirow}
+\usepackage[verbose]{wrapfig}
+\usepackage{textpos}
+\usepackage{makecell}
+\usepackage{array}
+\usepackage{amsmath}
+\usepackage{ifthen}
+\usepackage{cleveref}
+\usepackage{color}
+\usepackage{microtype}
+
+
+\pagestyle{empty}
+\setlength{\parindent}{0em}
+\DisableLigatures{encoding = *, family = *}
+
+\counterwithin*{equation}{section}
+\renewcommand{\baselinestretch}{1.0}
+\renewcommand{\theequation}{{{\bf{{\color{red}\arabic{section}.\arabic{equation}}}}}}
+\renewcommand{\thesection}{}
+\renewcommand{\thesubsection}{}
+\renewcommand{\thesubsubsection}{}
+\makeatletter
+\def\@seccntformat#1{\csname #1ignore\expandafter\endcsname\csname the#1\endcsname{}}
+\let\sectionignore\@gobbletwo
+\let\latex@numberline\numberline
+\def\numberline#1{\if\relax#1\relax\else\latex@numberline{#1}\fi}
+\makeatother
+
+\makeatletter
+\let\oldtagform@\tagform@
+\renewcommand\tagform@[1]{\maketag@@@{\ignorespaces#1\unskip\@@italiccorr}}
+\renewcommand{\eqref}[1]{\textup{\oldtagform@{\ref{#1}}}}
+\makeatother
+
+
+\newcommand{\vpha}{\vphantom{A}}
+\newcommand{\degree}{\ensuremath{^\circ}}
+\newcommand{\chemar}[2][]{
+  \schemestart[{},#1]
+  \vpha\arrow{#2}\vpha
+  \schemestop
+}
+\newcommand{\chemeq}[3][]{
+  \chemnameinit{}
+  \noindent
+  \begin{equation}
+    \schemestart[][base]
+    #3
+    \schemestop
+    %\hskip \textwidth minus \textwidth
+    \ifthenelse{\equal{#1}{}}{}{\hskip 10mm\rm{also\ }\cref{#1}}
+    \ifthenelse{\equal{#2}{}}{}{\label{#2}}
+  \end{equation}
+  \vskip 1ex
+}
+\newcommand{\precyc}{\vpha-[,0.1,,,draw=none]}
+\newcommand{\grn}[1]{\vpha{\color{green}#1}}
+\newcommand{\blu}[1]{\vpha{\color{blue}#1}}
+\newcommand{\blk}[1]{\vpha{\color{black}#1}}
+\newcommand{\red}[1]{\vpha{\color{red}#1}}
+\newcommand{\brw}[1]{\vpha{\color{brown}#1}}
+\newcommand{\ppl}[1]{\vpha{\color{purple}#1}}
+\newcommand{\vlt}[1]{\vpha{\color{violet}#1}}
+\definesubmol\O{\red{O}}
+\definesubmol\N{\blu{N}}
+\definesubmol\S{\brw{S}}
+
+\definesubmol\no{\vpha-[,0.1,,,draw=none]}
+\definesubmol\Me[H_3C]{CH_3}
+\definesubmol\Ammonia{\Lewis{4:,\N}H_3}
+\definesubmol\Cyanide{\quad\llap{${}^-$}\Lewis{4:,C}~\Lewis{0:,\N}}
+\definesubmol\Hydroxide{\quad\llap{${}^-$}\O|H}
+\definesubmol\Water{H_2\O}
+\definesubmol\Alkene{C([:120]-)([:-120]-)=C([:-60]-)([:60]-)}
+\definesubmol\R{ \chemskipalign{\mbox{\scriptsize R}} }
+\definesubmol{x}{(<[4]H)(<[0]\O|H)}
+\definesubmol{y}{(<[0]H)(<[4]H|\O)}
+\definesubmol{z}{CH\O|H}
+\definesubmol{Z}{{(}CH\O|H{)}_n}
+
+
+
+\makeatletter
+\definearrow1{s>}{%
+\ifx\@empty#1\@empty
+\expandafter\draw\expandafter[\CF@arrow@current@style,-CF](\CF@arrow@start@node)--(\CF@arrow@end@node);%
+\else
+\def\curvedarrow@style{shorten <=\CF@arrow@offset,shorten >=\CF@arrow@offset,}%
+\CF@expadd@tocs\curvedarrow@style\CF@arrow@current@style
+\expandafter\draw\expandafter[\curvedarrow@style,-CF](\CF@arrow@start@name)..controls#1..(\CF@arrow@end@name);
+\fi
+}
+\makeatother
+
+
+
+\let\origsection\section
+\makeatletter
+\renewcommand{\section}[1]{%
+
+    \vphantom{.}
+
+    \vspace{-5.5ex}
+    \color[rgb]{0.36, 0.54, 0.66}
+    \origsection{\large #1}
+    \color[gray]{0}
+    \vspace{-3ex}
+}
+\makeatother
+
+\let\origsubsection\subsection
+\makeatletter
+\renewcommand{\subsection}[1]{%
+
+    \vphantom{.}
+
+    \vspace{-6ex}
+    \origsubsection{\large #1}
+    \vspace{-3ex}
+}
+\makeatother
+
+\let\origsubsubsection\subsubsection
+\makeatletter
+\renewcommand{\subsubsection}[1]{%
+
+    \vphantom{.}
+
+    \vspace{-6.5ex}
+    \origsubsubsection{\large #1}
+    \vspace{-3ex}
+}
+\makeatother
+
+
+
+
+
+
+\begin{document}
+
+\abovedisplayskip=0ex
+\abovedisplayshortskip=0pt
+\belowdisplayskip=0ex
+\belowdisplayshortskip=0ex
+
+\setchemfig{atom sep=2em}
+%\setcrambond{2pt}{0.75pt}{0.75pt}
+\setchemfig{cram width = 2pt}
+\setchemfig{cram dash width = 0.75pt}
+\setchemfig{cram dash sep = 0.75pt}
+\setchemfig{arrow label sep = 1.5pt}
+\setchemfig{bond join=true}
+
+
+
+
+
+
+
+
+\begin{preview}
+
+
+\definesubmol{a}{-P(=[::-90,0.75,,1]\O)(-[::90,0.75,,1]\O|H)-}
+
+\definesubmol{tail}{
+    *5(-\O-(--[::60]\O([::-60]!aH\O))<(-[,,,1]\O|H)
+    -[,,,,line width=2pt](-\O|H)>)
+}
+
+\definesubmol{sail}{
+    *5(<(-H|\O)
+    -[,,,,line width=2pt](-[,,,1]\O|H)>(--[::60]\O([::-60]!a\O|H))-\O-)
+}
+
+\chemfig{[:18]*5((-H|\O)-[,,,,line width=2pt](-[,,,1]\O|H)>(-)-\O-(--[::60]\O([::-60]!aH|\O))<)}
+\\
+\\
+\\
+
+
+\chemfig{\N*5(-\O----)}
+
+
+\definesubmol{guanine}{
+  @{hb-gua1}H-[:180]\N(-[:-120]H)
+  -[:120]*6(
+    -\N(-@{hb-gua2}H)
+    -(=@{hb-gua3}\O)
+    -(*5(-\N=-\N(-!{tail})-))
+    =-\N=
+  )
+}
+
+\definesubmol{cytosine}{
+  @{hb-cyt1}\O=[:60]*6(
+    -\N(-!{sail})
+    -=-(
+      -\N(-[::60]@{hb-cyt3}H)
+      -[::-60]H
+    )
+    =@{hb-cyt2}\N-
+  )
+}
+
+
+\chemname{\chemfig{!{guanine}}}{Guanine}
+\qquad
+\chemname{\chemfig{!{cytosine}}}{Cytosine}
+\chemmove[-,dashed]{\foreach \i in {1,2,3} { \draw (hb-gua\i) -- (hb-cyt\i) ;}}
+
+
+
+\definesubmol{adenine}{
+  @{hb-ade1}H-[:180]\N(-[:120]H)-[:-120]
+  *6(=(*5(-\N=-\N(-!{tail})-))-=\N-=@{hb-ade2}\N-)
+}
+
+\definesubmol{uracil}{
+  @{hb-ura1}\O=[:-60]*6(
+    -\N(-[:180]@{hb-ura2}H)-(=\O)-\N(-!{sail})
+    -=(-)-
+    =
+  )
+}
+
+
+\chemname{\chemfig{!{adenine}}}{Adenine}
+\qquad
+\chemname{\chemfig{!{uracil}}}{Uracil (RNA) Thymine (DNA)}
+\chemmove[-,dashed]{\foreach \i in {1,2} { \draw (hb-ade\i) -- (hb-ura\i) ;}}
+
+
+
+
+
+
+\end{preview}
+
+\end{document}

@@ -1,0 +1,214 @@
+\documentclass[a4paper,twoside,aps,prl,preprint,10pt,notitlepage]{revtex4-1}
+\usepackage[active,tightpage]{preview}
+\usepackage[head=12pt,includehead,inner=4cm,outer=1cm,top=1cm,bottom=1.5cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{chemfig}
+\usepackage{longtable}
+\usepackage{amssymb}
+\usepackage{multirow}
+\usepackage[verbose]{wrapfig}
+\usepackage{textpos}
+\usepackage{fancyhdr}
+\usepackage{makecell}
+\usepackage{array} 
+\usepackage{amsmath}
+\usepackage{ifthen}
+\usepackage{cleveref}
+%\usepackage{titlesec}
+
+\renewcommand{\PreviewBorder}{1in}
+\newcommand{\Newpage}{\end{preview}\begin{preview}}
+
+
+\pagestyle{fancy}
+\fancyheadoffset{0pt}
+\renewcommand{\sectionmark}[1]{\markboth{#1}{}}
+\fancyhf{}
+\fancyhead[LE,RO]{\leftmark}
+\fancyhead[RE,LO]{\thepage}
+\fancypagestyle{plain}{%
+  \fancyhead{} % get rid of headers
+  \renewcommand{\headrulewidth}{0pt} % and the line
+}
+
+%\titlespacing\section{0pt}{15pt plus 4pt minus 2pt}{10pt plus 2pt minus 2pt}
+%\titlespacing\subsection{0pt}{12pt plus 4pt minus 2pt}{8pt plus 2pt minus 2pt}
+%\titlespacing\subsubsection{0pt}{8pt plus 4pt minus 2pt}{5pt plus 2pt minus 2pt}
+\setlength{\TPHorizModule}{\textwidth}
+\setlength{\TPVertModule}{\textheight}
+%\setlength{\parskip}{0cm}
+
+\let\stdsection\section
+\renewcommand\section{\newpage\stdsection}
+
+\newcommand{\vpha}{\vphantom{A}}
+\newcommand{\degree}{\ensuremath{^\circ}}
+\newcommand{\chemar}[2][]{
+  \schemestart[{},#1]
+  \vpha\arrow{#2}\vpha
+  \schemestop
+}
+\newcommand{\chemeq}[3][]{
+  \chemnameinit{}
+  \noindent
+  \begin{equation}
+    \schemestart[][base]
+    #3
+    \schemestop
+    \hskip \textwidth minus \textwidth
+    \ifthenelse{\equal{#1}{}}{}{\cref{#1}\Leftarrow}
+    \ifthenelse{\equal{#2}{}}{}{\label{#2}}
+  \end{equation}
+}
+\newcommand{\precyc}{\vpha-[,0.1,,,draw=none]}
+
+\newcommand{\grn}[1]{\vpha{\color{green}#1}}
+\newcommand{\blu}[1]{\vpha{\color{blue}#1}}
+\newcommand{\blk}[1]{\vpha{\color{black}#1}}
+\newcommand{\red}[1]{\vpha{\color{red}#1}}
+\newcommand{\brw}[1]{\vpha{\color{brown}#1}}
+\newcommand{\ppl}[1]{\vpha{\color{purple}#1}}
+\newcommand{\vlt}[1]{\vpha{\color{violet}#1}}
+
+
+\makeatletter
+\definearrow1{s>}{%
+\ifx\@empty#1\@empty
+\expandafter\draw\expandafter[\CF@arrow@current@style,-CF](\CF@arrow@start@node)--(\CF@arrow@end@node);%
+\else
+\def\curvedarrow@style{shorten <=\CF@arrow@offset,shorten >=\CF@arrow@offset,}%
+\CF@expadd@tocs\curvedarrow@style\CF@arrow@current@style
+\expandafter\draw\expandafter[\curvedarrow@style,-CF](\CF@arrow@start@name)..controls#1..(\CF@arrow@end@name);
+\fi
+}
+\makeatother
+
+
+
+\usetikzlibrary{decorations}
+\pgfdeclaredecoration{ddbond}{initial}{
+  \state{initial}[width=2pt]{
+    \pgfpathlineto{\pgfpoint{4pt}{0pt}}
+    \pgfpathmoveto{\pgfpoint{1pt}{2pt}}
+    \pgfpathlineto{\pgfpoint{2pt}{2pt}}
+    \pgfpathmoveto{\pgfpoint{4pt}{0pt}}
+  }
+  \state{final}{
+    \pgfpathlineto{\pgfpointdecoratedpathlast}
+  }
+}
+\tikzset{lddbond/.style={decorate, decoration=ddbond}}
+\tikzset{rddbond/.style={decorate, decoration={ddbond, mirror}}}
+
+
+\begin{document}
+
+\abovedisplayskip=9pt plus 3pt minus 9pt
+\abovedisplayshortskip=0pt plus 3pt
+\belowdisplayskip=9pt plus 3pt minus 9pt
+\belowdisplayshortskip=4pt plus 3pt minus 4pt
+
+\definesubmol\R{ \chemskipalign{\mbox{\scriptsize R}} }
+\definesubmol\no{\vpha-[,0.1,,,draw=none]}
+\definesubmol\Me[H_3C]{CH_3}
+\definesubmol\Ammonia{\Lewis{4:,N}H_3}
+\definesubmol\Cyanide{\quad\llap{${}^-$}\Lewis{4:,C}~\Lewis{0:,N}}
+\definesubmol\Hydroxide{\quad\llap{${}^-$}OH}
+\definesubmol\Water{H_2O}
+\definesubmol\Alkene{C([:120]-)([:-120]-)=C([:-60]-)([:60]-)}
+\definesubmol\O{\red{O}}
+\definesubmol\N{\blu{N}}
+\definesubmol\S{\brw{S}}
+\definesubmol\X{H}
+\newcommand{\M}{\chemabove{\N}{\X}}
+\newcommand{\K}{\chembelow{\N}{\X}}
+
+%\setatomsep{2em}
+\setchemfig{atom sep=2.2em}
+%\setcrambond{2pt}{0.75pt}{0.75pt}
+\setchemfig{cram width = 4pt}
+\setchemfig{cram dash width = 0.75pt}
+\setchemfig{cram dash sep = 0.75pt}
+\setchemfig{arrow label sep = 1.5pt}
+\setchemfig{bond join=true}
+%\setchemfig{atom style={scale=1.6}}
+%\setchemfig{bond style={thick}}
+
+
+\begin{preview}
+
+\quad\chemname{\chemfig{*6(----\O--)}}{oxolane}
+\quad\chemname{\chemfig{*6(----\M--)}}{piperidine}
+\quad\chemname{\chemfig{*6(----\S--)}}{thiolane}
+\\ \\ \\
+
+\quad\chemname{\chemfig{*6(-=--\O-=)}}{pyran}
+\quad\chemname{\chemfig{*6(-=-=\N-=)}}{pyridine}
+\quad\chemname{\chemfig{*6(-=--\S-=)}}{thiopyran}
+\\ \\ \\
+
+\quad\chemname{\chemfig{*6(-\K---\O--)}}{\\morpholine}
+\quad\chemname{\chemfig{*6(-\K---\M--)}}{\\piperazine}
+\quad\chemname{\chemfig{*6(-\K---\S--)}}{\\thiazinane}
+\\ \\ \\
+
+\quad\chemname{\chemfig{*6(-\K-=-\O-=)}}{\\oxazine}
+\quad\chemname{\chemfig{*6(-\N=-=\N-=)}}{\\pyrazine}
+\quad\chemname{\chemfig{*6(-\K-=-\S-=)}}{\\thiazine}
+\\ \\ \\
+
+\quad\chemname{\chemfig{*6(-\O---\O--)}}{dioxane}
+\quad\chemname{\chemfig{*6(-=\N-=\N-=)}}{pyrimidine}
+\quad\chemname{\chemfig{*6(-\S---\S--)}}{dioxane}
+\\ \\ \\
+
+\quad\chemname{\chemfig{*6(-\O-=-\O-=)}}{dioxine}
+\quad\chemname{\chemfig{*6(-=-\N=\N-=)}}{pyridazine}
+\\ \\ \\
+
+\quad\chemname{\chemfig{\O*6(--\O--\O--)}}{trioxane}
+\quad\chemname{\chemfig{\N*6(-=\N-=\N-=)}}{triazine}
+\quad\chemname{\chemfig{\N*6(-\N=-\N=\N-=)}}{tetrazine}
+\\ \\ \\
+
+\quad\chemname{\chemfig{[:38.6]*7(----\O---)}}{oxepane}
+\quad\chemname{\chemfig{[:38.6]*7(----\M---)}}{azepane}
+\quad\chemname{\chemfig{[:38.6]*7(----\S---)}}{thiepane}
+\\ \\ \\
+
+\quad\chemname{\chemfig{*6(-=(*5(-=--))-=-=)}}{indene}
+\chemname{
+  \chemfig{*6(-(-[::150,1.15]?)---?[]--)}
+  \chemfig{<[:15](>[:85,1.8]?)>[:-15]-[:60]-[:165]?-[:195]-[:240]}
+} {norbornane}
+\\ \\ \\
+
+\quad\chemname{\chemfig{*6(-=(*5(-=-\O-))-=-=)}}{benzofuran}
+\quad\chemname{\chemfig{*6(-=(*5(-=-\M-))-=-=)}}{indole}
+\quad\chemname{\chemfig{*6(-=(*5(-=-\S-))-=-=)}}{benzothiophene}
+\\ \\ \\
+
+\quad\chemname{\chemfig{*6(-=(*5(-\N=-\O-))-=-=)}}{benzoxazole}
+\quad\chemname{\chemfig{*6(-=(*5(-\N=-\M-))-=-=)}}{benzimidazole}
+\quad\chemname{\chemfig{*6(-=(*5(-\N=-\S-))-=-=)}}{benzothiazole}
+\\ \\ \\
+
+\quad\chemname{\chemfig{\N*6(-=(*5(-\N=-\M-))-=\N-=)}}{purine}
+\\ \\ \\
+
+\quad\chemname{\chemfig{*6(-=(*6(-=-=-))-=-=)}}{naphthalene}
+\chemname{
+  \chemfig{*6(-(-[::90,0.58]-[::60,0.58]?)--(-[::90,0.58]?)--(-[::90,0.58]?)-)}
+  \chemfig{-[:15](-[:90]>[:60]?)-[:-15]>[:60](-[:90]?)
+           -[:195]-[:165]()(-[:90]?)<[:240]}
+} {adamantane}
+\\ \\ \\
+
+
+
+
+
+\end{preview}
+
+\end{document}
+

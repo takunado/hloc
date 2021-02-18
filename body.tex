@@ -1,0 +1,2694 @@
+
+
+\section{Synthesis of Alkyl Halides}
+
+
+\subsection{From alkanes: free-radical halogenation \normalfont(Sections 4-13 and 6-6)}
+
+\chemeq{kan2ah_1}{
+  \chemfig{R-H}
+  \chemar[1.5]{->[\chemfig{X_2}][heat or light]}
+  \chemfig{R-X}
+  \+
+  \chemfig{H-X}
+}
+
+
+\subsection{From alkenes and alkynes \normalfont(Sections 6-6, 8-8, 9-9, 15-17)}
+
+\chemeq[ken2ah_2,ken2ah_3]{ken2ah_1}{
+  \chemfig{!\Alkene}
+  \chemar{->[\chemfig{HX}]}
+  \chemfig{C([2]-)([4]-)([6]-H)-C([0]-)([2]-)([6]-X)}
+  \quad\text{(Sections 8-3, 8-8)}
+}
+
+\chemeq[ken2ah_5]{ken2ah_4}{
+  \chemfig{!\Alkene}
+  \chemar{->[\chemfig{X_2}]}
+  \chemfig{C([2]-X)([4]-)([6]-)-C([0]-)([2]-)([6]-X)}
+  \quad\text{(Sections 8-8)}
+}
+
+\chemeq[kyn2ken2ah_1]{kyn2ah_1}{
+  \chemfig{C([4]-)~C([0]-)}
+  \chemar{->[\chemfig{2X_2}]}
+  \chemfig{C([2]-X)([4]-)([6]-X)-C([0]-)([2]-X)([6]-X)}
+  \quad\text{(Section 9-9D)}
+}
+
+\chemeq[kyn2ken2ah_2]{kyn2ah_2}{
+  \chemfig{C([4]-)~C([0]-)}
+  \chemar{->[\chemfig{2HX}]}
+  \chemfig{C([2]-H)([4]-)([6]-H)-C([0]-)([2]-X)([6]-X)}
+  \quad\text{(Section 9-9E)}
+}
+
+
+\chemeq{ken2ah_6}{
+  \chemfig{C([:120]-)([:-120]-)=C([:-60]-C([0]-H)([5]-)([6]-))([:60]-)}
+  \chemar{->[\em{NBS}][light]}
+  \chemfig{C([:120]-)([:-120]-)=C([:-60]-C([0]-Br)([5]-)([6]-))([:60]-)}
+  \quad\text{(Sections 6-6, 15-7)}
+}
+
+
+\subsection{From alcohols \normalfont(Sections 11-7, 11-8, 11-9)}
+
+\chemeq[al2ah_2]{al2ah_1}{
+  \chemfig{R-OH}
+  \chemar[1.2]{->[\chemfig{HX}, \chemfig{PX_3}][or others]}
+  \chemfig{R-X}
+}
+
+
+\subsection{From other halides \normalfont(Section 6-9)}
+
+\chemeq[ah2ah_2]{ah2ah_1}{
+  \chemfig{R-X} + \chemfig{I^{-}}
+  \chemar{->[\em{acetone}]}
+  \chemfig{R-I} + \chemfig{X^{-}}
+}
+
+\chemeq{ah2ah_3}{
+  \chemfig{R-Cl} + \chemfig{KF}
+  \chemar[1.5]{->[\em{18-crown-6}][\chemfig{CH_3CN}]}
+  \chemfig{R-F}
+}
+
+
+
+\section{Reactions of Alkyl Halides}
+
+\subsection{Nucleophilic substitutions \normalfont(Section 6-9)}
+
+\subsubsection{Alcohol formation}
+
+\chemeq[ah2al_2]{ah2al_1}{
+  \chemfig{R-X} + \chemfig{\quad\llap{${}^-$}\Lewis{2:4:6:,O}H}
+  \chemar{->}
+  \chemfig{R-OH} + \chemfig{\Lewis{0:2:4:6:,X}^{-}}
+}
+
+\subsubsection{Halide exchange}
+
+\chemeq[ah2ah_1]{ah2ah_2}{
+  \chemfig{R-X} + \chemfig{\Lewis{0:2:4:6:,I}^{-}}
+  \chemar{->}
+  \chemfig{R-I} + \chemfig{\Lewis{0:2:4:6:,X}^{-}}
+}
+
+\subsubsection{Williamson ether synthesis}
+
+\chemeq{ah2ther_1}{
+  \chemfig{R-X} + \chemfig{R|'\Lewis{0:2:6:,O}^{-}}
+  \chemar{->}
+  \chemfig{R-\Lewis{2:6:,O}-R|'} + \chemfig{\Lewis{0:2:4:6:,X}^{-}}
+  \quad\text{ether synthesis}
+}
+
+\chemeq{ah2ther_2}{
+  \chemfig{R-X} + \chemfig{R|'\Lewis{0:2:6:,S}^{-}}
+  \chemar{->}
+  \chemfig{R-\Lewis{2:6:,S}-R|'} + \chemfig{\Lewis{0:2:4:6:,X}^{-}}
+  \quad\text{thioether synthesis}
+}
+
+
+\subsubsection{Amine synthesis}
+
+\chemeq[ah2amn_2]{ah2amn_1}{
+  \chemfig{R-X} + \chemname{\chemfig{\Ammonia}}{excess}
+  \chemar{->}
+  \chemfig{R-NH_3^{+}X^{-}}
+  \chemar{->[\chemfig{\Ammonia}]}
+  \chemfig{R-\Lewis{2:,N}H_2} + \chemfig{NH_4^{+}X^{-}}
+}
+
+\subsubsection{Nitrile synthesis}
+
+\chemeq{ah2trile}{
+  \chemfig{R-X} + \quad\chemfig{\llap{${}^-$}\Lewis{4:,C}~\Lewis{0:,N}}
+  \chemar{->}
+  \chemfig{R-C~N} + \chemfig{\Lewis{0:2:4:6:,X}^{-}}
+}
+
+\subsubsection{Alkyne synthesis \normalfont(Section 9-7A)}
+
+\chemeq[ah2kyn_2,ah2kyn_3]{ah2kyn_1}{
+  \chemfig{R-X} + \chemfig{R|'-C~\Lewis{0:,C}|\rlap{${}^-$}}
+  \chemar{->}
+  \chemfig{R-C~C-R|'} + \chemfig{\Lewis{0:2:4:6:,X}^{-}}
+}
+
+
+\subsection{Elimination}
+
+\subsubsection{Dehydrohalogenation \normalfont(Sections 6-18 and 7-9A)}
+
+\chemeq[ah2ken_2]{ah2ken_1}{
+  \chemfig{C([2]-H)([4]-)([6]-)-C([0]-)([2]-)([6]-X)}
+  \chemar{->[\chemfig{KOH}]}
+  \chemfig{!\Alkene} + \chemfig{\Lewis{0:2:4:6:,X}^{-}}
+}
+
+\subsubsection{Dehalogenation \normalfont(Section 7-9D)}
+
+\chemeq[ah2ken_4]{ah2ken_3}{
+  \chemfig{C([2]-Br)([4]-)([6]-)-C([0]-)([2]-)([6]-Br)}
+  \chemar{->[\chemfig{KI}]}
+  \chemfig{!\Alkene} + \chemfig{I-Br} + \chemfig{K-Br}
+}
+
+
+\subsection{Formation of organometallic reagents \normalfont(Section 10-8)}
+
+\subsubsection{Grignard reagents}
+
+\chemeq{ah2gr}{
+  \chemfig{R-X} + \chemfig{Mg}
+  \chemar{->[ether]}
+  \chemname{\hspace{10mm}\chemfig{R-\vpha Mg-X}\hspace{10mm}}
+           {organomagnesium halide\\ (Grignard reagent)}
+  \quad(X = Cl, Br or I)
+}
+
+\subsubsection{Organolithium reagents}
+
+\chemeq{ah2om_1}{
+  \chemfig{R-X} + \chemfig{2Li}
+  \chemar{->}
+  \chemname{\hspace{5mm}\chemfig{R-Li}\hspace{5mm}} {organolithium}
+    + \chemfig{\hspace{5mm}Li^+X^{-}}
+  \quad(X = Cl, Br or I)
+}
+
+
+\subsection{Coupling of organocopper reagents \normalfont(Section 10-9)}
+
+\chemeq{om2om}{
+  \chemfig{2R-Li} + \chemfig{CuI}
+  \chemar{->}
+  \chemfig{R_2CuLi} + \chemfig{LiI}
+}
+
+\chemeq{ah2kan_1}{
+  \chemfig{R_2CuLi} + \chemfig{R|'-X}
+  \chemar{->}
+  \chemfig{R-R|'} + \chemfig{R-Cu} + \chemfig{LiX}
+}
+
+
+\subsection{Reduction \normalfont(Section 10-10)}
+
+\chemeq{ah2kan_2}{
+  \chemfig{R-X}
+  \chemar[1.5]{->[(1) \chemfig{Mg} or \chemfig{Li}][(2) \chemfig{\Water}\hphantom{AAl}]}
+  \chemfig{R-H}
+}
+
+
+
+\section{Synthesis of Alkenes}
+
+
+\subsection{Dehydrohalogenation of alkyl halides \normalfont(Section 7-9)}
+
+\chemeq[ah2ken_1]{ah2ken_2}{
+  \chemfig{C([2]-H)([4]-)([6]-)-C([0]-)([2]-)([6]-X)}
+  \chemar[1.3]{->[base][heat]}
+  \chemfig{!\Alkene} + \chemfig{HX}
+}
+
+
+\subsection{Dehalogenation of vicinal dibromides \normalfont(Section 7-9D)}
+
+\chemeq[ah2ken_3]{ah2ken_4}{
+  \chemfig{C([2]-Br)([4]-)([6]-)-C([0]-)([2]-)([6]-Br)}
+  \chemar{->[\chemfig{NaI}][aceton]}
+  \chemfig{!\Alkene}
+}
+
+
+\subsection{Dehydration of alcohols \normalfont(Section 7-10)}
+
+\chemeq[ken2al_2]{ken2al_1}{
+  \chemfig{C([2]-)([4]-)([6]-H)-C([0]-)([2]-)([6]-OH)}
+  \chemar[2.5]{->[conc. \chemfig{H_2SO_4} or \chemfig{H_3PO_4}][heat]}
+  \chemfig{!\Alkene} + \chemfig{\Water}
+}
+
+
+\subsection{Dehydrogenation of alkanes \normalfont(Section 7-11B)}
+
+\chemeq{kan2ken_1}{
+  \chemfig{C([2]-)([4]-)([6]-H)-C([0]-)([2]-)([6]-H)}
+  \chemar{->[catalyst][heat]}
+  \chemfig{!\Alkene} + \chemfig{H_2}
+}
+(Industrial preparation, useful only for small alkenes; commonly gives mixtures.)
+
+
+\subsection{Hofmann and Cope eliminations \normalfont(Sections 19-15 and 19-16)}
+
+\chemeq[amn2ken_2]{amn2ken_1}{
+  \chemfig{C([2]-H)([4]-)([6]-)-C([0]-)([2]-)([6]-[,,,2]
+    {\llap{${}^+$}}N|{(CH_3)_3\hspace{3mm}I^{-}})}
+  \chemar{->[\chemfig{Ag_2O}][heat]}
+  \chemfig{!\Alkene} + \chemfig{\Lewis{4:,N}|{(CH_3)_3}}
+}
+(Usually gives the least substituted alkene.)
+
+
+\subsection{Reduction of alkynes \normalfont(Section 9-9)}
+
+\chemeq[kyn2ken_2]{kyn2ken_1}{
+  \chemfig{R-C~C-R|'}
+  \chemar[1.7]{->[\chemfig{H_2}, \chemfig{Pd}/\chemfig{NaSO_4}][quinoline]}
+  \chemfig{C([:120]-R)([:-120]-H)=C([:-60]-R|')([:60]-H)}
+  cis \quad\text{(Section 9-9A)}
+}
+
+\chemeq[kyn2ken_4]{kyn2ken_3}{
+  \chemfig{R-C~C-R|'}
+  \chemar[1.2]{->[\chemfig{Na}, \chemfig{NH_3}]}
+  \chemfig{C([:120]-R)([:-120]-H)=C([:-60]-R|')([:60]-H)}
+  trans \quad\text{(Section 9-9B)}
+}
+
+
+\subsection{Wittig reaction \normalfont(Section 18-13)}
+
+\chemeq{ket2ken_1}{
+  \chemfig{C([:120]-[,,,1]R|')([:-120]-R)=O} + \chemfig{Ph_3P=CHR|''}
+  \chemar{->}
+  \chemfig{C([:120]-[,,,1]R|')([:-120]-R)=R|''} + \chemfig{Ph_3P=CHO}
+}
+
+
+
+\section{Reactions of Alkenes}
+
+
+\subsection{Electrophilic Additions}
+
+\subsubsection{Addition of hydrogen halides \normalfont(Section 8-3)}
+
+\chemeq[ken2ah_1]{ken2ah_2}{
+  \chemfig{!\Alkene}
+  \+
+  \chemfig{H-X}
+  \chemar{->}
+  \chemfig{C([2]-)([4]-)([6]-H)-C([0]-)([2]-)([6]-X)}
+  \quad Markovnikov\ orientation
+}
+
+(X = Cl, Br or I)
+
+\chemeq[ken2ah_1]{ken2ah_3}{
+  \chemfig{!\Alkene} + \chemfig{H-X}
+  \chemar[1.3]{->[peroxides]}
+  \chemfig{C([2]-)([4]-)([6]-H)-C([0]-)([2]-)([6]-X)}
+  \quad anti-Markovnikov\ orientation
+}
+
+\subsubsection{Acid-catalyzed hydration \normalfont(Section 8-4)}
+
+\chemeq[ken2col_2]{ken2col_1}{
+  \chemfig{!\Alkene} + \chemfig{\Water}
+  \chemar{->[\chemfig{H^+}]}
+  \chemfig{C([2]-)([4]-)([6]-H)-C([0]-)([2]-)([6]-OH)}
+  \quad Markovnikov\ orientation
+}
+
+\subsubsection{Oxymercuration-demercuration \normalfont(Section 8-5)}
+
+\chemeq[ken2col_4]{ken2col_3}{
+  \chemfig{!\Alkene} + \chemfig{Hg{(}OAc{)}_2}
+  \chemar{->[\chemfig{\Water}]}
+  \chemfig{C([2]-)([4]-)([6]-[,,,2]HO)-C([0]-)([2]-)([6]-HgOAc)}
+  \chemar{->[\chemfig{NaBH_4}]}
+  \chemname{\hspace{5mm}\chemfig{C([2]-)([4]-)([6]-[,,,2]HO)-C([0]-)([2]-)([6]-H)}\hspace{5mm}}
+           {Markovnikov orientation}
+}
+
+\subsubsection{Alkoxymercuration-demercuration \normalfont(Section 8-6)}
+
+\chemeq[kenal2est_2]{kenal2est_1}{
+  \chemfig{!\Alkene} + \chemfig{Hg{(}OAc{)}_2}
+  \chemar{->[\chemfig{R-OH}]}
+  \chemfig{C([2]-)([4]-)([6]-[,,,2]RO)-C([0]-)([2]-)([6]-HgOAc)}
+  \chemar{->[\chemfig{NaBH_4}]}
+  \chemname{\hspace{5mm}\chemfig{C([2]-)([4]-)([6]-[,,,2]RO)-C([0]-)([2]-)([6]-H)}\hspace{5mm}}
+           {Markovnikov orientation}
+}
+
+\subsubsection{Hydroboration-oxidation \normalfont(Section 8-7)}
+
+\chemeq[ken2col_6]{ken2col_5}{
+  \chemfig{!\Alkene} + {\em BH$_3\cdot$THF}
+  \chemar{->}
+  \chemfig{C([2]-)([4]-)([6]-H)-C([0]-)([2]-)([6]-BH_2)}
+  \chemar{->[\chemfig{H_2O_2}][\chemfig{\llap{${}^-$}OH}]}
+  \chemname{\hspace{5mm}\chemfig{C([2]-)([4]-)([6]-H)-C([0]-)([2]-)([6]-OH)}\hspace{5mm}}
+           {anti-Markovnikov orientation\\(syn addition)}
+}
+
+\subsubsection{Polymerization \normalfont(Section 8-16)}
+
+\chemeq{ken2pol_1}{
+  \chemfig{R|^+} + {\setchemfig{chemfig style={blue}}\chemfig{!\Alkene}}
+  \chemar{->}
+  {\setchemfig{chemfig style={blue}}
+    \chemfig{\blk{R}-C([2]-)([6]-)-C{\rlap{${}^+$}}([:60]-)([:-60]-)}}
+  \chemar{->[{\setchemfig{atom sep=1.5em}\chemfig{!\Alkene}}]}
+  \chemfig{R-[,,,,blue]\blu{C}([2]-[,,,,blue])([6]-[,,,,blue])
+           -[,,,,blue]\blu{C}([2]-[,,,,blue])([6]-[,,,,blue])
+           -C([2]-)([6]-)-C{\rlap{${}^+$}}([:60]-)([:-60]-)}
+}
+(also radical and anionic polymerization)
+
+
+\subsection{Reduction: Catalytic Hydrogenation \normalfont(Section 8-10)}
+
+\chemeq{ken2kan_1}{
+  \chemfig{!\Alkene} + \chemfig{H_2}
+  \chemar[1.5]{->[Pt, Pd or Ni]}
+  \chemfig{C([2]-)([4]-)([6]-H)-C([0]-)([2]-)([6]-H)}
+  \quad(syn addition)
+}
+
+
+\subsection{Addition of Carbenes: Cyclopropanation \normalfont(Section 8-11)}
+
+\chemeq{ken2cyc_1}{
+  \chemfig{!\Alkene} + \chemfig{\Lewis{4:,C}([:60]-X)([:-60]-Y)}
+  \chemar{->}
+  \chemfig{C([:-60]-X)([:-120]-Y)([:60]-C?([0]-)([2]-))([:120]-C?([2]-)([4]-))}
+  \quad(X,Y = H, Cl, Br, I, or \chemfig{\vpha-COOEt})
+}
+
+
+\subsection{Oxidative Additions}
+
+\subsubsection{Addition of halogens \normalfont(Section 8-8)}
+
+\chemeq[ken2ah_4]{ken2ah_5}{
+  \chemfig{!\Alkene} + \chemfig{X_2}
+  \chemar{->}
+  \chemname{\chemfig{C([2]-X)([4]-)([6]-)-C([0]-)([2]-)([6]-X)}}
+           {(anti addition)}
+  \quad (X = Cl, Br, sometimes I)
+}
+
+\subsubsection{Halohydrin formation \normalfont(Section 8-9)}
+
+\chemeq{ken2hal_1}{
+  \chemfig{*6(--=(-)---)} \arrow{0}[,0]\+ \chemfig{Br_2}
+  \arrow{->[\chemfig{\Water}]}
+  \chemfig{*6(--([0]<Br)([7]>:H)-([1]<)([0]>:OH)---)}
+}
+\hspace{2mm} anti addition (Markovnikov orientation)
+
+\subsubsection{Epoxidation \normalfont(Sections 8-12 and 14-11A)}
+
+\chemeq[ken2epx_2]{ken2epx_1}{
+  \chemfig{!\Alkene} + \chemfig{R-C([6]=O)-O-O-H}
+  \chemar{->}
+  \chemfig{C([2]-)([4]-)([:-60]-O?)-C?([0]-)([2]-)} + \chemfig{R-C([6]=O)-O-H}
+}
+
+\subsubsection{Anti hydroxylation \normalfont(Section 8-13)}
+
+\chemeq[ken2col_11]{ken2col_10}{
+  \chemfig{!\Alkene} + \chemfig{R-C([6]=O)-O-O-H}
+  \chemar[0.8]{->}
+  \chemfig{C([2]-)([4]-)([:-60]-O?)-C?([0]-)([2]-)}
+  \chemar[0.8]{->[\chemfig{H^+}][\chemfig{\Water}]}
+  \chemfig{C([2]-OH)([4]-)([6]-)-C([0]-)([2]-)([6]-OH)}
+}
+
+\subsubsection{Syn hydroxylation \normalfont(Section 8-14)}
+
+
+\chemeq[ken2col_9]{ken2col_7}{
+  \chemfig{!\Alkene} + \chemfig{KMnO_4}
+  \chemar[1.7]{->[\chemfig{!\Hydroxide}, \chemfig{!\Water}][cold, delute]}
+  \chemfig{C([2]-)([4]-)([6]-[,,,2]HO)-C([0]-)([2]-)([6]-OH)}
+}
+
+\chemeq[ken2col_9]{ken2col_8}{
+  \chemfig{!\Alkene} + \chemfig{OsO_4}
+  \chemar{->[\chemfig{H_2O_2}]}
+  \chemfig{C([2]-)([4]-)([6]-[,,,2]HO)-C([0]-)([2]-)([6]-OH)}
+}
+
+
+\subsection{Oxidative Cleavage of Alkenes \normalfont(Section 8-15)}
+
+\subsubsection{Ozonolysis}
+
+\chemeq[ken2ahket_2]{ken2ahket_1}{
+  \chemname{\chemfig{C([:120]-R)([:-120]-H)=C([:-60]-R|')([:60]-R|'')}}
+           {alkene}
+  \chemar{->[\chemfig{O_3}]}
+  \chemname{\chemfig{[:-18]C([3]-R)([5]-H)*5(-O-O-C([1]-R|'')([7]-R|')-O-)}}
+           {ozonide}
+  \chemar[1.2]{->[\chemfig{{(}CH_3{)}_2S}]}
+  \chemname{\chemfig{C([:120]-R)([:-120]-H)=O}}
+         {aldehyde} +
+  \chemname{\chemfig{O=C([:-60]-R|')([:60]-R|'')}}
+         {ketone}
+}
+
+\subsubsection{Potassium permanganate}
+
+\chemeq[ken2ket2acid_2]{ken2ket2acid_1}{
+  \chemfig{C([:120]-R)([:-120]-R)=C([:-60]-H)([:60]-R|')} + \chemfig{KMnO_4}
+  \chemar{->[warm]}
+  \chemname{\chemfig{C([:120]-R)([:-120]-R)=O}}{ketones} +
+  \chemname{\chemfig{O=C([:-60]-OH)([:60]-R|')}}{acids}
+  \quad\parbox{3.5cm}{(aldehydes are oxidized to acids)}
+}
+
+
+\subsection{Olefin (Alkene) Metathesis \normalfont(Section 8-17)}
+
+\chemeq{ken2ken_1}{
+  \chemfig{C([:120]-[,,,1]R|^1)([:-120]-H)=C([:-60]-H)([:60]-H)} +
+  \chemfig{C([:120]-[,,,1]R|^2)([:-120]-H)=C([:-60]-H)([:60]-H)}
+  \chemar[1.5]{<<->[catalyst]}
+  \chemname{\chemfig{C([:120]-[,,,1]R|^1)([:-120]-H)=C([:-60]-R|^2)([:60]-H)}}{(cis + trans)} +
+  \chemname{\chemfig{C([:120]-H)([:-120]-H)=C([:-60]-H)([:60]-H)}}{ethylene}
+}
+
+
+
+\section{Syntheses of Alkynes}
+
+
+\subsection{Alkylation of acetylide ions \normalfont(Section 9-7A)}
+
+\chemeq[ah2kyn_1,ah2kyn_3]{ah2kyn_2}{
+  \chemfig{R-C~\Lewis{0:,C}|^{-}} + \chemfig{R|'-X}
+  \chemar{->[S\textsubscript{N}2]}
+  \chemfig{R-C~C-R|'} + \chemfig{X^{-}}
+}
+(\chemfig{R|'-X} must be an unhindered primary halide or tosylate)
+
+
+\subsection{Additions to carbonyl groups \normalfont(Section 9-7B)}
+
+\chemeq[cnyl2kyn_2,cnyl2kyn_3]{cnyl2kyn_1}{
+  \chemfig{R-C~C|^{-}} + \chemfig{C([:120]-[,,,1]R|')([:-120]-[,,,1]R|')=O}
+  \chemar{->}
+  \chemar[1.1]{->[\chemfig{\Water}][or \chemfig{H_3O^+}]}
+  \chemfig{R-C~C-C([2]-R|')([6]-R|')-OH}
+}
+
+
+\subsection{Double dehydrohalogenation of alkyl dihalides \normalfont(Section 9-8)}
+
+\chemeq{ah2kyn_4}{
+  \chemfig{R-C([2]-X)([6]-H)-C([2]-X)([6]-H)-R|'}
+  \quad or\quad
+  \chemfig{R-C([2]-H)([6]-H)-C([2]-X)([6]-X)-R|'}
+  \chemar[2.5]{->[fused \chemfig{KOH} or \chemfig{NaNH_2}][(severe conditions)]}
+  \chemfig{R-C~C-R|'}
+}
+(\chemfig{KOH} forms internal alkynes; \chemfig{NaNH_2} forms terminal alkynes.)
+
+
+
+\section{Reactions of Alkynes}
+
+\noindent
+ACETYLIDE CHEMISTRY
+
+
+\subsection{Formation of acetylide anions (alkynides) \normalfont(Section 9-6)}
+
+\chemeq{kyn2knd_1}{
+  \chemfig{R-C~C-H} + \chemfig{NaNH_2}
+  \chemar{->}
+  \chemfig{R-C~\Lewis{0:,C}|^{-}|^+Na} + \chemfig{NH_3}
+}
+
+\chemeq{kyn2knd_2}{
+  \chemfig{R-C~C-H} + \chemfig{R|'MgX}
+  \chemar{->}
+  \chemfig{R-C~C-MgX} + \chemfig{R|'H}
+}
+
+\chemeq{kyn2knd_3}{
+  \chemfig{R-C~C-H} + \chemfig{R|'Li}
+  \chemar{->}
+  \chemfig{R-C~C-Li} + \chemfig{R|'H}
+}
+
+
+\subsection{Alkylation of acetylide ions \normalfont(Section 9-7A)}
+
+\chemeq[ah2kyn_1,ah2kyn_2]{ah2kyn_3}{
+  \chemfig{R-C~\Lewis{0:,C}|^{-}} + \chemfig{R|'-X}
+  \chemar{->}
+  \chemfig{R-C~C-R|'}
+}
+(\chemfig{R|'-X} must be an unhindered primary halide or tosylate.)
+
+
+\subsection{Reactions with carbonyl groups \normalfont(Section 9-7B)}
+
+\chemeq[cnyl2kyn_1,cnyl2kyn_3]{cnyl2kyn_2}{
+  \chemfig{R-C~C|^{-}} + \chemfig{C([:120]-[,,,1]R|')([:-120]-[,,,1]R|')=O}
+  \chemar[1.1]{->}
+  \chemar{->[\chemfig{\Water}][or \chemfig{H_3O^+}]}
+  \chemfig{R-C~C-C([2]-R|')([6]-R|')-OH}
+}
+
+\vspace{10mm}\noindent
+ADDITIONS TO THE TRIPLE BOND
+
+\subsection{Reduction to alkanes \normalfont(Sections 9-9A)}
+\chemeq{kyn2kan_1}{
+  \chemfig{R-C~C-R|'} + 2\chemfig{H_2}
+  \chemar[1.3]{->[Pt, Pd or Ni]}
+  \chemfig{R-C([2]-H)([6]-H)-C([2]-H)([6]-H)-R|'}
+}
+
+
+\subsection{Reduction to alkanes \normalfont(Sections 9-9B and 9-9C)}
+
+\chemeq[kyn2ken_1]{kyn2ken_2}{
+  \chemfig{R-C~C-R|'} + \chemfig{H_2}
+  \chemar[2.3]{->[\chemfig{Pd}/\chemfig{BaSO_4}, quinoline][(Lindlar's catalyst)]}
+  \chemfig{C([:120]-R)([:-120]-H)=C([:-60]-H)([:60]-R|')}
+  cis
+}
+
+\chemeq[kyn2ken_3]{kyn2ken_4}{
+  \chemfig{R-C~C-R|'}
+  \chemar[1.2]{->[\chemfig{Na}, \chemfig{NH_3}]}
+  \chemfig{C([:120]-R)([:-120]-H)=C([:-60]-R|')([:60]-H)}
+  trans
+}
+
+
+\subsection{Addition of halogens \normalfont(Section 9-9D)}
+
+\chemeq[kyn2ah_1]{kyn2ken2ah_1}{
+  \chemfig{R-C~C-R|'}
+  \chemar{->[\chemfig{X_2}]}
+  \chemname{\chemfig{C([:120]-R)([:-120]-X)=C([:-60]-R|')([:60]-X)}}{cis + trans}
+  \chemar{->[\chemfig{X_2}]}
+  \chemfig{R-C([2]-X)([6]-X)-C([2]-X)([6]-X)-R|'}
+  (X = Cl, Br)
+}
+
+
+\subsection{Addition of hydrogen halides \normalfont(Section 9-9E)}
+
+\chemeq[kyn2ah_2]{kyn2ken2ah_2}{
+  \chemfig{R-C~C-R|'}
+  \chemar{->[\chemfig{HX}]}
+  \chemname{\chemfig{C([:120]-R)([:-120]-H)=C([:-60]-R|')([:60]-X)}}
+           {Markovnikov orientation}
+  \chemar{->[\chemfig{HX}]}
+  \chemfig{R-C([2]-H)([6]-H)-C([2]-X)([6]-X)-R|'}
+  (X = Cl, Br, I)
+}
+
+
+\subsection{Addition of water \normalfont(Section 9-9F)}
+
+\subsubsection{Catalyzed by $HgSO_4$/$H_2SO_4$}
+
+\chemeq[kyn2ket_2]{kyn2ket_1}{
+  \chemfig{R-C~C-H} + \chemfig{\Water}
+  \chemar{->[\chemfig{HgSO_4},][\chemfig{H_2SO_4}]}
+  \chemname{\chemleft[
+            \chemfig{C([:120]-R)([:-120]-[,,,2]HO)=C([:-60]-H)([:60]-H)}
+            \chemright]}
+           {vinyl alcohol\\(unstable)}
+  \chemar{<->>}
+  \chemname{\chemfig{R-C([:60]-CH_3)([:-60]=O)}}{ketone\\(stable)}
+}
+\vspace{-10mm}
+
+(Markovnikov orientation)
+
+\subsubsection{Hydroboration-oxidation}
+
+\chemeq[kyn2ald_2]{kyn2ald_1}{
+  \chemfig{R-C~C-H}
+  \chemar[2]{->[(1) \chemfig{Sia_2BH\cdot THF}][(2) \chemfig{H_2O_2}, \chemfig{NaOH}]}
+  \chemname{\chemleft[
+            \chemfig{C([:120]-R)([:-120]-H)=C([:-60]-H)([:60]-OH)}
+            \chemright]}
+           {vinyl alcohol\\(unstable)}
+  \chemar{<->>}
+  \chemname{\chemfig{R-C([2]-H)([6]-H)-C([:60]=O)([:-60]-H)}}
+           {aldehyde\\(stable)}
+}
+\vspace{-10mm}
+
+(anti-Markovnikov orientation)
+
+
+\vspace{10mm}\noindent
+OXIDATION OF ALKYNES (Section 9-10)
+
+
+\subsection{Oxidation to $\alpha$-diketones \normalfont(Section 9-10A)}
+
+\chemeq{kyn2ket_3}{
+  \chemfig{R-C~C-R|'}
+  \chemar{->[\chemfig{KMnO_4}][\chemfig{\Water}]}
+  \chemfig{C([:120]=O)([:-120]-R)-C([:-60]-R|')([:60]=O)}
+}
+
+
+\subsection{Oxidative cleavage \normalfont(Section 9-10B)}
+
+\chemeq[kyn2acid_2]{kyn2acid_1}{
+  \chemfig{R-C~C-R|'}
+  \chemar[3]{->[(1) \chemfig{KMnO_4}, \chemfig{\Hydroxide} (2) \chemfig{H^+}][(or (1) \chemfig{O_3}, (2) \chemfig{\Water})]}
+  \chemfig{R-C([:60]-OH)([:-60]=O)} +
+  \chemfig{C([:120]-OH)([:-120]=O)-R|'}
+}
+
+
+
+\section{Synthesis of Alcohol}
+
+\noindent
+NUCLEOPHILIC SUBSTITUTION ON AN ALKYL HALIDE (Chapter 6)
+
+Usually via the S\textsubscript{N}2 mechanism; competes with elimination.
+
+\chemeq[ah2al_1]{ah2al_2}{
+  {\setchemfig{chemfig style={blue}}
+    \chemfig{H@{f1}\Lewis{0:2:6:,O}^{-}}}
+  +
+  \chemfig{@{f2}C([3]-R)([5]>:H)([:-100]<H)-[@{g1},,,,green]@{g2}\grn{X}}
+  \chemmove{\draw[->,red](f1)..controls +(60:10mm) and +(180:10mm)..(f2);}
+  \chemmove{\draw[->,red](g1)..controls +(-90:5mm) and +(-90:5mm)..(g2);}
+  \chemar[0.8]{->}
+  \chemname{\chemleft[
+  \chemfig{\blu{H}|\blu{O}
+           -[,,,,blue,dash pattern=on 1pt off 1pt]
+           C([2]-R)([:-110]>:H)([:-70]<H)
+           -[,,,,green,dash pattern=on 1pt off 1pt]
+           {\color{green}X}}
+  \chemright]\raisebox{6mm}{$\stackrel{-}{\ddagger}$}  } {transition state}
+  \chemar[0.8]{->}
+  \chemfig{\blu{H}|\blu{O}
+           -[,,,,blue,dash pattern=on 1pt off 1pt]
+           C([2]-R)([:-45]>:H)([:-80]<H) }
+  + {\setchemfig{chemfig style={green}} \chemfig{^{-}X}}
+}
+
+
+
+\vspace{10mm}\noindent
+SYNTHESIS OF ALCOHOLS FROM ALKENES (Chapter 8)
+
+
+\subsection{Acid-catalyzed hydration \normalfont(Section 8-4)}
+
+\chemeq[ken2col_1]{ken2col_2}{
+  \chemfig{!\Alkene} + {\setchemfig{chemfig style={green}}\chemfig{\Water}}
+  \chemar{->[\chemfig{H^{+}}]}
+  \chemfig{C([2]-)([4]-)([6]-\textcolor{green}{H})-C([0]-)([2]-)([6]-{\color{green}O}|{\color{green}H})}
+  Markovnikov orientation
+}
+
+
+\subsection{Oxymercuration-demercuration \normalfont(Section 8-5)}
+
+\chemeq[ken2col_3]{ken2col_4}{
+  \chemfig{!\Alkene} + {\setchemfig{chemfig style={green}}\chemfig{Hg{(}OAc{)}_2}}
+  \chemar{->[{\setchemfig{chemfig style={blue}}\chemfig{\Water}}]}
+  \chemfig{C([2]-\blu{O}|\blu{H})([4]-)([6]-)
+           -C([0]-)([2]-)([6]-{\color{green}Hg}|{\color{green}OAc})}
+  \chemar{->[\chemfig{NaBH_4}]}
+  \chemname{\chemfig{C([2]-\blu{O}|\blu{H})([4]-)
+                     ([6]-)-C([0]-)([2]-)([6]-\blu{H})}}
+           {Markovnikov orientation}
+}
+
+
+\subsection{Hydroboration-oxidation \normalfont(Section 8-7)}
+
+\chemeq[ken2col_5]{ken2col_6}{
+  \chemfig{!\Alkene}
+  \chemar[2]{->[(1){\em BH$_3\cdot$THF}][(2)\chemfig{H_2O_2}, \chemfig{NaOH}]}
+  \chemname{\hspace{5mm}\chemfig{C([2]-)([4]-)([6]-H)-C([0]-)([2]-)([6]-OH)}\hspace{5mm}}
+           {syn addition, anti-Markovnikov orientation}
+}
+
+
+\subsection{Hydroxylation: synthesis of 1,2-diols from alkenes}
+
+\subsubsection{Syn hydroxylation \normalfont(Section 8-14)}
+
+\chemeq[ken2col_7,ken2col_8]{ken2col_9}{
+  \chemfig{!\Alkene}
+  \chemar[3]{->[\chemfig{KMnO_4}, \chemfig{!\Hydroxide}, (cold, delute)][or \chemfig{OsO_4}, \chemfig{H_2O_2}]}
+  \chemfig{C([2]-)([4]-)([6]-[,,,2]HO)-C([0]-)([2]-)([6]-OH)}
+}
+
+\subsubsection{Anti hydroxylation \normalfont(Section 8-13)}
+
+\chemeq[ken2col_10]{ken2col_11}{
+  \chemfig{!\Alkene} +
+  \chemar[2.2]{->[\chemfig{R-C([2]=O)-O-O-H}][\chemfig{H^+}, \chemfig{\Water}]}
+  \chemfig{C([2]-OH)([4]-)([6]-)-C([0]-)([2]-)([6]-OH)}
+}
+
+
+\subsection{Additions of acetylides to carbonyl compaunds \normalfont(Section 9-7)}
+
+\chemeq[cnyl2kyn_1,cnyl2kyn_2]{cnyl2kyn_3}{
+  \chemnameinit{\chemfig{R-C~C-C(-[2]R|^{'})(-[6]R|^{'})-OH}}
+  \chemname{\chemfig{R-C~\charge{0=\:,45=$\scriptstyle-$}{C}\phantom{i}@{x1}\vpha}}{acetylide}
+  \+
+  \chemname{\chemfig[chemfig style=green]{@{x2}C(-[:-120,,,1]R|^{'})(-[:120,,,1]R|^{'})=[@{y1}]\charge{45=\:,-45=\:}{O}@{y2}}}{ketone or aldehyde}
+  \chemmove{\draw[->,red](x1)..controls +(60:8mm) and +(160:6mm)..(x2);}
+  \chemmove{\draw[->,red](y1)..controls +(-90:4mm) and +(-90:4mm)..(y2);}
+  \arrow{->}
+  \chemname{
+    \chemfig{R-C~C-\grn{C}
+                   (-[2,,,,green]\grn{R}|^{\grn{'}})
+                   (-[6,,,,green]\grn{R}|^{\grn{'}})
+            -[,,,,green]\charge{-90={\color{green}\:},0={\color{green}\:},90={\color{green}\:},45=$\color{green}\scriptstyle-$}{\grn{O}}}
+  }
+  {alkoxide}
+  \arrow{->[\chemfig{H_3O^+}]}
+  \chemname{\chemfig{R-C~C-\grn{C}
+                      (-[2,,,,green]\grn{R}|^{\grn{'}})
+                      (-[6,,,,green]\grn{R}|^{\grn{'}})
+                      -[,,,,green]\grn{O}H}}
+            {accetylenic alcohol}
+}
+
+\vspace{3mm}\noindent
+ALCOHOL SYNTHESES BY NUCLEOPHILIC ADDITIONS TO CARBONYL GROUPS
+
+\subsection{Addition of a Grignard or organolithium reagent \normalfont(Section 10-9)}
+Here and below in this section \chemfig{\vpha MgX} can be replaced with \chemfig{Li}.
+
+\chemeq[ket2al_2]{ket2al_1}{
+  \chemfig{R-MgX} + \chemfig{C([:120]-)([:-120]-)=O}
+  \chemar{->[ether]}
+  \chemfig{R-C([2]-)([6]-)-O|^{-}|^{+}MgX}
+  \chemar{->[\chemfig{H_3O^{+}}]}
+  \chemfig{R-C([2]-)([6]-)-OH}
+}
+
+\chemeq{om2al_1}{
+  2\hspace{1mm}\chemfig{R-MgX} +
+  \chemleft(
+    \chemname{\chemfig{C([:120]-R\rlap{$'$})([:-120]-O-[:180])=O}}
+             {ester}
+    \qquad or \qquad
+    \chemname{\chemfig{C([:120]-R\rlap{$'$})([:-120]-X)=O}\hspace{5mm}}
+             {acid halide}
+  \chemright)
+  \chemar[1.2]{->[(1) ether][(2) \chemfig{H_3O^{+}}]}
+  \chemfig{R|'-C([2]-R)([6]-R)-OH}
+}
+
+\chemeq{epx2al_1}{
+  \chemfig{R-MgX} +
+  \chemname{\hspace{5mm}\chemfig{[:-60]O*3(---)}\hspace{5mm}}
+           {ethylene oxide}
+  \chemar[1.2]{->[(1) ether][(2) \chemfig{H_3O^{+}}]}
+  \chemfig{R-[:30]-[:-30]-[:30]OH}
+}
+
+
+\subsection{Reduction of carbonyl compounds \normalfont(Section 10-11)}
+
+\subsubsection{Catalytic hydrogenation of aldehydes and ketones}
+
+\chemeq[ket2al_5]{ket2al_3}{
+  \chemfig{C([:120]-)([:-120]-)=O} + \chemfig{H_2}
+  \chemar[1.2]{->[Raney \chemfig{Ni}]}
+  \chemfig{C([:120]-)([:-120]-)-OH}
+}
+This method is usually not as selective or as effective as the use of hydride reagents.
+
+\subsubsection{Use of hydride reagents}
+
+\chemeq[ket2al_5]{ket2al_4}{
+  \chemfig{C([:120]-)([:-120]-)=O}
+  \chemar{->[\chemfig{NaBH_4}]}
+  \chemfig{HC([2,,2]-)([6,,2]-)-OH}
+}
+
+\chemeq[acid0est2alco_2]{acid0est2alco_1}{
+  \chemname{\chemfig{C([:120]-R)([:-120]-O-[:180])=O}}
+           {acid or ester}
+  \chemar[1.2]{->[(1) \chemfig{LiAlH_4}][(2) \chemfig{H_3O^{+}}]}
+  \chemfig{R-[:30]-[:-30]OH}
+}
+
+\subsection{Acid-catalyzed oxide opening \normalfont(Sections 8-13 and 14-12)}
+\chemeq[pox2al_2]{pox2al_1}{
+  \chemfig{\vpha-C([6]-)([:60]-O?)-C?([6]-)-}
+  \chemar{->[\chemfig{H^+}][\chemfig{R-OH}]}
+  \chemfig{\vpha-C([2]-)([6]-OH)-C([2]-OR)([6]-)-}
+  \qquad R can be hydrogen
+}
+The alkoxy group bonds to the more highly substituted carbon.
+
+
+
+%\section{S\textsubscript{N}2 Reactions of Tosylate Esters \normalfont(Section 11-6)}
+%
+%\noindent
+%\begin{tabular}{@{\hspace{-4pt}}lccclcc}
+% %% TODO on map %%
+%\chemnameinit{}
+%\chemfig{R-OTs} & + & \chemname{\chemfig{\Hydroxide}}{hydroxide} &
+%\chemar{->} &
+%\chemname{\chemfig{R-OH}}{alcohol} & + & \chemfig{\quad\llap{${}^-$}OTs} \\
+%\\
+%\chemfig{R-OTs} & + & \chemname{\chemfig{^{-}C~N}}{cyanide} &
+%\chemar{->} &
+%\chemname{\chemfig{R-C~H}}{nitrile} & + & \chemfig{\quad\llap{${}^-$}OTs} \\
+%\\
+%\chemfig{R-OTs} & + & \chemname{\chemfig{Br^{-}}}{halide} &
+%\chemar{->} &
+%\chemname{\chemfig{R-Br}}{alkyl halide} & + & \chemfig{\quad\llap{${}^-$}OTs} \\
+%\\
+%\chemfig{R-OTs} & + & \chemname{\chemfig{R|'-O^{-}}}{alkoxide} &
+%\chemar{->} &
+%\chemname{\chemfig{R-O-R|'}}{ether} & + & \chemfig{\quad\llap{${}^-$}OTs} \\
+%\\
+%\chemfig{R-OTs} & + & \chemname{\chemfig{\Ammonia}}{ammonia} &
+%\chemar{->} &
+%\chemname{\chemfig{R-NH_3^{+}|^{-}OTs}}{amine salt} & & \\
+%\\
+%\chemfig{R-OTs} & + & \chemname{\chemfig{LiAlH_4}}{LAH} &
+%\chemar{->} &
+%\chemname{\chemfig{R-H}}{alkane} & + & \chemfig{\quad\llap{${}^-$}OTs}
+%
+%\end{tabular}
+%
+
+
+
+\section{Reactions of Alcohols}
+
+
+\subsection{Oxidation-reduction reactions}
+
+\subsubsection{Oxidation of secondary alcohols to ketones \normalfont(Section 11-2A)}
+
+\chemeq[al2ket_2]{al2ket_1}{
+  \chemfig{H-C([2]-R\rlap{$'$})([6]-R\rlap{$''$})-OH}
+  \chemar[1.5]{->[\chemfig{Na_2Cr_2O_7}][\chemfig{H_2SO_4}]}
+  \chemfig{C([:120]-R\rlap{$'$})([:-120]-R\rlap{$''$})=O}
+}
+
+\subsubsection{Oxidation of primary alcohols to carboxylic acids \normalfont(Section 11-2B)}
+
+\chemeq{al2acid_1}{
+  \chemfig{R-[:30]-[:-30]OH}
+  \chemar[1.3]{->[\chemfig{Na_2Cr_2O_7}][\chemfig{H_2SO_4}]}
+  \chemfig{C([:120]-R)([:-120]-HO)=O}
+}
+
+\subsubsection{Oxidation of primary alcohols to aldehydes \normalfont(Section 11-2B)}
+
+\chemeq[al2ald_2]{al2ald_1}{
+  \chemfig{R-[:30]-[:-30]OH}
+  \chemar{->[\em{PCC}]}
+  \chemfig{C([:120]-R)([:-120]-H)=O}
+}
+
+\subsubsection{Reduction of alcohols to alkanes \normalfont(Section 11-6)}
+
+\chemeq{al2kan_1}{
+  \chemfig{R-OH}
+  \chemar[2]{->[(1)\chemfig{TsCl}/pyridine][(2)\chemfig{LiAlH_4}]}
+  \chemfig{R-H}
+}
+
+
+\subsection{Cleavage of alcohol hydroxyl group.}
+
+\subsubsection{Conversion of alcohols to alkyl halides \normalfont(Sections 11-7 - 11-9)}
+
+\chemeq[al2ah_1]{al2ah_2}{
+  \chemfig{R-OH}
+  \chemar[1.2]{->[\chemfig{HX}, \chemfig{PX_3}][or others]}
+  \chemfig{R-X}
+}
+
+\subsubsection{Dehydration of alcohols to form alkenes \normalfont(Section 11-10A)}
+
+\chemeq[ken2al_1]{ken2al_2}{
+  \chemfig{-C([2]-H)([6]-)-C([2]-OH)([6]-)-}
+  \chemar[1.4]{<->[\chemfig{H_2SO_4}][or \chemfig{H_2PO_4}]}
+  \chemfig{!\Alkene} + \chemfig{\Water}
+}
+
+\subsubsection{Industrial dehydration of alcohols to form ethers \normalfont(Section 11-10B)}
+
+\chemeq[al2eth_2]{al2eth_1}{
+  2\chemfig{R-OH}
+  \chemar{<->[\chemfig{H^{+}}]}
+  \chemfig{R-O-R} + \chemfig{\Water}
+}
+
+
+\subsection{Cleavage of the hydroxyl proton}
+
+\subsubsection{Tosylation \normalfont(Section 11-5)}
+
+\chemeq{al2aTs_1}{
+  \chemfig{R-OH} + \chemfig{Cl-S([2]=O)([6]=O)-**6(---(-CH_3)---)}
+  \chemar{->[pyridine]}
+  \chemfig{R-O-S([2]=O)([6]=O)-**6(---(-CH_3)---)} + \chemfig{HCl}
+}
+
+\subsubsection{Acylation to form esters \normalfont(Section 11-12)}
+
+\chemeq{al2est_3}{
+  \chemfig{R-OH} + \chemfig{R|'-C([2]=O)-Cl}
+  \chemar{->}
+  \chemfig{R-C([2]=O)-O-R|'} + \chemfig{HCl}
+}
+
+\subsubsection{Deprotonation to form an alkoxide \normalfont(Section 11-14)}
+
+\chemeq{al2axd_1}{
+  \chemfig{R-OH} + \chemfig{Na} (or \chemfig{K})
+  \chemar{->}
+  \chemfig{R-O^{-}|^{+}Na} + $\frac{1}{2}$\chemfig{H_2}$\uparrow$
+}
+
+\chemeq{al2axd_2}{
+  \chemfig{R-OH} + \chemfig{NaH}
+  \hspace{8mm}\chemar{->}
+  \chemfig{R-O^{-}|^{+}Na} + \chemfig{H_2}$\uparrow$
+}
+
+\subsubsection{Williamson ether synthesis \normalfont(Sections 11-14 and 14-5)}
+
+\chemeq[al2est_2]{al2est_1}{
+  \chemfig{R-O|^{-}} + \chemfig{R|'-X}
+  \chemar{->}
+  \chemfig{R-O-R|'} + \chemfig{X^{-}}
+}
+(\chemfig{R|'} must be unhindered, usually primary)
+
+
+
+\section{Syntheses of Ethers and Epoxides}
+{\large ETHERS}
+
+
+\subsection{Williamson ether synthesis \normalfont(Sections 11-14 and 14-5)}
+
+\chemeq[al2est_1]{al2est_2}{
+  \chemfig{R-O|^{-}} + \chemfig{R|'-X}
+  \chemar{->}
+  \chemfig{R-O-R|'} + \chemfig{X^{-}}
+}
+(X = Cl, Br, I, OTs, etc., \chemfig{R|'} must be primary)
+
+
+\subsection{Addition of an alcohol across a double bond: alkoxymercuration-demercuration \normalfont(Sections 8-6 and 14-6)}
+
+\chemeq[kenal2est_1]{kenal2est_2}{
+  \chemfig{!\Alkene} + \chemfig{Hg{(}OAc{)}_2}
+  \chemar{->[\chemfig{R-OH}]}
+  \chemfig{C([2]-)([4]-)([6]-[,,,2]RO)-C([0]-)([2]-)([6]-HgOAc)}
+  \chemar{->[\chemfig{NaBH_4}]}
+  \chemname{\hspace{1mm}\chemfig{C([2]-)([4]-)([6]-[,,,2]RO)-C([0]-)([2]-)([6]-H)}\hspace{1mm}}
+           {Markovnikov orientation}
+}
+
+
+\subsection{Bimolecular dehydration of alcohols: industrial synthesis \normalfont(Sections 11-10B and 14-7)}
+
+\chemeq[al2eth_1]{al2eth_2}{
+  2\chemname{\chemfig{R-OH}}{primary}
+  \chemar{<=>[\chemfig{H^+}]}
+  \chemfig{R-O-R} + \chemfig{\Water}
+}
+
+
+{\large EPOXIDES}
+
+\subsection{Peroxyacid epoxidation \normalfont(Sections 8-12 and 14-11A)}
+
+\chemeq[ken2epx_1]{ken2epx_2}{
+  \chemfig{!\Alkene} + \chemfig{R-C([2]=O)-OOH}
+  \chemar{->}
+  \chemfig{\vpha-C([6]-)([:60]-O?)-C?([6]-)-} + \chemfig{R-C([2]=O)-OH}
+}
+
+
+\subsection{Base-promoted cyclization of halohydrins \normalfont(Section 14-11B)}
+
+\chemeq{hdrn2epx_1}{
+  \chemfig{\vpha-C([2]-)([6]-OH)-C([2]-X)([6]-)-}
+  \chemar{->[base]}
+  \chemfig{\vpha-C([6]-)([:60]-O?)-C?([6]-)-}
+  (X = Cl, Br, I, OTs, etc.)
+}
+
+
+
+
+\section{Reactions of Ethers and Epoxides}
+{\large ETHERS}
+
+\subsection{Cleavage by HBr and HI \normalfont(Section 14-8)}
+
+\chemeq{eth2ah_1}{
+  \chemfig{R-[,1.123]O-R|'}
+  \chemar[1.5]{->[excess \chemfig{HX}][X = Br, I]}
+  \chemfig{R-X} + \chemfig{R|'-X}
+}
+
+\chemeq{eth2ah_2}{
+  \chemfig{Ar-O-R|'}
+  \chemar[1.5]{->[excess \chemfig{HX}][X = Br, I]}
+  \chemfig{Ar-OH} + \chemfig{R|'-X}
+  \hspace{10mm} Ar = aromatic ring
+}
+
+
+\subsection{Autoxidation \normalfont(Section 14-9)}
+
+\chemeq{eth2pxde_1}{
+  \chemfig{R-O-CH_2-R|'}
+  \chemar[1.2]{->[excess \chemfig{O_2}][(slow)]}
+  \chemname{\chemfig{R-O-CH([2]-[,,1]OOH)-R|'}}{hydroperoxide}
+  \hspace{5mm} + \hspace{5mm}
+  \chemname{\chemfig{R-O-O-CH_2-R|'}}{dialkyl peroxide}
+}
+
+{\large EPOXIDES}
+
+\subsection{Acid-catalyzed opening \normalfont(Sections 8-13 and 14-12)}
+
+\subsubsection{In water}
+
+\chemeq[pox2al_1]{pox2al_2}{
+  \chemfig{\vpha-C([6]-)([:60]-O?)-C?([6]-)-}
+  \chemar{->[\chemfig{H^+}][\chemfig{R-OH}]}
+  \chemfig{\vpha-C([2]-)([6]-OH)-C([2]-OR)([6]-)-}
+  \qquad \makecell{R can be hydrogen\\anti-stereochemistry}
+}
+The alkoxy group bonds to the more highly substituted carbon.
+
+\subsubsection{Using hydrohalic acids (X = Cl, Br, I)}
+
+\chemeq{epx2ah_1}{
+  \chemfig{\vpha-C([6]-)([:60]-O?)-C?([6]-)-}
+  \chemar{->[\chemfig{H-X}]}
+  \chemfig{\vpha-C([2]-)([6]-X)-C([2]-OH)([6]-)-}
+  \chemar{->[\chemfig{H-X}]}
+  \chemfig{\vpha-C([2]-)([6]-X)-C([2]-X)([6]-)-}
+}
+
+
+\subsection{Base-catalyzed opening}
+
+\subsubsection{With alkoxides or hydroxide \normalfont(Section 14-13)}
+
+\chemeq{epx2eth_1}{
+  \chemfig{\vpha-C([6]-)([:60]-O?)-C?H_2}
+  \chemar[1.3]{->[\chemfig{R-O|^{-}}][\chemfig{R-OH}]}
+  \chemfig{\vpha-C([2]-)([6]-OH)-CH_2-OR}
+}
+The alkoxy group bonds to the less highly substituted carbon.
+
+\subsubsection{With organometallics \normalfont(Section 14-15)}
+
+\chemeq{epx2eth_2}{
+  \chemfig{\vpha-C([6]-)([:60]-O?)-C?H_2}
+  \chemar[1.3]{->[(1)\chemfig{R-M}][(2)\chemfig{H_3O^{+}}]}
+  \chemfig{\vpha-C([2]-)([6]-OH)-CH_2-OR}
+  \quad M = Li or MgX
+}
+R bonds to the less substituted carbon.
+
+
+
+
+\section{Reactions of Aromatic Compounds}
+
+
+\subsection{Electrophilic aromatic substitution}
+
+\subsubsection{Halogenation \normalfont(Section 17-2)}
+
+\chemeq{bz2arx_1}{
+  \chemfig{!\precyc**6(------)} + \chemfig{X_2}
+  \chemar[2.2]{->[\chemfig{FeBr_3} for X=Br][\chemfig{AlCl_3} for X=Cl]}
+  \chemfig{!\precyc**6(---(-X)---)}
+  + \chemfig{HX} (X is Br or Cl)
+}
+
+\subsubsection{Nitration \normalfont(Section 17-3)}
+
+\chemeq{bz2nbz_1}{
+  \chemfig{!\precyc**6(------)} + \chemfig{HNO_3}
+  \chemar{->[\chemfig{H_2SO_4}]}
+  \chemname{\chemfig{!\precyc**6(---(-N([:60]=O)([:-60]-O|\rlap{$^{-}$}))---)}} {nitrobenzene}
+  + \chemfig{\Water}
+}
+Nitration followed by reduction gives anilines.
+
+\subsubsection{Sulfonation \normalfont (Section 17-4)}
+
+\chemeq{bz2bzsf_1}{
+  \chemfig{!\precyc**6(------)} + \chemfig{SO_3}
+  \chemar[1.5]{<=>[\chemfig{H_2SO_4}][\chemfig{H_3O^+}, heat]}
+  \chemname{\chemfig{!\precyc**6(---(-S([2]=O)([6]=O)-OH)---)}} {benzenesulfonic acid}
+}
+
+\subsubsection{Friedel-Crafts alkylation \normalfont(Section 17-10)}
+
+\chemeq{bz2arr_1}{
+  \chemfig{!\precyc**6(------)} + \chemfig{R-X}
+  \chemar[2]{->[Lewis acid][(\chemfig{AlCl_3}, \chemfig{FeBr_3}, etc.)]}
+  \chemfig{!\precyc**6(---(-R)---)} + \chemfig{H-X}
+  \hspace{10mm} (X = Cl, Br, I)
+}
+
+\subsubsection{Friedel-Crafts acylation \normalfont(Section 17-11)}
+
+\chemeq[ph2ket_2]{ph2ket_1}{
+  \chemfig{!\precyc**6(------)}
+  + \chemname{\chemfig{R-C([2]=O)-Cl}} {acyl halide}
+  \chemar{->[\chemfig{AlCl_3}]}
+  \chemfig{!\precyc**6(---(-C([:60]=O)([:-60]-R))---)}
+  + \chemfig{HCl}
+}
+
+\subsubsection{Gatterman-Koch synthesis \normalfont(Section 17-11C)}
+
+\chemeq[ph2ald_2]{ph2ald_1}{
+  \chemfig{!\precyc**6(------)} + \chemfig{CO} + \chemfig{HCl}
+  \chemar[1.5]{->[\chemfig{AlCl_3}/\chemfig{CuCl}]}
+  \chemname{\chemfig{!\precyc**6(---(-C([:60]=O)([:-60]-H))---)}} {benzaldehyde}
+}
+
+
+\subsubsection{Substituent effects \normalfont(Sections 17-5 through 17-9)}
+
+\noindent
+\begin{tabular}{|c|c|c||c|c|}
+
+  \hline
+
+  $\pi$ donors & $\sigma$ donors & Halogens & Carbonyls & Other \\
+
+  \hline
+
+  \noindent
+  \begin{tabular}{l}
+  \chemfig{-O^{-}} \\ \\
+  \chemfig{-N([2]-R)-R|'} \\ \\
+  \chemfig{-OH} \\ \\
+  \chemfig{-OR} \\ \\
+  \chemfig{-N([2]-R)-C([2]=O)-R}
+  \end{tabular}
+
+  &
+
+  \noindent
+  \begin{tabular}{c}
+  \chemnameinit{}
+  \chemname{\chemfig{-R}}{alkyl} \\
+  \\
+  \chemname{\chemfig{-**6(------)}}{aryl} \\ (weak $\pi$ donors)
+  \end{tabular}
+
+  &
+
+  \noindent
+  \begin{tabular}{l}
+  \chemfig{-F} \\ \\
+  \chemfig{-Cl} \\ \\
+  \chemfig{-Br} \\ \\
+  \chemfig{-I}
+  \end{tabular}
+
+  &
+
+  \noindent
+  \begin{tabular}{l}
+  \chemfig{-C([2]=O)-R} \\ \\
+  \chemfig{-C([2]=O)-OH} \\ \\
+  \chemfig{-C([2]=O)-OR}
+  \end{tabular}
+
+  &
+
+  \noindent
+  \begin{tabular}{l}
+  \chemfig{-SO_3H} \\ \\
+  \chemfig{-C~N} \\ \\
+  \chemfig{-NO_2} \\ \\
+  \chemfig{-\chemabove{N}{+}R_3}
+  \end{tabular}
+
+  \\ & & & &  \\
+
+  \hline
+  \multicolumn{3}{|c||}{ortho-, para-directing} & \multicolumn{2}{c|}{meta-directing} \\
+  \hline
+  \multicolumn{2}{|c|}{ACTIVATING} & \multicolumn{3}{c|}{DEACTIVATING}
+
+  \\
+  \hline
+
+\end{tabular}
+\vskip 2ex
+
+\subsection{Nucleophilic aromatic substitution \normalfont(Section 17-12)}
+
+\chemeq{bz2bz_1}{
+  \chemname{\chemfig{**6((-G)--(-G)-(-X)---)} }
+           {a halobenzene}
+  + \chemnameinit{}
+  \chemname{\chemfig{\Lewis{0:,Nuc}^{-}}}{strong\\nucleophile}
+  \chemar{->}
+  \chemfig{**6((-G)--(-G)-(-Nuc)---)} + \chemfig{X^{-}}
+}
+G = \chemfig{NO_2} or other strong withdrawing group. If G is not a strong electron-withdrawing group,
+severe conditions are required, and a benzyne mechanism is involved (Section 17-12B).
+
+
+\subsection{Addition reactions}
+
+\subsubsection{Chlorination \normalfont(Section 17-13A)}
+
+\chemeq{bz2bzh_1}{
+  \chemfig{!\precyc**6(------)} + 3\chemfig{Cl_2}
+  \chemar[2]{->[heat and pressure][or light]}
+  \chemname{\chemfig{!\precyc*6( ([::-160]-H)([::160]-Cl)-
+                                 ([::-40]-H)([::-80]-Cl)-
+                                 ([::-40]-H)([::-80]-Cl)-
+                                 ([::-40]-H)([::-80]-Cl)-
+                                 ([::-40]-H)([::-80]-Cl)-
+                                 ([::-40]-H)([::-80]-Cl)- ) }}
+           {benzene hexachloride}
+}
+
+\subsubsection{Catalytic hydrogenation \normalfont(Section 17-13B)}
+
+\chemeq{bz2kan_1}{
+  \chemfig{**6(--(-CH_2CH_3)-(-CH_2CH_3)---)}
+  \arrow{0}[,0] + \chemfig{3H_2}
+  \arrow{->[Ru or Rh catalyst][100\degree C, 1000psi]}[,2]
+  \chemfig{*6(--(-[:0]H)(-[:-60]CH_2CH_3)-(-[:60]H)(-[:0]CH_2CH_3)---)}
+}
+
+\subsubsection{Birch reduction \normalfont(Section 17-13C)}
+
+\chemeq{bz2ken_1}{
+  \chemfig{!\precyc**6(---(-CH_2CH_3)---)}
+  \chemar[2]{->[Na or Li ][\chemfig{NH_3}$(l)$, \chemfig{R-OH}]}
+  \chemfig{!\precyc*6(-=-(-CH_2CH_3)-=-)}
+}
+Takes place on carbon atoms bearing electron-withdrawing substituents and not on carbon atoms bearing electron-releasing substituents.
+
+
+\subsection{Side-chain reactions}
+
+\subsubsection{The Clemmensen reduction \normalfont(Section 17-11B)}
+
+\chemeq{bz2arr_2}{
+  \chemfig{[:-30]**6(---(-([:60]=O)([:-60]-R))---)}
+  \chemar[2]{->[\chemfig{Zn{(}Hg{)}}][dilute \chemfig{HCl}]}
+  \chemfig{[:-30]**6(---(-CH_2-R)---)}
+}
+
+\subsubsection{Permanganate oxidation \normalfont(Section 17-14A)}
+
+\chemeq[bzkyl2bzacid_2]{bzkyl2bzacid_1}{
+  \chemname{\chemfig{[:-30]**6(---(-CH_2-R)---)}}
+           {an alkylbenzene}
+  \arrow(.mid east--.mid west){->[hot, concd. \chemfig{KMnO_4}][\chemfig{\Water}]}[,2.2]
+  \chemname{\chemfig{[:-30]**6(---(-COO^{-}|^{+}K)---)}}
+           {a benzoic acid salt}
+}
+
+\subsubsection{Side-chain halogenation \normalfont(Section 17-14B)}
+
+\chemeq{arr2arr_1}{
+  \chemname{\chemfig{!\precyc**6(---(-CH_2-R)---)}}
+           {an alkylbenzene}
+  \arrow(.mid east--.mid west){->[\chemfig{Br_2}][$h\nu$]}
+  \chemname{\chemfig{!\precyc**6(---(-([:60]-Br)([:-60]-R))---)}}
+           {an $\alpha$-bromo alkylbenzene}
+}
+
+\subsubsection{Nucleophilic substitution at the benzylic position \normalfont(Section 17-14C)}
+
+The benzylic position is activated toward both S\textsubscript N1 and S\textsubscript N2 displacements.
+\chemeq{bz2bz_2}{
+  \chemname{\chemfig{!\precyc**6(---(-([:60]-X)([:-60]-R))---)}}
+           {an $\alpha$-halo alkylbenzene}
+  + \chemfig{\Lewis{0:,Nuc}^{-}}
+  \chemar{->}
+  \chemfig{!\precyc**6(---(-([:60]-Nuc)([:-60]-R))---)}
+  + \chemfig{X^{-}}
+}
+
+
+\subsection{Oxidation of phenols to quinones \normalfont(Section 17-15A)}
+
+\chemeq{ph2qui_1}{
+  \chemfig{!\precyc**6(---(=OH)-(-Cl)--)}
+  \chemar[1.3]{->[\chemfig{Na_2Cr_2O_7}][\chemfig{H_2SO_4}]}
+  \chemfig{O=*6(-=-(=O)-(-Cl)=-)}
+}
+
+
+
+
+\section{Syntheses of Ketones and Aldehydes}
+
+
+\subsection{Oxidation of alcohols \normalfont(Section 11-2)}
+
+\subsubsection{Secondary alcohols $\longrightarrow$ ketones}
+
+\chemeq[al2ket_1]{al2ket_2}{
+  \chemfig{H-C([2]-R\rlap{$'$})([6]-R\rlap{$''$})-OH}
+  \chemar[1.5]{->[\chemfig{Na_2Cr_2O_7}][\chemfig{H_2SO_4}]}
+  \chemfig{C([:120]-R\rlap{$'$})([:-120]-R\rlap{$''$})=O}
+}
+
+\subsubsection{Primary alcohols $\longrightarrow$ aldehydes \normalfont(Section 11-2B)}
+
+\chemeq[al2ald_1]{al2ald_2}{
+  \chemfig{R-[:30]-[:-30]OH}
+  \chemar{->[\em{PCC}]}
+  \chemfig{C([:120]-R)([:-120]-H)=O}
+}
+
+
+\subsection{Ozonolysis of alkenes \normalfont(Section 8-15B)}
+
+\chemeq[ken2ahket_1]{ken2ahket_2}{
+  \chemname{\chemfig{C([:120]-R)([:-120]-H)=C([:-60]-R|')([:60]-R|'')}}
+           {alkene}
+  \chemar[1.5]{->[(1) \chemfig{O_3}][(2) \chemfig{{(}CH_3{)}_2S}]}
+  \chemname{\chemfig{C([:120]-R)([:-120]-H)=O}}
+         {aldehyde} +
+  \chemname{\chemfig{O=C([:-60]-R|')([:60]-R|'')}}
+         {ketone}
+}
+(gives aldehydes or ketones, depending on the starting alkene)
+
+
+\subsection{Friedel-Crafts acylation \normalfont(Section 17-11)}
+
+\chemeq[ph2ket_1]{ph2ket_2}{
+  \chemname{\chemfig{R-C([2]=O)-Cl}} {acyl halide}
+  + \chemfig{G-**6(------)}
+  \chemar{->[\chemfig{AlCl_3}]}
+  \chemname{\chemfig{G-**6(---(-C([2]=O)-R)---)}} {aryl ketone}
+  + (+ortho)
+}
+R = alkyl or aryl; G =  hydrogen, an activating group or halogen.
+
+\subsubsection{The Gatterman-Kochformylation \normalfont(Section 17-11C)}
+
+\chemeq[ph2ald_1]{ph2ald_2}{
+  \chemfig{G-**6(------)} + \chemfig{CO} + \chemfig{HCl}
+  \chemar[1.5]{->[\chemfig{AlCl_3}/\chemfig{CuCl}]}
+  \chemname{\chemfig{G-**6(---(-C([:60]=O)([:-60]-H))---)}} {benzaldehyde}
+}
+
+
+\subsection{Hydration of alkynes \normalfont(Section 9-9F)}
+
+\subsubsection{Catalyzed by acid and mercuric salts (Markovnikov orientation)}
+
+\chemeq[kyn2ket_1]{kyn2ket_2}{
+  \chemfig{R-C~C-H}
+  \chemar[2]{->[\chemfig{Hg^{2+}}, \chemfig{H_2SO_4}][\chemfig{\Water}]}
+  \chemname{\chemleft[
+            \chemfig{C([:120]-R)([:-120]-[,,,2]HO)=C([:-60]-H)([:60]-H)}
+            \chemright]}
+           {enol (not isolated)}
+  \chemar{->}
+  \chemname{\chemfig{C(-[:120]R)(=[:-120]O)-CH_3}} {methyl ketone}
+}
+
+\subsubsection{Hydroboration-oxidation (anti-Markovnikov orientation)}
+
+\chemeq[kyn2ald_1]{kyn2ald_2}{
+  \chemfig{R-C~C-H}
+  \chemar[2]{->[(1) \chemfig{Sia_2BH\cdot THF}][(2) \chemfig{H_2O_2}, \chemfig{NaOH}]}
+  \chemname{\chemleft[
+            \chemfig{C([:120]-R)([:-120]-H)=C([:-60]-H)([:60]-OH)}
+            \chemright]}
+           {vinyl alcohol\\(unstable)}
+  \chemar{<->>}
+  \chemname{\chemfig{R-C([2]-H)([6]-H)-C([:60]=O)([:-60]-H)}}
+           {aldehyde\\(stable)}
+}
+
+
+\subsection{Alkylation of 1,3-dithianes \normalfont(Section 18-8)}
+
+\chemeq{dith2ket_1}{
+  \chemname { \chemfig{S*6(-([:-30]-H)([:-150]-H)-S----)} }
+            {1,3-dithiane}
+  \arrow{->[(1) \chemfig{BuLi}][(2) 1\degree \chemfig{R-X}][10pt]}[,1.5]
+  \chemname{ \chemfig{S*6(-([:-30]-H)([:-150]-R)-S----)} }
+           {thioacetal}
+  \arrow(bb--cc){->[(1) \chemfig{BuLi}][(2) 1\degree \chemfig{R'-X}][10pt]}[,1.5]
+  \chemname{ \chemfig{S*6(-([:-30]-R|')([:-150]-R)-S----)} }
+           {thioketal}
+  \chemnameinit{}
+  \arrow(@bb--){->[*{0}\chemfig{H_3O^+}][*{0}\chemfig{HgCl_2}]}[-90]
+  \chemname{ \chemfig{([2]=O)([:-150]-R)([:-30]-H)} } {aldehyde}
+  \arrow(@cc--){->[*{0}\chemfig{H_3O^+}][*{0}\chemfig{HgCl_2}]}[-90]
+  \chemname{ \chemfig{([2]=O)([:-150]-R)([:-30]-R|')} } {ketone}
+}
+
+
+\subsection{Synthesis of ketones using organolithium reagents with carboxylic acids \normalfont(Section 18-9)}
+
+\chemeq[acid2ket_2]{acid2ket_1}{
+  \chemfig{C([:120]-R)([:-120]-HO)=O}
+  \chemar{->[2\chemfig{R|'-Li}]}
+  \chemfig{R-C([2]-OLi)([6]-OLi)-R|'}
+  \chemar{->[\chemfig{H_3O^+}]}
+  \chemfig{C([:120]-R)([:-120]-R')=O}
+}
+
+
+\subsection{Synthesis of ketones from nitriles \normalfont(Section 18-10)}
+
+\chemeq{ntrl2ket_1}{
+  \chemfig{R-C~\Lewis{0:,N}} + \chemname{\chemfig{R|'-MgX}}{or \chemfig{R|'-Li}}
+  \chemar{->}
+  \chemname{\chemfig{R-C([2]=N([0]-MgX))-R|'}} {Mg salt or imine}
+  \chemar{->[\chemfig{H_3O^+}]}
+  \chemfig{R-C([2]=O)-R|'}
+}
+
+
+\subsection{Aldehyde synthesis by reduction of acid chlorides \normalfont(Section 18-11)}
+
+\chemeq[ach2ald_2]{ach2ald_1}{
+  \chemfig{R-C([2]=O)-Cl}
+  \chemar[2.5]{->[\chemfig{Li^{+}|^{-}AlH{(}O\-t\-Bu{)}_3}][(or \chemfig{H_2} Pd, \chemfig{BaSO_4}, S)]}
+  \chemfig{R-C([2]=O)-H}
+}
+
+
+\subsection{Ketone synthesis from acid chlorides \normalfont(Section 18-11)}
+
+\chemeq{acid2ket_3}{
+  \chemfig{R|'-C([2]=O)-Cl} + \chemfig{R_2CuLi}
+  \chemar{->}
+  \chemfig{R|'-C([2]=O)-R}
+}
+
+
+
+
+\section{Reactions of Ketones and Aldehydes}
+
+
+\subsection{Addition of organometallic reagents \normalfont(Sections 9-7B and 10-9)}
+
+\chemeq[ket2al_1]{ket2al_2}{
+  \chemfig{R-C([2]=O)-R|'} + \chemname{\chemfig{R|''-M}} {(M=MgX, Li, etc.)}
+  \chemar{->}
+  \chemname{\chemfig{R-C([2]-O|^{-}|^{+}M)([6]-R|'')-R|'}}{alkoxide}
+  \chemar{->[\chemfig{H_3O^+}]}
+  \chemname{\chemfig{R-C([2]-OH)([6]-R|'')-R|'}}{alcohol}
+}
+
+
+\subsection{Reduction \normalfont(Sections 10-12 and 18-21)}
+
+\chemeq[ket2al_3,ket2al_4]{ket2al_5}{
+  \chemname{\chemfig{R-C([2]=O)-R|'}}{ketone or \\ aldehyde}
+  \chemar[2.3]{->[\chemfig{NaBH_4} or \chemfig{LiAlH_4}][or \chemfig{H_2}/Ranney nickel]}
+  \chemname{\chemfig{R-C([2]-O|^{-})([6]-H)-R|'}}{alkoxide}
+  \chemar[0.8]{->[\chemfig{H^+}]}
+  \chemname{\chemfig{R-C([2]-OH)([6]-H)-R|'}}{alcohol}
+}
+
+\subsubsection{Clemmensen reduction \normalfont(Sections 17-11B and 18-21C)}
+
+\chemeq{ket2kan_1}{
+  \chemname{\chemfig{R-C([2]=O)-R|'}}
+           {ketone or aldehyde}
+  + \chemfig{Zn{(}Hg{)}}
+  \chemar{->[\chemfig{HCl}]}
+  \chemfig{R-[:30]-[:-30]R|'}
+}
+
+\subsubsection{Wolff-Kishner reduction \normalfont(Section 18-21C)}
+
+\chemeq{ket2kan_2}{
+  \chemfig{R-C([2]=O)-R|'} +
+  \chemname{\chemfig{H_2N-NH_2}}{hydrazine}
+  \chemar{->}
+  \chemname{\chemfig{R-C([2]=N([0]-NH_2))-R|'}} {hydrazone}
+  \chemar{->[\chemfig{KOH}][heat]}
+  \chemfig{R-[:30]-[:-30]R|'}
+  + \chemfig{\Water} + \chemfig{N_2}$\uparrow$
+}
+
+
+\subsection{The Wittig reaction \normalfont(Section 18-13)}
+
+\chemeq{ket2kan_3}{
+  \chemfig{Ph_3|\chemabove{P}{\scriptstyle +}-\Lewis{0:,C}|^{-}([:60]-[,,1]R)([:-60]-[,,1]R)} +
+  \chemfig{C([:120]-[,,,1]R|')([:-120]-[,,,1]R|')=O}
+  \chemar{->}
+  \chemfig{C([:120]-[,,,1]R)([:-120]-R)-C([:60]-R|')([:-60]-R|')}
+  + \chemfig{Ph_3P=O}
+}
+
+
+\subsection{Hydration \normalfont(Section 18-14)}
+
+\chemeq{ket2al_6}{
+  \chemname{ \chemfig{R-C([2]=O)-R|'} } {ketone or aldehyde} + \chemfig{\Water}
+  \chemar{<=>}
+  \chemname{\chemfig{R-C([1]-OH)([3]-[,,,2]HO)-R|'}} {hydrate}
+}
+
+
+\subsection{Formation of cyanohydrins \normalfont(Section 18-15)}
+
+\chemeq{ket2al_7}{
+  \chemname{ \chemfig{R-C([2]=O)-R|'} } {ketone or aldehyde} + \chemfig{HCN}
+  \chemar{<=>[\chemfig{^{-}CN}]}
+  \chemname{\chemfig{R-C([1]-CN)([3]-[,,,2]HO)-R|'}} {cyanohydrin}
+}
+
+
+\subsection{Condensations of Amines with Ketones and Aldehydes \normalfont(Sections 18-16, 18-17, 19.10)}
+
+\chemeq[amn2amn_2,amn2amn_3,amn2amn_4]{amn2amn_1}{
+  \chemfig{!\no([:120]-)([:-120]-)=O} + \chemfig{H_2\lewis{2:,N}-Z}
+  \chemar{->[\chemfig{H^+}]}
+  \chemfig{!\no([:120]-)([:-120]-)=\lewis{2:,N}-Z} + \chemfig{\Water}
+}
+
+\noindent
+\begin{tabular}{lllll}
+
+Z in \chemfig{H_2\lewis{2:,N}-Z} &  \multicolumn{2}{c}{Reagent} & \multicolumn{2}{c}{Product} \\
+\hline
+
+\smallskip
+\chemfig{!\no-H} &  \chemfig{H_2\lewis{2:,N}-H} & ammonia &
+\chemfig{!\no([:160]-)([:-160]-)=\lewis{2:,N}-H} & an imime \\
+
+\smallskip
+\chemfig{!\no-R} &  \chemfig{H_2\lewis{2:,N}-R} & primary amine &
+\chemfig{!\no([:160]-)([:-160]-)=\lewis{2:,N}-R} &  an imine (Schiff base) \\
+
+\smallskip
+\chemfig{!\no-OH} &  \chemfig{H_2\lewis{2:,N}-OH} & hydroxylamine &
+\chemfig{!\no([:160]-)([:-160]-)=\lewis{2:,N}-OH} &  an oxime \\
+
+\smallskip
+\chemfig{!\no-NH_2} &  \chemfig{H_2\lewis{2:,N}-NH_2} & hydrazine &
+\chemfig{!\no([:160]-)([:-160]-)=\lewis{2:,N}-NH_2} &  a hydrazone \\
+
+\smallskip
+\chemfig{!\no-NHPh} &  \chemfig{H_2\lewis{2:,N}-NHPh} & phenylhydrazine &
+\chemfig{!\no([:160]-)([:-160]-)=\lewis{2:,N}-NHPh} &  a phenylhydrazone \\
+
+\smallskip
+\chemfig{!\no-NH-C([2]=O)-NH_2} & %\chemfig{H_2\lewis{2:,N}-NH-C([2]=O)-NH_2}
+& semicarbazide &
+%\chemfig{!\no([:160]-)([:-160]-)=\lewis{2:,N}-NH-C([2]=O)-NH_2}
+&  a semicarbazone
+
+\end{tabular}
+\vskip 2ex
+
+\subsection{Formation of acetals \normalfont(Section 18-18)}
+\chemeq{ket2acl_1}{
+  \chemname{\chemfig{R-C([2]=O)-R|'} }
+           {ketone or aldehyde}
+  \quad + \quad
+  \chemname{\chemfig{R|''-OH}}{1\degree alcohol}
+  \chemar{<=>[\chemfig{H^+}]}
+  \chemname{\chemfig{R-C([1]-OR|'')([3]-[,,,3]R|''O)-R|'}} {acetal}
+  + \chemfig{\Water}
+}
+
+
+\subsection{Oxidation of aldehydes \normalfont(Section 18-20)}
+
+\chemeq{ald2acid_1}{
+  \chemname{\chemfig{R-C([2]=O)-H} } {aldehyde}
+  \chemar[4]{->[chromic acid, permanganate, \chemfig{Ag^+}, etc.]}
+  \chemname{ \chemfig{R-C([2]=O)-OH} } {acid}
+}
+
+
+\subsection{Reactions of ketones and aldehydes at their $\alpha$ positions}
+
+This large group of reactions is covered in Chapter 22.
+
+
+
+\section{Reactions of Amines}
+
+
+\subsection{Reaction as a proton base \normalfont(Section 19-5)}
+
+\chemeq{amn2amns_1}{
+  \chemname{\chemfig{R-\lewis{0:,N}([:60]-H)([:-60]-H)} } {base}
+  + \chemname{\chemfig{H-X} } {proton acid}
+  \chemar{<=>}
+  \chemname{\chemfig{R-\chemabove{N}{\quad\scriptstyle+}(-[2]H)(-[6]H)-H|\quad X^{-} } }
+           {ammonium salt}
+}
+
+
+\subsection{Reactions with ketones and aldehydes \normalfont(Sections 18-16, 18-17, and 19-10)}
+
+\chemeq{amn2amm_1}{
+  \chemname{\chemfig{C([2]=O)([:-30]-R|')([:-150]-R)}}
+           {ketone or aldehyde} +
+  \chemfig{Y-\lewis{2:,N}H_2}
+  \chemar{<=>[\chemfig{H^+}]}
+  \chemname{\chemleft[
+            \chemfig{C([1]-\lewis{4:,N}([0]-H)([2]-Y))([3]-[,,,2]HO)([5]-R)([7]-R|')}
+            \chemright]}
+            {carbinolamine}
+  \chemar{<=>[\chemfig{H^+}]}
+  \chemname{\chemfig{C([2]=\lewis{3:,N}([1]-Y))([:-30]-R|')([:-150]-R)} }
+           {derivative}
+}
+Y = H or alkyl gives an imine,  Y = OH gives an oxime and Y = NHR gives a hydrazone.
+
+
+\subsection{Alkylation \normalfont(Section 19-12)}
+
+\chemeq{amn2aamn_1}{
+  \chemname{\chemfig{R-\lewis{2:,N}H_2}}{amine} +
+  \chemname{\chemfig{R|'-CH_2-Br}}{1\degree halide}
+  \chemar{->}
+  \chemname{\chemfig{R-\chemabove{N}{\scriptstyle +}H_2-CH_2-R|'\quad^{-}Br}}
+           {salt of alkilated amine}
+}
+Overalkylation is common.
+
+
+\subsection{Acylation to form amides \normalfont(Section 19-13)}
+
+\chemeq{amn2amd_1}{
+  \chemname{\chemfig{Y-\lewis{2:,N}H_2}} {amine} +
+  \chemname{\chemfig{R-C([2]=O)-Cl}} {acid chloride}
+  \chemar{->[pyridine]}
+  \chemname{ \chemfig{R-C([2]=O)-\lewis{2:,N}H-R|'} } {amide}
+}
+
+
+\subsection{Reaction with sulfonyl chlorides \normalfont(Section 19-14)}
+
+\chemeq{amn2sfnd_1}{
+  \chemfig{Y-\lewis{2:,N}H_2} +
+  \chemname{ \chemfig{Cl-S([2]=O)([6]=O)-R|'} } {sulfonyl chloride}
+  \chemar{->}
+  \chemname{ \chemfig{R-\lewis{2:,N}H-S([2]=O)([6]=O)-R|'} } {sulfonide} +
+  \chemfig{HCl}
+}
+
+\subsection{Hofmann and Cope eliminations}
+
+\subsubsection{Hofmann elimination \normalfont(Section 19-15)}
+
+Conversion to quaternary ammonium hydroxide
+\chemeq{amn2amnhx_1}{
+  \chemfig{R-[:30]-[:-30]-[:30]\lewis{3:,N}H_2}
+  \chemar{->[3\chemfig{CH_3I}]}
+  \chemfig{R-[:30]-[:-30]-[:30]\chemabove{N}{\scriptstyle+}{(}CH_3{)}_3\quad^{-}I}
+}
+
+\chemeq{amn2amnhx_2}{
+  \chemfig{R-[:30]-[:-30]-[:30]\lewis{3:,N}H_2}
+  \chemar{->[\chemfig{Ag_2O}]}
+  \chemfig{R-[:30]-[:-30]-[:30]\chemabove{N}{\scriptstyle+}{(}CH_3{)}_3\quad^{-}OH}
+}
+
+
+\bigskip
+Elimination
+
+\chemeq[amn2ken_1]{amn2ken_2}{
+  \chemfig{R-C([2]-[@{d3},,,5]HO@{d1}^{-}|\qquad @{d2}H)([6]-H)
+           -[@{d4}]C([2]-H)([6]-[@{d5},,,2]@{d6}^{+}|N|{(}CH_3{)}_3)-H}
+  \chemmove[->,red]{
+    \draw(d1)..controls +(-60:5mm) and +(-120:5mm)..(d2);
+    \draw(d3)..controls +(0:2mm) and +(90:2mm)..(d4);
+    \draw(d5)..controls +(180:2mm) and +(90:2mm)..(d6);}
+  \chemar{->[heat]}
+  \chemfig{C([:120]-R)([:-120]-H)=C([:-60]-H)([:60]-H)} +
+  \chemfig{\lewis{4:,N}{(}CH_3{)}_3} + \chemfig{\Water}
+}
+Hofmann elimination usually gives the least substituted alkene.
+
+\subsubsection{Cope elimination of a tertiary amine oxide \normalfont(Section 19-16)}
+
+\chemeq{amn2ken_3}{
+  \chemfig{R-C([2]-H)([6]-H)-C([6]-R|')([2]-\lewis{4:,N}|{(}CH_3{)}_2)-H}
+  \chemar{->[peracid][or \chemfig{H_2O_2}]}
+  \chemfig{R-C([2]-[@{e1}]@{e6}H)([6]-H)-[@{e2}]C([6]-H)
+           ([2]-[@{e3},,,2]@{e4}^{+}|N|{(}CH_3{)}_2([2]-[,,2,2]@{e5}^{-}|O))-H}
+  \chemmove[->,red]{
+    \draw(e1)..controls +(0:2mm) and +(90:2mm)..(e2);
+    \draw(e3)..controls +(-180:2mm) and +(-90:2mm)..(e4);
+    \draw(e5)..controls +(-180:5mm) and +(90:5mm)..(e6);}
+  \chemar{->[heat]}
+  \chemfig{C([:120]-R)([:-120]-H)=C([:-60]-R|')([:60]-H)} +
+  \chemfig{HO-\lewis{2:,N}|{(}CH_3{)}_3}
+}
+Cope elimination also gives the least highly substituted alkene.
+
+
+\subsection{Oxidation \normalfont(Section 19-16)}
+
+\subsubsection{Secondary amines}
+
+\chemeq{amn2hxamn_1}{
+  \chemname{\chemfig{R_2\Lewis{2:,N}-H}} {2\degree amine} + \chemfig{H_2O_2}
+  \chemar{->}
+  \chemname{\chemfig{R_2\Lewis{2:,N}-OH}} {a 2\degree hydroxylamine} + \chemfig{\Water}
+}
+
+\subsubsection{Tertiary amines}
+
+\chemeq{amn2amnox_1}{
+  \chemname{\chemfig{R_3\Lewis{0:,N}}}{3\degree amine}
+  \hspace{5mm} + \hspace{5mm}
+  \chemname{\chemfig{H_2O_2}} {(or \chemfig{ArCO_3H})}
+  \chemar{->}
+  \chemname{\chemfig{R_3\chemabove{N}{+}-\chemabove{O}{-}}} {3\degree amine oxide}
+  \hspace{5mm} + \hspace{5mm}
+  \chemname{\chemfig{\Water}} {(or \chemfig{ArCOOH})}
+}
+
+
+\subsection{Diazotization (Section 19-17)}
+
+\chemeq{amn2damn_1}{
+  \chemfig{R-\Lewis{2:,N}H_2}
+  \chemar{->[\chemfig{NaNO_2}][\chemfig{HCl}]}
+  \chemfig{R-\chemabove{N}{+}~\lewis{0:,N}|\quad Cl^{-}}
+  \qquad R can be alkyl or aryl.
+}
+
+
+Reactions of diazonium salts(Section 19-18)
+
+\subsubsection{Hydrolysis}
+
+\chemeq{damn2al_1}{
+  \chemfig{Ar-\chemabove{N}{+}~\lewis{0:,N}|\quad Cl^{-}}
+  \chemar{->[\chemfig{H^+}, heat][\chemfig{\Water}]}
+  \chemfig{Ar-OH} + \chemfig{N_2}$\uparrow$ + \chemfig{HCl}
+}
+
+\subsubsection{The Sandmeyer reaction}
+
+\chemeq{damn2ah_1}{
+  \chemfig{Ar-\chemabove{N}{+}~\lewis{0:,N}|\quad Cl^{-}}
+  \chemar[2]{->[\chemfig{CuX}][X = Cl, Br, \chemfig{C~N}]}
+  \chemfig{Ar-X} + \chemfig{N_2}$\uparrow$
+}
+
+\subsubsection{Replacement by fluoride or iodide}
+
+\chemeq{damn2ah_2}{
+  \chemfig{Ar-\chemabove{N}{+}~\lewis{0:,N}|\quad Cl^{-}}
+  \chemar{->[\chemfig{HBF_4}]}
+  \chemfig{Ar-\chemabove{N}{+}~\lewis{0:,N}|\quad BF_4^{-}}
+  \chemar{->[heat]}
+  \chemfig{Ar-F} + \chemfig{BF_3} + \chemfig{N_2}$\uparrow$
+}
+
+\chemeq{damn2ah_3}{
+  \chemfig{Ar-\chemabove{N}{+}~\lewis{0:,N}|\quad Cl^{-}}
+  \chemar{->[\chemfig{KI}]}
+  \chemfig{Ar-I} + \chemfig{KCl} + \chemfig{N_2}$\uparrow$
+}
+
+\subsubsection{Reduction to hydrogen}
+
+\chemeq{damn2kan_1}{
+  \chemfig{Ar-\chemabove{N}{+}~\lewis{0:,N}|\quad Cl^{-}}
+  \chemar{->[\chemfig{H_3PO_2}]}
+  \chemfig{Ar-H} + \chemfig{N_2}$\uparrow$
+}
+
+\subsubsection{Diazo coupling}
+
+\chemeq{}{
+  \chemfig{Ar-\chemabove{N}{+}~\lewis{0:,N}} \hspace{5mm} + \hspace{5mm}
+  \chemname{\chemfig{H-Ar|'}} {(activated)}
+  \chemar{->}
+  \chemname{\chemfig{Ar-\lewis{2:,N}=\lewis{2:,N}-Ar|'}} {an azo compaund}
+  + \chemfig{H^+}
+}
+
+
+
+\section{Synthesis of amines}
+
+
+\subsection{Reductive amination \normalfont(Section 19-19)}
+
+\subsubsection{Primary amines}
+
+\chemeq[amn2amn_1]{amn2amn_2}{
+  \chemfig{R-C([2]=O)-R'} +
+  \chemname{\chemfig{H_2N-OH}}{hydroxilamine}
+  \chemar{->[\chemfig{H^+}]}
+  \chemname{\chemfig{R-C([2]=\Lewis{4:,N}([0]-OH))-R'}}{oxime}
+  \chemar[1.2]{->[reduction]}
+  \chemname{\chemfig{R-CH([2]-\Lewis{4:,N}H_2)-R'}}{1\degree amine}
+}
+
+\subsubsection{Secondary amines}
+
+\chemeq[amn2amn_1]{amn2amn_3}{
+  \chemfig{R-C([2]=O)-R'} +
+  \chemname{\chemfig{H_2N-R''}}{1\degree amine}
+  \chemar{->[\chemfig{H^+}]}
+  \chemname{\chemfig{R-C([2]=\Lewis{4:,N}([0]-R''))-R'}}{N-substituted imine}
+  \chemar[1.2]{->[reduction]}
+  \chemname{\chemfig{R-CH([2]-\Lewis{4:,N}HR'')-R'}}{2\degree amine}
+}
+
+\subsubsection{Tertiary amines}
+
+\chemeq[amn2amn_1]{amn2amn_4}{
+  \chemfig{R-C([2]=O)-R'} +
+  \chemname{\chemfig{R\rlap{$^{''}$}-NH-R|\rlap{$^{''}$}}}{2\degree amine}
+  \chemar{->[\chemfig{H^+}]}
+  \chemname{\chemfig{R-C([2]=\chemabove{N}{+}([4]-R\rlap{$^{''}$})([0]-R\rlap{$^{''}$}))-R'}}{iminimum salt}
+  \chemar[1.2]{->[reduction]}
+  \chemname{\chemfig{R-CH([2]-\Lewis{2:,N}([4]-R\rlap{$^{''}$})([0]-R\rlap{$^{''}$}))-R'}}{3\degree amine}
+}
+
+
+\subsection{Acylation-reduction of amines \normalfont(Section 19-20)}
+
+\chemeq{amn2amn_5}{
+  \chemname{\chemfig{R-\Lewis{2:,N}H_2}}{amine} +
+  \chemname{\chemfig{Cl-C([2]=O)-R'}}{acid chloride}
+  \chemar[1.2]{->[acylation]}
+  \chemname{\chemfig{R-\Lewis{2:,N}H-C([2]=O)-R'}}
+           {amide}
+  \chemar[1.2]{->[(1) \chemfig{LiAlH_4}][(2) \chemfig{\Water}]}
+  \chemname{\chemfig{R-\Lewis{2:,N}H-CH_2-R'}}{alkylated amine}
+}
+
+
+\subsection{Alkylation of ammonia \normalfont(Section 19-21A)}
+
+\chemeq[ah2amn_1]{ah2amn_2}{
+  \chemfig{R-[:30]-[:-30]X} + \chemname{\chemfig{\Ammonia}}{excess}
+  \chemar{->}
+  \chemfig{R-[:30]-[:-30]\Lewis{2:,N}H_2} + \chemfig{HX}
+}
+
+
+\subsection{The Gabriel synthesis of primary amines \normalfont(Section 19-21A)}
+
+\chemeq{ah2amn_3}{
+  \chemfig{R-X} + \hspace{-8mm}
+  \chemname{\chemfig{!\precyc*3(-[,,,,draw=none]**6(--*5(-(=O)-\Lewis{0:4:,N}|^{-\hspace{1mm}+}K-(=O)-)----))}}
+           {phthalimide anion}
+  \chemar{->} \hspace{-8mm}
+  \chemname{\chemfig{!\precyc*3(-[,,,,draw=none]**6(--*5(-(=O)-\Lewis{0:4:,N}(-R)-(=O)-)----))}}
+           {N-alkyl phthalimide}
+  \chemar[1.2]{->[\chemfig{H_2NNH_2}][heat]}
+  \chemnameinit{}
+  \chemname{\chemfig{R-\Lewis{2:,N}H_2}}{1\degree amine}
+}
+
+
+\subsection{Reduction of azides \normalfont(Section 19-21B)}
+
+\chemeq{azd2amn_1}{
+  \chemname{\chemfig{R-\Lewis{2:,N}=\chemabove{N}{+}=\chemabove[1pt]{\Lewis{2:0:,N}}{\quad\scriptstyle-}}}
+           {alkyl azide}
+  \chemar[1.3]{->[\chemfig{LiAlH_4}][or \chemfig{H_2/Pd}]}
+  \chemname{\chemfig{R-\Lewis{2:,N}H_2}}{1\degree amine}
+}
+
+
+\subsection{Reduction of nitriles \normalfont(Section 19-21B)}
+
+\chemeq{ntrl2amn_1}{
+  \chemname{\chemfig{R-C~\Lewis{0:,N}}}
+           {nitrile}
+  \chemar[1.8]{->[\chemfig{LiAlH_4}][or \chemfig{H_2}/catalys]}
+  \chemname{\chemfig{R-[:30]-[:-30]\Lewis{2:,N}H_2}}
+           {1\degree amine}
+}
+
+
+\subsection{ Reduction of nitro compounds \normalfont(Section 19-21C)}
+
+\chemeq{ntro2amn_1}{
+  \chemfig{R-NO_2}
+  \chemar[2.2]{->[active metal and \chemfig{H^+}][or \chemfig{H_2}/catalys]}
+  \chemfig{R-\Lewis{2:,N}H_2}
+  \qquad
+  \makecell{active metal = Fe, Zn, Sn\\catalyst = Ni, Pd, or Pt}
+}
+
+
+\subsection{The Hofmann rearrangement \normalfont(Section 19-21D)}
+
+\chemeq{amd2amn_1}{
+  \chemname{\chemfig{R-C(=[2]O)-\Lewis{2:,N}H_2}}
+           {1\degree amide}
+   + \chemfig{4NaOH} + \chemname{\chemfig{X_2}}{X = Cl or Br}
+  \chemar{->}
+  \chemfig{R-\Lewis{2:,N}H_2}
+  + \chemfig{2NaX} + \chemfig{Na_2CO_3} + \chemfig{2H_2O}
+}
+
+
+\subsection{Nucleophilic aromatic substitution \normalfont(Section 17-12)}
+
+\chemeq{amn2amn_6}{
+  \chemfig{R-\vpha|\Lewis{2:,N}H_2}
+  +
+  \chemfig{Ar-X}
+  \chemar{->}
+  \chemfig{R-\vpha|\Lewis{2:,N}H-Ar}
+  +
+  \chemfig{HX}
+}
+(The aromatic ring should be activated toward nucleophilic attack.)
+
+
+
+\section{Syntheses of Carboxylic Acids}
+
+
+\subsection{Oxidation of primary alcohols and aldehydes \normalfont(Sections ll-2B and 18-20)}
+
+\chemeq{al2acid_2}{
+  \chemname{\chemfig{R-[:30]-[:-30]OH}}
+           {1\degree alcohol}
+  \chemar[1.2]{->[\chemfig{H_2CrO_4}][or \chemfig{KMnO_4}]}
+  \chemname{\chemfig{R-C(=[2]O)-H}}{aldehyde}
+  \chemar[1.2]{->[\chemfig{H_2CrO_4}][or \chemfig{KMnO_4}]}
+  \chemname{\chemfig{R-C(=[2]O)-OH}}{carboxilic acid}
+}
+
+
+\subsection{Oxidative cleavage of alkenes and alkynes \normalfont(Sections 8-15A and 9-10)}
+
+\chemeq[ken2ket2acid_1]{ken2ket2acid_2}{
+  \chemfig{C([:120]-R)([:-120]-R)=C([:-60]-H)([:60]-R|')} +
+  \chemar{->[\chemfig{KMnO_4}][concd.]}
+  \chemname{\chemfig{C([:120]-R)([:-120]-R)=O}}{ketone} +
+  \chemname{\chemfig{O=C([:-60]-OH)([:60]-R|')}}{acid}
+}
+
+\chemeq[kyn2acid_1]{kyn2acid_2}{
+  \chemfig{R-C~C-R|'}
+  \chemar[2]{->[concd. \chemfig{KMnO_4}][or (1) \chemfig{O_3}, (2) \chemfig{\Water}]}
+  \chemfig{R-C([:60]-OH)([:-60]=O)} +
+  \chemfig{C([:120]-OH)([:-120]=O)-R|'}
+}
+
+
+\subsection{Oxidation of alkylbenzenes \normalfont(Section  17-14A)}
+
+\chemeq[bzkyl2bzacid_1]{bzkyl2bzacid_2}{
+  \chemname{\chemfig{**6(-(-[::120,,,,,draw=none]-[:-120,1.5]Z)--(-R|{(}alkyl{)})---)}}
+           {alkylbenzene}
+  \chemar[2]{->[\chemfig{Na_2Cr_2O_7},\chemfig{H_2SO_4}][or \chemfig{KMnO_4},\chemfig{!\Water}]}
+  \chemname{\chemfig{**6(-(-[::120,,,,,draw=none]-[:-120,1.5]Z)--(-COOH)---)}}
+           {benzoic acid}
+  \makecell{Z must be \\oxidation-resistant}
+}
+
+
+\subsection{Carboxylation of Grignard reagents \normalfont(Section 20-SB)}
+
+\chemeq{om2acid_1}{
+  \chemfig{R-MgX}
+  \chemar[1.3]{->[\chemfig{O=C=O}]}
+  \chemfig{R-C(=[2]O)-O|^{-+}|MgX}
+  \chemar{->[\chemfig{H^+}]}
+  \chemfig{R-C(=[2]O)-OH}
+}
+R = alkyl or aryl
+
+
+\subsubsection{Hydrolysis of nitriles \normalfont(Section 20-8C)}
+
+\chemeq{ntrl2acid_1}{
+  \chemfig{R-CH_2-C~\Lewis{0:,N}}
+  \chemar[1.3]{->[\chemfig{H^+} or \chemfig{HO^{-}}][\chemfig{!\Water}]}
+  \chemfig{R-CH_2-C(=[2]O)-OH}
+}
+
+
+\subsection{The haloform reaction\normalfont(Chapter 22)}
+
+converts methyl ketones to acids and iodoform
+\chemeq[ket2acid_2]{ket2acid_1}{
+  \chemfig{R-C(=[2]O)-CH_3}
+  \chemar{->[\chemfig{X_2}][\chemfig{HO^{-}}]}
+  \chemfig{R-C(=[2]O)-O^{-}} + \chemfig{HCX_3}
+  \qquad X = Cl, Br, I
+}
+
+
+\subsection{Malonic ester synthesis \normalfont(Chapter 22)}
+
+makes substituted acetic acids
+\chemeq[malest_2]{malest_1}{
+  \chemfig{CH_2(-[2]COOEt)(-[6]COOEt)}
+  \chemar[2]{->[(1) \chemfig{Na^{+-}OCH_2CH_3}][(2) \chemfig{R-X}]}
+  \chemfig{HC(-[2,,2]COOEt)(-[6,,2]COOEt)-R}
+  \chemar[1.3]{->[(1)\chemfig{HO^{-}}][(2)\chemfig{H^+}, heat]}
+  \chemfig{R-[:-30]-[:30]C(-[2]OH)=O} + \chemfig{CO_2}
+}
+
+\section{Reactions of Carboxylic Acids}
+
+
+\subsection{Salt formation \normalfont(Section 20-5)}
+
+\chemeq{acid2acid_1}{
+  \chemfig{R-C(=[2]O)-OH} +
+  \chemname{\chemfig{M^{+-}OH}}{strong base}
+  \chemar{<->>}
+  \chemfig{R-C(=[2]O)-\vpha|O^{-+}M} + \chemfig{!\Water}
+}
+
+
+\subsection{ Conversion to esters \normalfont(Sections 20-10, 20-11, and 20-15)}
+Fisher esterification
+
+\chemeq{acid2est_1}{
+  \chemname{\chemfig{R-C(=[2]O)-OH}}{acid}
+  +
+  \chemname{\chemfig{R'-OH}}{alcohol}
+  \chemar{<=>[\chemfig{H^+}]}
+  \chemname{\chemfig{R-C(=[2]O)-O-R'}}{ester}
+}
+
+
+\subsection{Conversion to amides \normalfont(Sections 20-12 and 20-15)}
+
+\chemeq{acid2amd_1}{
+  \chemname{\chemfig{R-C(=[2]O)-OH}}{acid}
+  +
+  \chemname{\chemfig{H_2N-R'}}{amine}
+  \chemar{<->>}
+  \chemname{\chemfig{R-C(=[2]O)-O|^{-}\hspace{2mm}H_3N\rlap{$^+$}-R'}}{salt}
+  \chemar{->[heat]}
+  \chemname{\chemfig{R-C(=[2]O)-NH-R'}}{amide}
+}
+
+
+\subsection{Conversion to anhydrides \normalfont(Section 21-5)}
+
+\chemeq{acid2ahdr_1}{
+  \chemname{\chemfig{R-C(=[2]O)-OH}}{acid}
+  +
+  \chemname{\chemfig{Cl-C(=[2]O)-R'}}{acid chloride}
+  \chemar{->}
+  \chemname{\chemfig{R-C(=[2]O)-O-C(=[2]O)-R'}}{acid anhydride}
+  +
+  \chemfig{HCl}
+}
+
+
+\subsection{Reduction to primary alcohols \normalfont(Sections 10-11 and 20-13)}
+
+\chemeq[acid0est2alco_1]{acid0est2alco_2}{
+  \chemname{\chemfig{R-C(=[2]O)-OH}}{acid}
+  \chemar[3]{->[(1) \chemfig{LiAlH_4}][(2) \chemfig{H_3O^+} (or use {\em BH$_3\cdot$THF})]}
+  \chemname{\chemfig{R-[:30]-[:-30]OH}}{1\degree alcohol}
+}
+
+
+\subsection{Reduction to aldehydes \normalfont(Sections 18-11 and 20-13)}
+
+\chemeq[ach2ald_1]{ach2ald_2}{
+  \chemname{\chemfig{R-C(=[2]O)-Cl}}{acid chloride}
+  \chemar[4]{->[(1) \chemfig{LiAl{(}OC{(}CH_3{)}_3{)}_3H}][lithium tri-{\em tert}-butoxyaluminum hydride]}
+  \chemname{\chemfig{R-C(=[2]O)-H}}{aldehyde}
+}
+
+
+\subsection{Alkylation to form ketones \normalfont(Sections 18-9 and 20-14)}
+
+\chemeq[acid2ket_1]{acid2ket_2}{
+  \chemname{\chemfig{R-C(=[2]O)-O|^{-+}Li}}{lithium carboxilate}
+  \qquad + \qquad
+  \chemname{\chemfig{Li-R'}}{alkyllythium}
+  \chemar{->[\chemfig{!\Water}]}
+  \chemname{\chemfig{R-C(=[2]O)-R'}}{ketone}
+}
+
+
+\subsection{Conversion to acid chlorides \normalfont(Section 20-15)}
+
+\chemeq{acid2acidh_1}{
+  \chemname{\chemfig{R-C(=[2]O)-OH}}{acid}
+  +
+  \chemname{\chemfig{Cl-S(=[2]O)-Cl}}{thionyl chloride}
+  \chemar{->}
+  \chemname{\chemfig{R-C(=[2]O)-Cl}}{acid chloride}
+  +
+  \chemfig{SO_2\uparrow}
+  +
+  \chemfig{HCl\uparrow}
+}
+
+
+\subsection{Side-chain halogenation (Hell-Volhard-Zelinsky reaction), \normalfont(Section 22-4)}
+
+\chemeq[hvz_2]{hvz_1}{
+  \chemnameinit{\chemfig{\Chembelow{C}{H}=[2]O}}
+  \chemname{\chemfig{-\chembelow{C_{\hphantom{2}}}{H_2}-C(=[2]O)-\vphantom{H_2}OH}}{acid}
+  \chemar[1.2]{->[\chemfig{Br_2}/\chemfig{PBr_3}]}
+  \chemname{\chemfig{-\chembelow{C}{H}(-[2]Br)-C(=[2]O)-Br}}{$\alpha$-bromo acyl bromide}
+  \chemar{->[\chemfig{!\Water}]}
+  \chemname{\chemfig{-\chembelow{C}{H}(-[2]Br)-C(=[2]O)-OH}}{$\alpha$-bromoacid}
+  +
+  \chemfig{HBr}
+}
+
+
+
+\section{Enolate Additions and Condensations}
+
+A complete summary of additions and condensations would be long and involved. This summary covers the major classes of condensations and related reactions.
+
+\subsection{Alkylation of lithium enolates \normalfont(Section 22-3)}
+
+\chemeq{ket2ket_1}{
+  \chemfig{R-C(=[2]O)-CH_2-R}
+  \chemar[1.3]{->[(1) LDA][(2) {\setchemfig{chemfig style={green}}\chemfig{R'-X}}]}
+  \chemfig{R-C(=[2]O)-CH(-[2]\grn{R}|\grn{'})-R}
+}
+(LDA = lithium diisopropylamide; \chemfig{R'-X} = unhindered 1\degree halide or tosylate)
+
+
+\subsection{Alkylation of enamines (Stork reaction) \normalfont(Section 22-4)}
+
+\chemeq{ah2ket_1}{
+  \chemname{\chemfig{C(-[:-120])(-[@{x2}:120]@{x1}\Lewis{0:,N}(-[:60]R)(-[4]R))=[@{y1}]C(-[:60])(-[:-60])}}
+           {eminamine}
+  \chemar{->[{\setchemfig{chemfig style={green}}\chemfig{@{y2}R'-[@{z1}]@{z2}X}}]}
+  \chemname{\chemfig{C(-[:-120])(=[:120]N(-[:120,0.4,,,draw=none]{+}-[:120,0.4,,,draw=none]X^{-})(-[:60,,1]R)(-[4]R))-C(-[6])(-[2]\grn{R}|\grn{'})-}}
+           {alkylated eminamine}
+  \chemar{->[\chemfig{H_3O^+}]}
+  \chemname{\chemfig{C(-[:-120])(=[:120]O)-C(-[6])(-[2]\grn{R}|\grn{'})-}}
+           {alkylated ketone}
+  +
+  \chemfig{R-N\rlap{$^+$}(-[2]H)(-[6]H)-R}
+  \chemmove{\draw[->,red](x1)..controls +(0:5mm) and +(45:2mm)..(x2);}
+  \chemmove{\draw[->,red](y1)..controls +(90:10mm) and +(135:10mm)..(y2);}
+  \chemmove{\draw[->,red](z1)..controls +(90:3mm) and +(135:3mm)..(z2);}
+}
+
+
+\subsection{$\alpha$ halogenation \normalfont(Section 22-5)}
+
+\chemeq{ket2ket_2}{
+  \chemfig{R-C(=[2]O)-C\rlap{\color{red}$^\alpha$}(-[2]H)(-[6])-}
+  +
+  {\setchemfig{chemfig style={green}}\chemfig{X_2}}
+  \chemar{->[\chemfig{H^+} or][\chemfig{HO^{-}}]}
+  \chemfig{R-C(=[2]O)-C(-[2]\grn{X})(-[6])-}
+}
+
+\subsubsection{The iodoform (or haloform) reaction \normalfont(Section 22-5B)}
+
+\chemeq[ket2acid_1]{ket2acid_2}{
+  \chemname{\chemfig{R-C(=[2]O)-CH_3}}{methyl ketone}
+  \quad + \quad
+  \chemname{\chemfig{I_2}}{excess}
+  \chemar{->[\chemfig{HO^{-}}]}
+  \chemfig{R-C(=[2]O)-O^{-}}
+  +
+  \chemfig{HCI_3\downarrow}
+}
+
+\subsubsection{The Hell-Volhard-Zelinsky (HVZ) reaction \normalfont(Section 22-6)}
+
+\chemeq[hvz_1]{hvz_2}{
+  \chemname{\chemfig{-CH_2-C(=[2]O)-\vphantom{H_2}OH}}{acid}
+  \chemar[1.2]{->[{\setchemfig{chemfig style={green}}\chemfig{Br_2}/\chemfig{PBr_3}}]}
+  \chemname{\chemfig{-CH(-[2]\grn{Br})-C(=[2]O)-\grn{Br}}}
+           {$\alpha$-bromo acyl bromide}
+  \chemar{->[\chemfig{!\Water}]}
+  \chemname{\chemfig{-CH(-[2]\grn{Br})-C(=[2]O)-OH}}{$\alpha$-bromoacid}
+}
+
+
+\subsection{The aldol condensation and subsequent dehydration \normalfont(Sections 22-7 through 22-11)}
+
+\chemeq{ket2ket_3}{
+  \chemname{
+      \chemfig{H_2C(-[6,,2]R|')(-[2,,2]C(=[4]O)-[2]R)
+      -[,,,,draw=none]
+      \grn{C}(-[2,,,,green]\grn{R})(=[,,,,green]\grn{O})-[6,,,,green]\grn{C}|\grn{H_2}-[6,,,,green]\grn{R}|\grn{'}}
+    }{ketone or aldehyde}
+  \chemar{<=>[\chemfig{H^+} or][\chemfig{HO^{-}}]}
+  \chemname{
+      \chemfig{HC(-[6,,2]R|')(-[2,,2]C(=[4]O)-[2]R)-
+      \grn{C}(-[2,,,,green]\grn{R})(-[,,,,green]\grn{O}\grn{H})-[6,,,,green]\grn{C}|\grn{H_2}-[6,,,,green]\grn{R}|\grn{'}}
+    }{aldol product}
+  \chemar[1.5]{<=>[heat][\chemfig{H^+} or \chemfig{HO^{-}}]}
+  \chemname{
+      \chemfig{C(-[6]R|')(-[2]C(=[4]O)-[2]R)=
+      \grn{C}(-[2,,,,green]\grn{R})-[6,,,,green]\grn{C}|\grn{H_2}-[6,,,,green]\grn{R}|\grn{'}}
+    }{$\alpha,\beta$-unsaturated\\ketone or aldehyde}
+  +
+  \chemfig{!\Water}
+}
+
+
+\subsection{The Claisen ester condensation \normalfont(Sections 22-12 through 22-14)
+            \\(Cyclizations are the Dieckmann condensation.)}
+
+\chemeq{est2est_1}{
+  \chemfig{RO-C(=[6]O)-CH_2(-R')-[2,,,,draw=none]
+    \grn{C}(-[4,,,,green]\grn{R}|\grn{O})(=[2,,,,green]\grn{O})-[,,,,green]\grn{C}|\grn{H_2}-[,,,,green]\grn{R}|\grn{'}}
+  \chemar{<=>[\chemfig{RO^{-}}]}
+  \chemfig{RO-C(=[6]O)-CH(-R')-[2]
+      \grn{C}(=[2,,,,green]\grn{O})-[,,,,green]\grn{C}|\grn{H_2}-[,,,,green]\grn{R}|\grn{'}}
+  +
+  \chemfig{\grn{R}\grn{O}H}
+}
+The product is initially formed as its anion.
+
+
+\subsection{The malonic ester synthesis \normalfont(Section 22-16)}
+
+\chemeq[malest_1]{malest_2}{
+  \chemname{\chemfig{H-C(-H)(-[2]COOEt)(-[6]COOEt)}}
+           {malonic ester}
+  \chemar[1.8]{->[(1) \chemfig{NaOCH_2CH_3}][(2)\setchemfig{chemfig style=green}\chemfig{R-X}]}
+  \chemname{\chemfig{\grn{R}-C(-H)(-[2]COOEt)(-[6]COOEt)}}
+           {substitutes\\malonic ester}
+  \chemar{->[\chemfig{H_3O}][heat]}
+  \chemname{\chemfig{\grn{R}-[:30]-[:-30]COOH} + \chemfig{CO_2}}
+           {substituted\\acetic acid}
+}
+
+
+
+
+
+
+\subsection{The acetoacetic ester synthesis \normalfont(Section 22-17)}
+
+\chemeq{est2ket_1}{
+  \chemname{\chemfig{H-C(-H)(-[2]COOEt)(-[6]C(=[4]O)-CH_3)}}
+           {acetoacetic ester}
+  \chemar[1.8]{->[(1) \chemfig{NaOCH_2CH_3}][(2)\setchemfig{chemfig style=green}\chemfig{R-X}]}
+  \chemname{\chemfig{\grn{R}-C(-H)(-[2]COOEt)(-[6]C(=[4]O)-CH_3)}}
+           {substituted\\acetoacetic ester}
+  \chemar{->[\chemfig{H_3O}][heat]}
+  \chemname{\chemfig{\grn{R}-CH_2-[6]C(=[4]O)-CH_3} + \chemfig{CO_2}}
+           {substituted acetone}
+}
+
+
+\subsection{The Michael addition (conjugate addition) \normalfont(Sections 22-18 and 22-19)}
+
+\chemeq{ken2kan_2}{
+  \chemfig{H-\Lewis{0:,C}|^{-}(-[2]Y)(-[6]Z)}
+  +
+  \setchemfig{chemfig style=green}
+  \chemfig{C(-[:120])(-[:-120])=C(-[2])-C(=[2]O)-}
+  \chemar[1.5]{->[ROH][(proton source)]}
+  \chemfig{\blk{H}-[,,,,black]\blk{C}(-[2,,,,black]\blk{Y})(-[6,,,,black]\blk{Z})-C(-[2])(-[6])-C(-[2,,,,black]\blk{H})(-[6])-C(=[2]O)-}
+}
+(Y and Z are carbonyl or other electron-withdrawing groups.)
+
+
+
+
+
+
+\section{Reactions of carbohydrates}
+
+\subsection{Undesirable rearrangements catalyzed by base \normalfont(Section 23-8)}
+Because of these side reactions, basic reagents are rarely used with sugars.
+
+\subsubsection{Epimerization of the alpha carbon}
+
+\chemeq{sug2sug_1}{
+  \arrow{0}[0]
+  \chemfig{[2]CH_2OH-[,,,2]!Z-[,,2]!x-CHO}
+  \arrow{<=>[\chemfig{HO^{-}}]}
+  \chemfig{[2]CH_2OH-[,,,2]!Z-[,,2]!y-CHO}
+}
+
+\subsubsection{Enediol rearrangements}
+
+\newcommand{\phantomas}{\vphantom{\chemfig{[2]CH_2OH-!z-!z-C(-[:0]OH)=C(-[:150]H)-[:30]OH}}}
+\chemeq{sug2sug_2}{
+  \arrow{0}[,0]\phantomas
+  \chemfig{[2]CH_2OH-!z-!z-!z-CHO}
+  \arrow{<=>[\chemfig{HO^{-}}]}\phantomas
+  \chemfig{[2]CH_2OH-!z-!z-C(-[:0]OH)=C(-[:150]H)-[:30]OH}
+  \arrow{<=>[\chemfig{HO^{-}}]}\phantomas
+  \chemfig{[2]CH_2OH-!z-!z-C(=[:0]O)-CH_2OH}
+  \arrow{<=>[\chemfig{HO^{-}}]}\phantomas
+  \chemfig{[2]CH_2OH-!z-C(-[:0]OH)=C(-[:150]HO)-[:30]CH_2OH}
+  \arrow{<=>[\chemfig{HO^{-}}]}\phantomas
+  \chemfig{[2]CH_2OH-!z-C(=[:0]O)-!z-CH_2OH}
+}
+
+
+\subsection{Reduction  \normalfont(Section 23-9)}
+
+\chemeq{sug2sug_3}{
+  \arrow{0}[0]
+  \chemfig{[2]CH_2OH-[,,,2]!Z-[,,2]CHO}
+  \arrow{<=>[\chemfig{NaBH_4}][or \chemfig{H_2}/\chemfig{Ni}]}[,1.4]
+  \chemfig{[2]CH_2OH-[,,,2]!Z-[,,2]CH_2OH}
+}
+
+
+\subsection{Oxidation \normalfont(Section 23-10)}
+
+\subsubsection{To aldonic acids (glyconic acids) by bromine water}
+
+\chemeq{sug2acid_1}{
+  \arrow{0}[0]
+  \chemfig{[2]CH_2OH-[,,,2]!Z-[,,2]CHO}
+  \arrow{->[\chemfig{Br_2}][\chemfig{H_2O}]}
+  \chemfig{[2]CH_2OH-[,,,2]!Z-[,,2]COOH}
+}
+
+\subsubsection{To aldaric acids (glycaric acids) by nitric acid}
+
+\chemeq{sug2acid_2}{
+  \arrow{0}[0]
+  \chemfig{[2]CH_2OH-[,,,2]!Z-[,,2]CHO}
+  \arrow{->[\chemfig{HNO_3}]}
+  \chemfig{[2]COOH-[,,,2]!Z-[,,2]COOH}
+}
+
+\subsubsection{Tollens test for reducing sugars}
+
+\chemeq{sug2acid_3}{
+  \arrow{0}[0]
+  \chemfig{[2]CH_2OH-[,,,2]!Z-[,,2]!z-CHO}
+  \arrow{0}[,0.25] or \arrow{0}[,0.25]
+  \chemfig{[2]CH_2OH-[,,,2]!Z-[,,2]C(=[0]O)-CH_2OH}
+  \arrow{->[\chemfig{Ag{(}NH_3{)}_2OH}]}[,2]
+  \chemfig{[2]CH_2OH-[,,,2]!Z-[,,2]!z-COO^{-}}
+  \arrow{0}[,0.25] \makecell[l]{\+ \chemfig{Ag} (silver mirror)\\ \+ rearrangement}
+}
+
+\subsection{Glycoside formation (conversion to acetal) \normalfont(Section 23-11)}
+
+\chemeq{sug2acl_1}{
+\chemfig{
+  ?(-[:190]HO)
+  -[:-50](-[:170]HO)
+  -[:10](-[:-55,0.7,,2]HO)
+  -[:-10]\charge{-5:12mm=\grn{\small\it either anomer}}{}
+      (-[6,0.7,1,,green,decorate,decoration={snake,amplitude=0.3mm,segment length=0.7mm}]OH)
+      (-[1,0.7,1,,green,decorate,decoration={snake,amplitude=0.3mm,segment length=0.7mm}]H)
+  -[:130]O
+  -[:190]
+  ?(-[:150,0.7]-[2,0.7]OH) }
+\hphantom{123456789}
+\arrow{->[\chemfig{CH_3OH}][\chemfig{H^+}]}[,1.3]
+\chemfig{
+  ?(-[:190]HO)
+  -[:-50](-[:170]HO)
+  -[:10](-[:-55,0.7,,2]HO)
+  -[:-10]\charge{-10:20mm=\makecell[l]{\color{green}\small\it$\alpha$ + $\beta$\\\color{green}\small\it more stable predominates}}{}
+    (-[6,0.7,,,green,decorate,decoration={snake,amplitude=0.3mm,segment length=0.7mm}]H)
+    (-[1,0.7,,,green,decorate,decoration={snake,amplitude=0.3mm,segment length=0.7mm}]OCH_3)
+  -[:130]O
+  -[:190]
+  ?(-[:150,0.7]-[2,0.7]OH) }
+  \vpha
+}
+
+\subsection{Alkylation to give ethers \normalfont(Section 23-12)}
+
+\chemeq{sug2eth_1}{
+\arrow{0}[0]
+\chemfig{
+  ?(-[:190]HO)
+  -[:-50](-[:170]HO)
+  -[:10](-[:-55,0.7,,2]HO)
+  -[:-10](-[6,0.7,1]OH)
+  -[:130]O
+  -[:190]
+  ?(-[:150,0.7]-[2,0.7]OH) }
+\arrow{->[excess \chemfig{CH_3I}][\chemfig{Ag_2O}]}[,1.7]
+\chemfig{
+  ?(-[:190]H_3CO)
+  -[:-50](-[:170]H_3CO)
+  -[:10](-[:-55,0.7,,3]H_3CO)
+  -[:-10](-[6,0.7]OCH_3)
+  -[:130]O
+  -[:190]
+  ?(-[:150,0.7]-[2,0.7]OCH_3) }
+\makecell{gives the same anomer\\as starting material}
+}
+
+\subsection{Acylation to give esters \normalfont(Section 23-12)}
+
+\chemeq{sug2est_1}{
+\arrow{0}[0]
+\chemfig{
+  ?(-[:190]HO)
+  -[:-50](-[:170]HO)
+  -[:10](-[:-55,0.7,,2]HO)
+  -[:-10](-[6,0.7,1]OH)
+  -[:130]O
+  -[:190]
+  ?(-[:150,0.7]-[2,0.7]OH) }
+\arrow{->[excess \chemfig{Ac_2O}][pyridine]}[,1.7]
+\chemfig{
+  ?(-[:190]AcO)
+  -[:-50](-[:170]AcO)
+  -[:10](-[:-55,0.7,,2]AcO)
+  -[:-10](-[6,0.7]OAc)
+  -[:130]O
+  -[:190]
+  ?(-[:150,0.7]-[2,0.7]OAc) }
+\makecell{gives the same anomer\\as starting material}
+}
+
+\subsection{Osazon formation \normalfont(Section 23-13)}
+
+\chemeq{sug2osz_1}{
+  \arrow{0}[0]
+  \chemfig{[2]CH_2OH-[,,,2]!Z-[,,2]!z-CHO}
+  \arrow{0}[,0.25] or \arrow{0}[,0.25]
+  \chemfig{[2]CH_2OH-[,,,2]!Z-[,,2]C(=[0]O)-CH_2OH}
+  \arrow{->[excess \chemleft[\chemfig{Ph-NHNH_2}\chemright]][\chemfig{H^+}]}[,2.5]
+  \chemfig{[2]CH_2OH-[,,,2]!Z-[,,2]C(=[0]N-[0]NHPh)-[,,,2]HC(=[0]N-[0]NHPh)}
+  \arrow{0}[,0.25] osazone
+}
+
+\subsection{Ruff degradation \normalfont(Section 23-14)}
+
+\chemeq{sug2sug_4}{
+  \arrow{0}[0]
+  \chemfig{[2]CH_2OH-[,,,2]!Z-[,,2]!z-CHO}
+  \arrow{->[1. \chemfig{Br_2}/\chemfig{H_2O}][2. \chemfig{H_2O_2},\chemfig{Fe_2{(}SO_4{)}_3}]}[,2.2]
+  \vphantom{\chemfig{[2]CH_2OH-[,,,2]!Z-[,,2]!z-CHO}}
+  \chemfig{[2]CH_2OH-[,,,2]!Z-[,,2]CHO}
+  \arrow{0}[,0]
+  \+
+  \arrow{0}[,0]
+  \chemfig{CO_2\uparrow}
+}
+
+\subsection{Kiliani-Fisher synthesis \normalfont(Section 23-14)}
+
+\chemeq{sug2sug_5}{
+  \arrow{0}[0]
+  \vphantom{\chemfig{[2]CH_2OH-[,,,2]!Z-[,,2]!z-CHO}}
+  \chemfig{[2]CH_2OH-[,,,2]!Z-[,,2]CHO}
+  \arrow{->[1. \chemfig{HCN}/\chemfig{KCN}\hphantom{aaa}][\makecell[l]{2. \chemfig{H_2}/\chemfig{Pd{(}BaSO_4{)}} \\ 3. \chemfig{H_3O^+}}]}[,2.2]
+  \chemfig{[2]CH_2OH-[,,,2]!Z-[,,2]!z-CHO}
+}
+
+\subsection{Formose (Butlerov) reaction}
+
+\chemeq{ald2sug_1}{
+  \arrow{0}[,0.1]
+  \vphantom{\chemfig{(=[2]O)-[:-30]-[:-90]H}}
+  {\it n}\chemfig{(-[:210]H)(=[2]O)-[:-30]H}
+  \arrow{->[\chemfig{Ca{(}OH{)}_2}][\chemfig{H_2O}]}[,1.3]
+  \chemfig{(-[:210]H)(=[2]O)-[@{op}:-30](-[6]OH)-[@{cl}:30]-[:-30]OH}
+  \polymerdelim[indice=\!\!n-2]{op}{cl}
+}
+
+
+
+\section{Synthesis of Amino Acids}
+
+\subsection{Reductive amination \normalfont(Section 24-5A)}
+
+\chemeq{acid2imn2ama_1}{
+\chemname{\chemfig{R-C(=[2]O)-COOH}}{$\alpha$-ketoacid}
+\arrow{->[excess \chemfig{NH_3}]}[,1.6]
+\chemname{\chemfig{R-C(=[2]NH)-COO^{-}}\chemfig{\vpha^{+}NH_4}}{imine}
+\arrow{->[\chemfig{H_2}][\chemfig{Pd}]}
+\chemname{\chemfig{R-CH(-[2]NH_2)-COO^{-}}}{$\alpha$-amino acid}
+}
+
+\subsection{Amination of an $\alpha$-haloacid \normalfont(Section 24-5B)}
+
+\chemeq{acid2ama_1}{
+\chemname{\chemfig{R-CH_2-C(=[2]O)-OH}}{carboxylic acid}
+\arrow{->[1. \chemfig{Br_2}/\chemfig{PBr_3}][2. \chemfig{{H_2O}}]}[,1.6]
+\chemname{\chemfig{R-CH(-[2]Br)-C(=[2]O)-OH}}{$\alpha$-bromo acid}
+\arrow{->[\chemfig{NH_3}][large excess]}[,1.5]
+\chemname{\chemfig{R-CH(-[2]NH_2)-COO^{-}}\chemfig{\vpha^{+}NH_4}}{(D,L)-$\alpha$-amino salt}
+}
+
+
+\subsection{The Gabriel malonic ester synthesis \normalfont(Section 24-5C)}
+
+\chemeq{est2ama_1}{
+  \setchemfig{atom sep=1em}
+  \chemname{\chemfig{**6(--*5(-(=o)-N(-[,2]CH(-[2,2]COOEt)(-[6,2]COOEt))-(=o)-)----)}}
+           {N-phthalimidomalonic ester}
+  \arrow{->[1. base][2. \chemfig{R-X}]}[,1.3]
+  \setchemfig{atom sep=1em}
+  \chemname{\chemfig{**6(--*5(-(=o)-N(-[,2]C(-[2,2]COOEt)(-[6,2]COOEt)-[,2]R)-(=o)-)----)}}
+           {alkylated}
+  \arrow{->[\chemfig{H_3O^+}][heat]}
+  \chemname{\chemleft[\chemfig{H_3\chemabove{N}{+}-C(-[2]COOH)(-[6]COOH)-R}\chemright]}
+           {hydrolized}
+  \arrow{->[heat]}
+  \chemname{\chemfig{H_3\chemabove{N}{+}-C(-[2]H)(-[6]COOH)-R}}
+           {$\alpha$-amino acid}
+}
+
+
+\subsection{The Strecker synthesis \normalfont(Section 24-5D)}
+
+\chemeq{ald2ntrl2ama_1}{
+\chemname{\chemfig{R-CH(=[2]O)}}{aldehyde}
+\+ \chemfig{NH_3} \+ \chemfig{HCN}
+\arrow{->[\chemfig{H_2O}]}
+\chemname{\chemfig{R-CH(-[2]NH_2)-C~N}}{$\alpha$-amino nitrile}
+\arrow{->[\chemfig{H_3O^+}]}
+\chemname{\chemfig{R-CH(-[2,,,2]\vpha^+NH_3)-COOH}}{$\alpha$-amino acid}
+}
+
+
+
+
+\section{Reactions of Amino Acids}
+
+\subsection{Esterification of the carboxyl group \normalfont(Section 24-7A)}
+
+\chemeq{ama2est_1}{
+  \chemname{\chemfig{R-CH(-[2,,,2]\vpha^+NH_3)-COOH}}
+           {amino acid}
+  \+
+  \chemname{\chemfig{\Charge{0=$'$}{R}-OH}}{alcohol}
+  \arrow{->[\chemfig{H^+}]}
+  \chemname{\chemfig{R-CH(-[2,,,2]\vpha^+NH_3)-C-O-\Charge{0=$'$}{R}}}
+           {amino ester}
+  \+
+  \chemfig{H_2O}
+}
+
+
+\subsection{Acylation of the amino group: formation of amides \normalfont(Section 24-7B)}
+
+\chemeq{ama2amd_1}{
+  \chemname{\chemfig{\Charge{0=$'$}{R}-C(=[2]O)-X}}{acylating agent}
+  \+
+  \chemname{\chemfig{NH_2-CH(-[2]R)-COOH}}
+           {amino acid}
+  \arrow{->}
+  \chemname{\chemfig{\Charge{0=$'$}{R}-C(=[2]O)-NH-CH(-[2]R)-COOH}}
+           {acylated amino acid}
+  \+
+  \chemfig{H-X}
+}
+
+
+\subsection{Reaction with ninhydrin \normalfont(Section 24-7C)}
+
+\chemeq{ama2ald_1}{
+  \chemnameinit{\chemfig[atom sep=1.4em]{!\precyc*3(2-**6(--*5(-(=O)-(-[1]OH)(-[7]OH)-(=O)-)----))}}
+  \chemname{\chemfig{NH_2-CH(-[2]R)-COOH}}
+           {amino acid}
+  \+
+  \setchemfig{atom sep=1.4em}
+  \chemname{\chemfig{!\precyc*3(2-[,,,,draw=none]**6(--*5(-(=O)-(-[1]OH)(-[7]OH)-(=O)-)----))}}
+           {ninhydrin}
+  \arrow(.mid east--.mid west) {->[pyridine]}[,1.2]
+  \setchemfig{atom sep=1.3em}
+  \chemname{\chemfig{!\precyc*3(-[,,,,draw=none]**6(--*5(-(=O)-(=N-*5(-(=O)-**6(------)--(-[,,,1]O|^{-})=))-(=O)-)----))}}
+           {Ruhemann's purple}
+  \arrow{0}[,0.25] \makecell[l]{\+ \chemfig{R-CHO}\\ \+ \chemfig{CO_2\uparrow}}
+}
+
+
+\subsection{Formation of peptide bonds \normalfont(Sections 24-10 and 24-11)}
+
+\chemeq{ama2ppt_1}{
+  \chemfig{H_3\chemabove{N}{+}-CH(-[6]R_1)-C(=[2]O)-O|^{-}}
+  \+
+  \chemfig{H_3\chemabove{N}{+}-CH(-[6]R_2)-C(=[2]O)-O|^{-}}
+  \arrow
+  \chemfig{H_3\chemabove{N}{+}-CH(-[6]R_1)-C(=[2]O)-NH-CH(-[6]R_2)-C(=[2]O)-O|^{-}}
+  \+
+  \chemfig{H_2O}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

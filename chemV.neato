@@ -1,0 +1,352 @@
+
+digraph orgchem {
+
+compound=true;
+
+graph [
+splines=curve
+]
+
+
+node [color="",
+//fontsize=20,
+//fontsize=2,
+fillcolor=none,
+fixedsize=true,
+label="\N",
+labelfloat=true
+//shape=none
+shape=circle,
+width=2
+]
+
+halide    [pos="1836,306"]
+alkane    [pos="1323,0"]
+alkene    [pos="755,0"]
+alkyne    [pos="259,306"]
+alcohol   [pos="67,843"]
+ether     [pos="38,1457"]
+aldehyde  [pos="763,2300"]
+aldket    [pos="1095,2262"]
+ketone    [pos="1431,2300"]
+amine     [pos="1976,1993"]
+benzene   [pos="200,1993"]
+acid      [pos="1802,1188"]
+
+node [width=1.5]
+
+acidh     [pos="1295,1572"]
+ester     [pos="2051,843"]
+amide     [pos="2111,1457"]
+epoxide   [pos="1046,650"]
+organom   [pos="800,510"]
+sugar     [pos="1050,1572"]
+ama       [pos="1293,1300"]
+
+node [width=1]
+
+polymer            [pos="387,130"]
+cycprop            [pos="265,100"]
+hlhdrn             [pos="1001,160"]
+alkinide           [pos="106,0"]
+alcoTs             [pos="86,460"]
+alcoxid            [pos="555,1280"]
+perxde             [pos="29,1687"]
+ArX                [pos="437,1840"]
+bzslfcd            [pos="5,2147"]
+ArR                [pos="359,2147"]
+ArKet              [pos="286,2300"]
+ArAld              [pos="142,2300"]
+BzHxCl             [pos="0,2300"]
+BzAcid             [pos="387,1993"]
+ArRX               [pos="429,2300"]
+phenol             [pos="360,1650"]
+quin               [pos="187,1825"]
+nitrobz            [pos="21,1840"]
+aniline            [pos="166,1687"]
+diazonium          [pos="1106,950"]
+ArNR               [pos="570,2262"]
+dithiane           [pos="714,1950"]
+acetal             [pos="856,1600"]
+ammsalt            [pos="2195,2300"]
+imine              [pos="1694,1950"]
+sulfonide          [pos="2179,2147"]
+ammhox             [pos="2053,2300"]
+hoxamn             [pos="1909,2300"]
+amnox              [pos="2149,1840"]
+azide              [pos="1765,2300"]
+nitro              [pos="1619,2262"]
+nitrile            [pos="1432,1730"]
+anhydride          [pos="1690,613"]
+osazone            [pos="1250,1950"]
+peptide            [pos="1480,950"]
+
+node[shape=circle, width=1, label="\N"]
+
+edge [style="",
+fontsize=6,
+//fontsize=2,
+// headclip=false,
+// tailclip=false,
+lblstyle="sloped, rectangle, rounded corners, draw, fill=white, text=blue, arrows=-"
+]
+
+// synthesis of alkyl halides
+
+alkane  -> halide  [label="\\mcref{kan2ah_1}"]
+alkene  -> halide  [label="\\mcref{ken2ah_1,ken2ah_2}"]
+alkene  -> halide  [label="\\mcref{ken2ah_1,ken2ah_3}"]
+alkene  -> halide  [label="\\mcref{ken2ah_4,ken2ah_5}"]
+alkyne  -> halide  [label="\\mcref{kyn2ken2ah_1,kyn2ah_1}"]
+alkyne  -> halide  [label="\\mcref{kyn2ken2ah_2,kyn2ah_2}"]
+alkene  -> halide  [label="\\mcref{ken2ah_6}"]
+alcohol -> halide  [label="\\mcref{al2ah_1,al2ah_2}"]
+halide:ne  -> halide:se  [label="\\mcref{ah2ah_1,ah2ah_2}"]
+halide:ne  -> halide:se  [label="\\mcref{ah2ah_3}"]
+
+//  Reactions of Alkyl Halides
+halide  -> alcohol [label="\\mcref{ah2al_1,ah2al_2}"]
+halide  -> ether   [label="\\mcref{ah2ther_1,ah2ther_2}"]
+halide  -> amine   [label="\\mcref{ah2amn_1,ah2amn_2}"]
+halide  -> nitrile [label="\\mcref{ah2trile}"]
+halide  -> alkyne  [label="\\mcref{ah2kyn_1,ah2kyn_2,ah2kyn_3}"]
+halide  -> alkene  [label="\\mcref{ah2ken_1,ah2ken_2}"]
+halide  -> alkene  [label="\\mcref{ah2ken_3,ah2ken_4}"]
+halide  -> organom [label="\\mcref{ah2gr}"]
+halide  -> organom [label="\\mcref{ah2om_1}"]
+organom:w -> organom:sw [label="\\mcref{om2om}"]
+////{halide organom} -> {alkane organom}
+jnt25 [pos="1174,400"]
+jnt26 [pos="1128,220"]
+{halide organom} -> jnt25
+jnt25 -> jnt26 [label="\\mcref{ah2kan_1}"]
+jnt26 -> {alkane organom}
+halide  -> alkane  [label="\\mcref{ah2kan_2}"]
+
+// Synthesis of Alkenes
+alcohol -> alkene  [label="\\mcref{ken2al_1,ken2al_2}"]
+alkane  -> alkene  [label="\\mcref{kan2ken_1}"]
+amine   -> alkene  [label="\\mcref{amn2ken_1,amn2ken_2}"]
+alkyne  -> alkene  [label="\\mcref{kyn2ken_1,kyn2ken_2}"]
+alkyne  -> alkene  [label="\\mcref{kyn2ken_3,kyn2ken_4}"]
+ketone  -> alkene  [label="\\mcref{ket2ken_1}"]
+alkene  -> alcohol [label="\\mcref{ken2col_1,ken2col_2}"]
+alkene  -> alcohol [label="\\mcref{ken2col_3,ken2col_4}"]
+alkene  -> ether   [label="\\mcref{kenal2est_1,kenal2est_2}"]
+alkene  -> alcohol [label="\\mcref{ken2col_5,ken2col_6}"]
+alkene  -> polymer [label="\\mcref{ken2pol_1}"]
+alkene  -> alkane  [label="\\mcref{ken2kan_1}"]
+alkene  -> cycprop [label="\\mcref{ken2cyc_1}"]
+alkene  -> hlhdrn  [label="\\mcref{ken2hal_1}"]
+alkene  -> epoxide [label="\\mcref{ken2epx_1,ken2epx_2}"]
+alkene  -> alcohol [label="\\mcref{ken2col_10,ken2col_11}"]
+alkene  -> alcohol [label="\\mcref{ken2col_7,ken2col_9}"]
+alkene  -> alcohol [label="\\mcref{ken2col_8,ken2col_9}"]
+jnt1               [pos="1220,1750"]
+alkene  -> jnt1 -> {aldehyde ketone}  [label="\\mcref{ken2ahket_1,ken2ahket_2}"]
+jnt2               [pos="1076,1120"]
+alkene  -> jnt2 -> {ketone acid} [label="\\mcref{ken2ket2acid_1,ken2ket2acid_2}"]
+alkene:w  -> alkene:sw  [label="\\mcref{ken2ken_1}"]
+
+//  Syntheses of Alkynes
+alkyne -> alcohol  [color=blue, style="dashed", arrowhead=none]
+pnt3               [pos="164,575"]
+jnt301             [pos="245,460"]
+{halide alkyne} -> jnt301
+jnt301 -> pnt3 [label="\\mcref{ah2kyn_1,ah2kyn_2,ah2kyn_3}"]
+jnt302             [pos="367,630"]
+{aldket alkyne} -> jnt302
+jnt302 -> pnt3 [label="\\mcref{cnyl2kyn_1,cnyl2kyn_2,cnyl2kyn_3}"]
+halide  -> alkyne  [label="\\mcref{ah2kyn_4}"]
+
+//  Reactions of Alkynes
+alkyne  -> alkinide[label="\\mcref{kyn2knd_1}"]
+alkyne  -> alkinide[label="\\mcref{kyn2knd_2,kyn2knd_3}"]
+alkyne  -> alkane  [label="\\mcref{kyn2kan_1}"]
+alkyne  -> ketone  [label="\\mcref{kyn2ket_1,kyn2ket_2}"]
+alkyne  -> aldehyde[label="\\mcref{kyn2ald_1,kyn2ald_2}"]
+alkyne  -> aldket  [label="\\mcref{kyn2ket_3}"]
+alkyne  -> acid    [label="\\mcref{kyn2acid_1,kyn2acid_2}"]
+
+//  Alco Synthesis
+jnt7               [pos="655,730"]
+{organom epoxide} -> jnt7 ->  alcohol [label="\\mcref{epx2al_1}"]
+jnt4               [pos="698,755"]
+{organom aldket}  -> jnt4 -> alcohol [label="\\mcref{ket2al_1,ket2al_2}"] // 73,131
+jnt5               [pos="756,760"]
+{organom acidh}   -> jnt5 -> alcohol [label="\\mcref{om2al_1}"]
+jnt6               [pos="792,770"]
+{organom ester}   -> jnt6 -> alcohol [label="\\mcref{om2al_1}"]
+aldket  -> alcohol [label="\\mcref{ket2al_3,ket2al_5}"]
+aldket  -> alcohol [label="\\mcref{ket2al_4,ket2al_5}"]
+ester   -> alcohol [label="\\mcref{acid0est2alco_1,acid0est2alco_2}"]
+acid    -> alcohol [label="\\mcref{acid0est2alco_1,acid0est2alco_2}"]
+epoxide -> alcohol [label="\\mcref{pox2al_1,pox2al_2}"]
+
+//  Reactions of Alcohols
+alcohol -> ketone  [label="\\mcref{al2ket_1,al2ket_2}"]
+alcohol -> acid    [label="\\mcref{al2acid_1}"]
+alcohol -> aldehyde[label="\\mcref{al2ald_1,al2ald_2}"]
+alcohol -> alkane  [label="\\mcref{al2kan_1}"]
+alcohol -> ether   [label="\\mcref{al2eth_1,al2eth_2}"]
+alcohol -> alcoTs  [label="\\mcref{al2aTs_1}"]
+jnt11               [pos="1621,855"]
+{alcohol acidh} -> jnt11 -> ester   [label="\\mcref{al2est_3}"]
+alcohol -> alcoxid [label="\\mcref{al2axd_1}"]
+alcohol -> alcoxid [label="\\mcref{al2axd_2}"]
+jnt12               [pos="221,1400"]
+{alcoxid halide} -> jnt12 -> ether   [label="\\mcref{al2est_1,al2est_2}"]
+hlhdrn  -> epoxide [label="\\mcref{hdrn2epx_1}"]
+
+// Reactions of ethers and epoxides
+ether   -> halide  [label="\\mcref{eth2ah_1}"]
+ether   -> halide  [label="\\mcref{eth2ah_2}"]
+ether   -> perxde  [label="\\mcref{eth2pxde_1}"]
+epoxide -> halide  [label="\\mcref{epx2ah_1}"]
+alcohol -> ether   [color=blue, style="dashed", arrowhead=none]
+pnt8               [pos="56,1111"]
+jnt9               [pos="375,1000"]
+{epoxide alcoxid} -> jnt9 -> pnt8 [label="\\mcref{epx2eth_1}"]
+jnt10              [pos="323,1000"]
+{epoxide organom} -> jnt10 -> pnt8 [label="\\mcref{epx2eth_2}"]
+
+// Reactions of Aromatic Compounds
+benzene -> ArX     [label="\\mcref{bz2arx_1}"]
+benzene -> bzslfcd [label="\\mcref{bz2bzsf_1}"]
+benzene -> ArR     [label="\\mcref{bz2arr_1}"]
+benzene -> ArKet   [label="\\mcref{ph2ket_1,ph2ket_2}"]
+benzene -> ArAld   [label="\\mcref{ph2ald_1,ph2ald_2}"]
+benzene:nw -> benzene:sw [label="\\mcref{bz2bz_1}"]
+benzene -> BzHxCl  [label="\\mcref{bz2bzh_1}"]
+benzene -> alkane  [label="\\mcref{bz2kan_1}"]
+benzene -> alkene  [label="\\mcref{bz2ken_1}"]
+ArKet   -> ArR     [label="\\mcref{bz2arr_2}"]
+ArR     -> BzAcid  [label="\\mcref{bzkyl2bzacid_1,bzkyl2bzacid_2}"]
+ArR     -> ArRX    [label="\\mcref{arr2arr_1}"]
+ArRX    -> ArR     [label="\\mcref{bz2bz_2}"]
+phenol  -> quin    [label="\\mcref{ph2qui_1}"]
+benzene -> nitrobz [label="\\mcref{bz2nbz_1}"]
+nitrobz -> aniline [label="\\mcref{ntro2amn_1}"]
+aniline -> diazonium [label="\\mcref{amn2damn_1}"]
+diazonium -> phenol [label="\\mcref{damn2al_1}"]
+diazonium -> ArX [label="\\mcref{damn2ah_1}"]
+diazonium -> ArX [label="\\mcref{damn2ah_2}"]
+diazonium -> ArX [label="\\mcref{damn2ah_3}"]
+diazonium -> benzene [label="\\mcref{damn2kan_1}"]
+jnt24              [pos="573,2070"]
+{ArX amine}  -> jnt24 -> ArNR [label="\\mcref{amn2amn_6}"]
+
+
+dithiane-> aldket  [label="\\mcref{dith2ket_1}"]
+acid    -> ketone  [label="\\mcref{acid2ket_1,acid2ket_2}"]
+nitrile -> ketone  [label="\\mcref{ntrl2ket_1}"]
+acidh   -> aldehyde[label="\\mcref{ach2ald_1,ach2ald_2}"]
+acidh   -> ketone  [label="\\mcref{acid2ket_3}"]
+
+aldket  -> alkane  [label="\\mcref{ket2kan_1}"]
+aldket  -> alkane  [label="\\mcref{ket2kan_2}"]
+aldket  -> alkane  [label="\\mcref{ket2kan_3}"]
+aldket  -> alcohol [label="\\mcref{ket2al_6}"] // -> hydrine
+aldket  -> alcohol [label="\\mcref{ket2al_7}"] // -> cyanohydrine
+cnt13              [pos="1704,2108"]
+{aldket amine} -> cnt13 -> amine [label="\\mcref{amn2amn_1}"]
+jnt28              [pos="733,1687"]
+{aldket alcohol}  -> jnt28 -> acetal  [label="\\mcref{ket2acl_1}"]
+aldehyde-> acid    [label="\\mcref{ald2acid_1}"]
+
+// Reactions of amines
+amine   -> ammsalt [label="\\mcref{amn2amns_1}"]
+jnt14              [pos="1673,2070"]
+{amine aldket} -> jnt14 -> imine [label="\\mcref{amn2amm_1}"]
+cnt15              [pos="1980,1763"]
+{amine halide} -> cnt15 -> amine [label="\\mcref{amn2aamn_1}"]
+jnt17              [pos="1839,1648"]
+{amine acidh}  -> jnt17 -> amide [label="\\mcref{amn2amd_1}"]
+amine   -> sulfonide [label="\\mcref{amn2sfnd_1}"]
+amine   -> ammhox  [label="\\mcref{amn2amnhx_1}"]
+amine   -> ammhox  [label="\\mcref{amn2amnhx_2}"]
+amine   -> alkene  [label="\\mcref{amn2ken_3}"]
+amine   -> hoxamn  [label="\\mcref{amn2hxamn_1}"]
+amine   -> amnox   [label="\\mcref{amn2amnox_1}"]
+amine   -> diazonium [label="\\mcref{amn2damn_1}"]
+diazonium -> alcohol [label="\\mcref{damn2al_1}"]
+diazonium -> halide  [label="\\mcref{damn2ah_1}"]
+diazonium -> halide  [label="\\mcref{damn2ah_2}"]
+diazonium -> halide  [label="\\mcref{damn2ah_3}"]
+diazonium -> alkane  [label="\\mcref{damn2kan_1}"]
+
+// Synthesis of amines
+cnt16               [pos="1779,1840"]
+{amine acidh} -> cnt16 -> amine [label="\\mcref{amn2amn_5}"]
+halide  -> amine   [label="\\mcref{ah2amn_3}"]
+azide   -> amine   [label="\\mcref{azd2amn_1}"]
+nitrile -> amine   [label="\\mcref{ntrl2amn_1}"]
+nitro   -> amine   [label="\\mcref{ntro2amn_1}"]
+amide   -> amine   [label="\\mcref{amd2amn_1}"]
+amine:ne -> amine:se  [label="\\mcref{amn2amn_6}"]
+
+// Syntheses of Carboxylic Acids
+alcohol -> acid    [label="\\mcref{al2acid_2}"]
+organom -> acid    [label="\\mcref{om2acid_1}"]
+nitrile -> acid    [label="\\mcref{ntrl2acid_1}"]
+ketone  -> acid    [label="\\mcref{ket2acid_1,ket2acid_2}"]
+ester   -> acid    [label="\\mcref{malest_1,malest_2}"]
+
+// Reactions of Carboxylic Acids
+acid    -> acid    [label="\\mcref{acid2acid_1}"]
+jnt19              [pos="1796,870"]
+{acid alcohol} -> jnt19 -> ester [label="\\mcref{acid2est_1}"]
+jnt18              [pos="1873,1530"]
+{acid amine} -> jnt18 -> amide [label="\\mcref{acid2amd_1}"]
+jnt20              [pos="1615,766"]
+{acid acidh} -> jnt20 -> anhydride [label="\\mcref{acid2ahdr_1}"]
+acid    -> acidh   [label="\\mcref{acid2acidh_1}"]
+acid    -> acid    [label="\\mcref{hvz_1,hvz_2}"]
+
+// Enolate Additions and Condensations
+cnt21              [pos="1461,1955"]
+{ketone halide}  -> cnt21 -> ketone  [label="\\mcref{ket2ket_1}"]
+jnt22              [pos="1529,1840"]
+{amine halide} -> jnt22 -> ketone [label="\\mcref{ah2ket_1}"]
+ketone:ne  -> ketone:se  [label="\\mcref{ket2ket_2}"]
+aldket:nw  -> aldket:ne  [label="\\mcref{ket2ket_3}"]
+cnt23              [pos="2077,1100"]
+ester   -> cnt23 -> {ester ketone} [label="\\mcref{est2est_1}"]
+ester   -> ketone  [label="\\mcref{est2ket_1}"]
+alkene  -> alkane  [label="\\mcref{ken2kan_2}"]
+
+// Reactions of carbohydrates
+sugar:sw -> sugar:se [label="\\mcref{sug2sug_1}"]
+sugar:sw -> sugar:se [label="\\mcref{sug2sug_2}"]
+sugar:sw -> sugar:se [label="\\mcref{sug2sug_3}"]
+sugar:sw -> sugar:se [label="\\mcref{sug2sug_4}"]
+sugar:sw -> sugar:se [label="\\mcref{sug2sug_5}"]
+sugar    -> acid [label="\\mcref{sug2acid_1}"]
+sugar    -> acid [label="\\mcref{sug2acid_2}"]
+sugar    -> acid [label="\\mcref{sug2acid_3}"]
+sugar    -> acetal [label="\\mcref{sug2acl_1}"]
+sugar    -> ether [label="\\mcref{sug2eth_1}"]
+sugar    -> ester [label="\\mcref{sug2est_1}"]
+sugar    -> osazone [label="\\mcref{sug2osz_1}"]
+aldehyde -> sugar [label="\\mcref{ald2sug_1}"]
+
+// Synthesis of Amino Acids
+acid    -> ama [label="\\mcref{acid2imn2ama_1}"]
+acid    -> ama [label="\\mcref{acid2ama_1}"]
+jnt27          [pos="1853,940"]
+{ester halide} -> jnt27 -> ama [label="\\mcref{est2ama_1}"]
+aldehyde -> nitrile -> ama [label="\\mcref{ald2ntrl2ama_1}"]
+
+// Reactions of Amino Acids
+ama    -> ester [label="\\mcref{ama2est_1}"]
+ama    -> amide [label="\\mcref{ama2amd_1}"]
+ama    -> aldehyde [label="\\mcref{ama2ald_1}"]
+ama -> peptide [label="\\mcref{ama2ppt_1}"]
+
+
+
+// end
+
+}
+
+

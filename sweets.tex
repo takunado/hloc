@@ -1,0 +1,254 @@
+\documentclass{article}
+%\documentclass[twoside,aps,prl,preprint,10pt,notitlepage]{revtex4-1}
+\usepackage[active,tightpage]{preview}
+%\usepackage[head=12pt,includehead,inner=4cm,outer=1cm,top=1cm,bottom=1.5cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{chemfig}
+\usepackage{longtable}
+\usepackage{amssymb}
+\usepackage{multirow}
+\usepackage[verbose]{wrapfig}
+\usepackage{textpos}
+%\usepackage{fancyhdr}
+\usepackage{makecell}
+\usepackage{array}
+\usepackage{amsmath}
+\usepackage{ifthen}
+\usepackage{cleveref}
+
+
+%\usepackage{titlesec}
+
+%\setlength{\TPHorizModule}{50cm}
+%\setlength{\TPVertModule}{\textheight}
+%\renewcommand{\PreviewBorder}{1in}
+%\newcommand{\Newpage}{\end{preview}\begin{preview}}
+
+
+%\pagestyle{fancy}
+%\fancyheadoffset{0pt}
+%\renewcommand{\sectionmark}[1]{\markboth{#1}{}}
+%\fancyhf{}
+%\fancyhead[LE,RO]{\leftmark}
+%\fancyhead[RE,LO]{\thepage}
+%\fancypagestyle{plain}{%
+%  \fancyhead{} % get rid of headers
+%  \renewcommand{\headrulewidth}{0pt} % and the line
+%}
+
+%\titlespacing\section{0pt}{15pt plus 4pt minus 2pt}{10pt plus 2pt minus 2pt}
+%\titlespacing\subsection{0pt}{12pt plus 4pt minus 2pt}{8pt plus 2pt minus 2pt}
+%\titlespacing\subsubsection{0pt}{8pt plus 4pt minus 2pt}{5pt plus 2pt minus 2pt}
+%\setlength{\TPHorizModule}{\textwidth}
+%\setlength{\TPVertModule}{\textheight}
+\setlength{\parskip}{10mm}
+%\let\stdsection\section
+%\renewcommand\section{\newpage\stdsection}
+
+\newcommand{\vpha}{\vphantom{A}}
+\newcommand{\degree}{\ensuremath{^\circ}}
+\newcommand{\chemar}[2][]{
+  \schemestart[{},#1]
+  \vpha\arrow{#2}\vpha
+  \schemestop
+}
+\newcommand{\chemeq}[3][]{
+  \quad\chemnameinit{}
+  \noindent
+  \begin{equation}
+    \schemestart[][base]
+    #3
+    \schemestop
+    \hskip \textwidth minus \textwidth
+    \ifthenelse{\equal{#1}{}}{}{\cref{#1}\Leftarrow}
+    \ifthenelse{\equal{#2}{}}{}{\label{#2}}
+  \end{equation}
+}
+\newcommand{\precyc}{\vpha-[,0.1,,,draw=none]}
+\newcommand{\grn}[1]{\vpha{\color{green}#1}}
+\newcommand{\blu}[1]{\vpha{\color{blue}#1}}
+\newcommand{\blk}[1]{\vpha{\color{black}#1}}
+\newcommand{\red}[1]{\vpha{\color{red}#1}}
+\newcommand{\brw}[1]{\vpha{\color{brown}#1}}
+\newcommand{\ppl}[1]{\vpha{\color{purple}#1}}
+\newcommand{\vlt}[1]{\vpha{\color{violet}#1}}
+\definesubmol\O{\red{O}}
+\definesubmol\N{\blu{N}}
+\definesubmol\S{\brw{S}}
+\newcommand{\X}{H}
+\newcommand{\M}{\chemabove{\N}{\X}}
+\newcommand{\K}{\chembelow{\N}{\X}}
+\definesubmol\R{ \chemskipalign{\mbox{\scriptsize R}} }
+\definesubmol{x}{(<[4]H)(<[0]\O|H)}
+\definesubmol{y}{(<[0]H)(<[4]H|\O)}
+
+
+\usetikzlibrary{decorations}
+\pgfdeclaredecoration{ddbond}{initial}{
+  \state{initial}[width=2pt]{
+    \pgfpathlineto{\pgfpoint{4pt}{0pt}}
+    \pgfpathmoveto{\pgfpoint{1pt}{2pt}}
+    \pgfpathlineto{\pgfpoint{2pt}{2pt}}
+    \pgfpathmoveto{\pgfpoint{4pt}{0pt}}
+  }
+  \state{final}{
+    \pgfpathlineto{\pgfpointdecoratedpathlast}
+  }
+}
+\tikzset{lddbond/.style={decorate, decoration=ddbond}}
+\tikzset{rddbond/.style={decorate, decoration={ddbond, mirror}}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{document}
+
+\abovedisplayskip=9pt plus 3pt minus 9pt
+\abovedisplayshortskip=0pt plus 3pt
+\belowdisplayskip=9pt plus 3pt minus 9pt
+\belowdisplayshortskip=4pt plus 3pt minus 4pt
+
+
+
+%\setatomsep{2em}
+\setchemfig{atom sep=2.2em}
+%\setcrambond{2pt}{0.75pt}{0.75pt}
+\setchemfig{cram width = 4pt}
+\setchemfig{cram dash width = 0.75pt}
+\setchemfig{cram dash sep = 0.75pt}
+\setchemfig{arrow label sep = 1.5pt}
+\setchemfig{bond join=true}
+\setchemfig{atom style={scale=1.6}}
+%\setchemfig{bond style={thick}}
+
+
+\begin{preview}
+
+
+  \chemfig{H|\O-[:120]-[:60](<:[:15]\O|H)(<[:-15]H)
+                     -[:120](<:[:165]H)(<[:195]\O|H)
+                      -[:60](<:[:15]H)(<[:-15]\O|H)
+                     -[:120](<:[:165]H)(<[:195]\O|H)-[:60]=[0]\O}
+\\
+\\
+
+
+
+\end{preview}
+
+\end{document}
+
+
+
+\chemname{\chemfig{[2]\O|H-[3]-!x-=[1]\O}}{glyceraldehyde}
+\\   \\
+
+\chemname{\chemfig{[2]\O|H-[3]-!x-!x-=[1]\O}}{erythrose}
+\\   \\
+
+\chemname{\chemfig{[2]\O|H-[3]-!x-!y-=[1]\O}}{threose}
+\\   \\
+
+\chemname{\chemfig{[2]\O|H-[3]-!x-!x-!x-=[1]\O}}{ribose}
+\\   \\
+
+\chemname{\chemfig{[2]\O|H-[3]-!x-!x-!y-=[1]\O}}{arabinose}
+\\   \\
+
+\chemname{\chemfig{[2]\O|H-[3]-!x-!y-!x-=[1]\O}}{xylose}
+\\   \\
+
+\chemname{\chemfig{[2]\O|H-[3]-!x-!y-!y-=[1]\O}}{lyxose}
+\\   \\
+
+\chemname{\chemfig{[2]\O|H-[3]-!x-!x-!x-!x-=[1]\O}}{allose}
+\\   \\
+
+\chemname{\chemfig{[2]\O|H-[3]-!x-!x-!x-!y-=[1]\O}}{altrose}
+\\   \\
+
+\chemname{\chemfig{[2]\O|H-[3]-!x-!x-!y-!x-=[1]\O}}{glucose}
+\\   \\
+
+\chemname{\chemfig{[2]\O|H-[3]-!x-!x-!y-!y-=[1]\O}}{mannose}
+\\   \\
+
+\chemname{\chemfig{[2]\O|H-[3]-!x-!y-!x-!x-=[1]\O}}{gulose}
+\\   \\
+
+\chemname{\chemfig{[2]\O|H-[3]-!x-!y-!x-!y-=[1]\O}}{idose}
+\\   \\
+
+\chemname{\chemfig{[2]\O|H-[3]-!x-!y-!y-!x-=[1]\O}}{galaclose}
+\\   \\
+
+\chemname{\chemfig{[2]\O|H-[3]-!x-!y-!y-!y-=[1]\O}}{talose}
+\\   \\
+
+
+\chemname{\chemfig{[2]\O|H-[3]-!x-(=[0]\O)(-[2]-[1]\O|H)}}{erythulose}
+\\   \\
+
+\chemname{\chemfig{[2]\O|H-[3]-!x-!y-(=[0]\O)(-[2]-[1]\O|H)}}{xylulose}
+\\   \\
+
+\chemname{\chemfig{[2]\O|H-[3]-!x-!x-(=[0]\O)(-[2]-[1]\O|H)}}{ribulose}
+\\   \\
+
+\chemname{\chemfig{[2]\O|H-[3]-!x-!y-!y-(=[0]\O)(-[2]-[1]\O|H)}}{tagatose}
+\\   \\
+
+\chemname{\chemfig{[2]\O|H-[3]-!x-!y-!x-(=[0]\O)(-[2]-[1]\O|H)}}{sorbose}
+\\   \\
+
+\chemname{\chemfig{[2]\O|H-[3]-!x-!x-!x-(=[0]\O)(-[2]-[1]\O|H)}}{psicose}
+\\   \\
+
+\chemname{\chemfig{[2]\O|H-[3]-!x-!x-!y-(=[0]\O)(-[2]-[1]\O|H)}}{fructose}
+\\   \\
+
+\chemname{\chemfig{[2]\O|H-[3]-!x-!x-!x-!y-(=[0]\O)(-[2]-[1]\O|H)}}{sedoheptulose}
+\\   \\
+
+%\end{tabular}
+
+\chemfig{[2]\O|H-[3]-!x-!x-!y-!x-=[1]\O}
+
+\chemfig{?(-[:190]H\O)-[:-50](-[:170]H\O)-[:10](-[:-55,0.7,,2]H|\O)-[:-10](-[6,0.7]\O H)-[:130]\O-[:190]?(-[:150,0.7]-[2,0.7]\O H)}
+
+\chemfig[cram width=2pt]{\vpha|H|\O-[2,0.5,3]?<[7,0.7](-[2,0.5]\O H)-[,,,,
+ line width=3pt](-[6,0.5]\O H)>[1,0.7](-[6,0.5]\O|H)-[3,0.7]
+ \O-[4]?(-[2,0.3]-[3,0.5,,2]H|\O)}
+
+ \chemfig[cram width=2pt]{H|\O-[-1,0.5]-[-2,0.4]?
+ <[:-60,0.8](-[-2,0.5,,2]H|\O)
+ -[,,,,line width=3pt](-[2,0.5,,2]H|\O)
+ >[:60,0.8](-[6,0.5]\O|H)
+ -[:150,1.03]\O?}
+
+
+
+
+
+
+
+
+
+
+
+

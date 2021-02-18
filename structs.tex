@@ -1,0 +1,887 @@
+\documentclass[a4paper,twoside,aps,prl,preprint,10pt,notitlepage]{revtex4-1}
+\usepackage[active,tightpage]{preview}
+\usepackage{longtable}
+\usepackage[utf8]{inputenc}
+\usepackage{chemfig}
+\usepackage{amssymb}
+\usepackage{multirow}
+\usepackage{makecell}
+\usepackage{array}
+\usepackage{amsmath}
+\usepackage{ifthen}
+\usepackage{cleveref}
+%\usepackage{titlesec}
+
+
+
+\newcommand{\vpha}{\vphantom{A}}
+\newcommand{\degree}{\ensuremath{^\circ}}
+\newcommand{\chemar}[2][]{
+  \schemestart[{},#1]
+  \vpha\arrow{#2}\vpha
+  \schemestop
+}
+\newcommand{\chemeq}[3][]{
+  \chemnameinit{}
+  \noindent
+  \begin{equation}
+    \schemestart[][base]
+    #3
+    \schemestop
+    \hskip \textwidth minus \textwidth
+    \ifthenelse{\equal{#1}{}}{}{\cref{#1}\Leftarrow}
+    \ifthenelse{\equal{#2}{}}{}{\label{#2}}
+  \end{equation}
+}
+\newcommand{\precyc}{\vpha-[,0.1,,,draw=none]}
+
+\newcommand{\grn}[1]{\vpha{\color{green}#1}}
+\newcommand{\blu}[1]{\vpha{\color{blue}#1}}
+\newcommand{\blk}[1]{\vpha{\color{black}#1}}
+\newcommand{\red}[1]{\vpha{\color{red}#1}}
+\newcommand{\brw}[1]{\vpha{\color{brown}#1}}
+\newcommand{\ppl}[1]{\vpha{\color{purple}#1}}
+\newcommand{\vlt}[1]{\vpha{\color{violet}#1}}
+\newcommand{\M}{$<$R$>$}
+
+
+
+\usetikzlibrary{decorations}
+\pgfdeclaredecoration{ddbond}{initial}{
+  \state{initial}[width=2pt]{
+    \pgfpathlineto{\pgfpoint{4pt}{0pt}}
+    \pgfpathmoveto{\pgfpoint{1pt}{2pt}}
+    \pgfpathlineto{\pgfpoint{2pt}{2pt}}
+    \pgfpathmoveto{\pgfpoint{4pt}{0pt}}
+  }
+  \state{final}{
+    \pgfpathlineto{\pgfpointdecoratedpathlast}
+  }
+}
+\tikzset{lddbond/.style={decorate, decoration=ddbond}}
+\tikzset{rddbond/.style={decorate, decoration={ddbond, mirror}}}
+
+
+\begin{document}
+
+
+\definesubmol\R{ \chemskipalign{\mbox{\scriptsize R}} }
+\definesubmol\no{\vpha-[,0.1,,,draw=none]}
+\definesubmol\Me[H_3C]{CH_3}
+\definesubmol\Ammonia{\Lewis{4:,N}H_3}
+\definesubmol\Cyanide{\quad\llap{${}^-$}\Lewis{4:,C}~\Lewis{0:,N}}
+\definesubmol\Hydroxide{\quad\llap{${}^-$}OH}
+\definesubmol\Water{H_2O}
+\definesubmol\Alkene{C([:120]-)([:-120]-)=C([:-60]-)([:60]-)}
+
+%%\setatomsep{2em}
+\setchemfig{atom sep=2.2em}
+%%\setcrambond{2pt}{0.75pt}{0.75pt}
+\setchemfig{cram width = 4pt}
+\setchemfig{cram dash width = 0.75pt}
+\setchemfig{cram dash sep = 0.75pt}
+\setchemfig{arrow label sep = 1.5pt}
+\setchemfig{bond join=true}
+\setchemfig{atom style={scale=1.6}}
+\setchemfig{bond style={thick}}
+
+\begin{preview}
+
+
+
+
+
+\noindent
+\begin{tabular}{c|c|c}
+
+Me & methyl &
+\hflipnext
+\chemfig{-\R}
+\\
+\\
+
+Et & ethyl &
+\hflipnext
+\chemfig{-[:-30]-[:30]\R}
+\\
+\\
+
+& vinyl &
+\hflipnext
+\chemfig{=[:-30]-[:30]\R}
+\\
+\\
+
+Pr & propyl &
+\hflipnext
+\chemfig{-[:30]-[:-30]-[:30]\R}
+\\
+\\
+
+
+{\it i}-Pr & isopropyl &
+\hflipnext
+\chemfig{-[:-30](-[-2])-[:30]\R}
+\\
+\\
+
+& allyl &
+\hflipnext
+\chemfig{=[:30]-[:-30]-[:30]\R}
+\\
+\\
+
+{\it n}-Bu & {\it n}-butyl &
+\hflipnext
+\chemfig{-[:-30]-[:30]-[:-30]-[:30]\R}
+\\
+\\
+
+{\it i}-Bu & isobutyl &
+\hflipnext
+\chemfig{-[:30](-[2])-[:-30]-[:30]\R}
+\\
+\\
+
+{\it s}-Bu & {\it sec}-butyl &
+\hflipnext
+\chemfig{-[:30]-[:-30](-[-2])-[:30]\R}
+\\
+\\
+
+{\it t}-Bu & {\it tert}-butyl &
+\hflipnext
+\chemfig{-[:30]([:120]<)([:60]>:)-[:-30]\R}
+\\
+\\
+
+Sia & {\it secondary} isoamyl &
+\hflipnext
+\chemfig{!\no(-[:120])(-[:-120])-(-[:-60])(-[:60]\R)}
+\\
+\\
+
+Ac & acetyl &
+\hflipnext
+\chemfig{\red{O}=[:-30]-[:30]\R}
+\\
+\\
+
+Boc & {\it tert}-butyloxycarbonyl &
+\hflipnext
+\chemfig{-[:30]([:120]<)([:60]>:)-[:-30]\red{O}-[:30](=[2]\red{O})-[:-30]\R}
+\\
+\\
+
+{\it c}-Hx & cyclohexyl &
+\hflipnext
+\chemfig{!\precyc*6(---(-\R)---)}
+\\
+\\
+
+THP & tetrahydropyranyl &
+\hflipnext
+\chemfig{!\precyc*6(---(-\R)-\red{O}--)}
+\\
+\\
+
+Ph & phenyl &
+\hflipnext
+\chemfig{!\precyc**6(---(-\R)---)}
+\\
+\\
+
+Bn & benzyl &
+\hflipnext
+\chemfig{!\precyc**6(---(--[:60]\R)---)}
+\\
+\\
+
+Bz & benzoyl &
+\hflipnext
+\chemfig{!\precyc**6(---(-(-[:60]\R)(=[:-60]\red{O}))---)}
+\\
+\\
+
+Cbz (or Z) & benzyloxycarbonyl &
+\hflipnext
+\chemfig{!\precyc**6(---(--[:60]\red{O}-(-[:60]\R)(=[:-60]\red{O}))---)}
+\\
+\\
+
+Ts & para-toluenesulfonyl (tosyl) &
+\chemfig{\R-\brw{S}([2]=\red{O})([6]=\red{O})-**6(---(-)---)}
+\\
+
+\end{tabular}
+
+
+
+\end{preview}
+
+
+\end{document}
+
+
+
+Alkynide \chemfig{\R-~\Lewis{0:,\vpha}}
+\\
+\\
+
+Polymer \chemfig{-[@{op,.66}]...-[@{cl,0.33}]}
+\polymerdelim[height = 5pt, indice = \!\!n]{op}{cl}
+\\
+\\
+
+
+Cyclopropane \chemfig{[:-30]*3(---)}
+\\
+\\
+
+Halohydrin \chemfig{(-[:120]\R)(-[:-120]\vlt{X})-([:60]-\red{O}H)(-[:-60]\R)}
+\\
+\\
+
+Tosylate \chemfig{\R-\brw{S}([2]=\red{O})([6]=\red{O})-**6(---(-)---)}
+\\
+\\
+
+Alkoxide \chemfig{\R-\Lewis{0:2:6:,\red{O}}^{-}}
+\\
+\\
+
+Peroxide \chemfig{\R-[:-30]\red{O}-[:30]\red{O}-[:-30]\R}
+\\
+\\
+
+Aniline \chemfig{!\precyc**6(---(-\blu{N}H_2)---)}
+\\
+\\
+
+Nitrobenzene \chemfig{!\precyc**6(---(-\blu{N}(-[:60,,1,,,rddbond]\red{O})(-[:-60,,1,,,lddbond]\red{O}))---)}
+\\
+\\
+
+BZsf acid \chemfig{!\precyc**6(---(-\brw{S}([2]=\red{O})([6]=\red{O})-\red{O}H)---)}
+\\
+\\
+
+BZ hexacl \chemfig{\vlt{Cl}-*6(-(-\vlt{Cl})-(-\vlt{Cl})-(-\vlt{Cl})-(-\vlt{Cl})-(-\vlt{Cl})-)}
+\\
+\\
+
+
+Benzaldehyde \chemfig{!\precyc**6(---(-(=[:60]\red{O})(-[:-60]H))---)}
+\\
+\\
+
+Phenylketone \chemfig{!\precyc**6(---(-(=[:60]\red{O})(-[:-60]\R))---)}
+\\
+\\
+
+Alkylbenzene \chemfig{!\precyc**6(---(--[:-60]\R)---)}
+\\
+\\
+
+Alkylbenzenehld \chemfig{!\precyc**6(---(-(-[:-60]\R)(-[:60]\vlt{X}))---)}
+\\
+\\
+
+Benzoic acid \chemfig{!\precyc**6(---(-(-[:60,,1,,,rddbond]\red{O})(-[:-60,,1,,,lddbond]\red{O}))---)}
+\\
+\\
+
+Arylamine \chemfig{!\precyc**6(---(-\blu{N}(-[:60]H)(-[:-60]\R))---)}
+\\
+\\
+
+Arylhalide \chemfig{!\precyc**6(---(-\vlt{X})---)}
+\\
+\\
+
+Phenol \chemfig{!\precyc**6(---(-\red{O}H)---)}
+\\
+\\
+
+Quinone \chemfig{\red{O}=*6(-=-(=\red{O})-=-)}
+\\
+\\
+
+
+Diazonium \chemfig{!\precyc**6(---(-\chemabove{\blu{N}}{+}~\blu{N})---)}
+
+Dithiane \chemfig{!\precyc*6(--\brw{S}-(-[:60])(-[:-60])-\brw{S}--)}
+\\
+\\
+
+
+acetal \chemfig{([:-150]-\R)([:-30]-H)([:120]<\red{O}-[4]\R)([:60]>:\red{O}-[0]\R)}
+\\
+\\
+
+
+
+Azide \hflipnext
+\chemfig{\chemabove{\blu{N}}{-}=\chemabove{\blu{N}}{+}=\blu{N}-[:30]\R}
+\\
+\\
+
+
+Nitro \chemfig{\R-\blu{N}(-[:60,,1,,,rddbond]\red{O})(-[:-60,,1,,,lddbond]\red{O})}
+\\
+\\
+
+
+HdrxAmn \chemfig{H\red{O}-\blu{N}H_2}
+\\
+\\
+
+Ammonia hydroxide \chemfig{H\red{O}^{-}} \chemfig{!\no^{+}\blu{N}H_4}
+\\
+\\
+
+Ammonia \chemfig{\blu{N}|^{\vpha^{\scriptstyle+}}(-[2,,1]H)(-[:210,,1]H)(>:[:-20,,1]H)(<[:-50,,1]H)}
+\\
+\\
+
+Sulfonide
+\chemfig{\R-\brw{S}(=[2]\red{O})(=[6]\red{O})-\blu{N}(-[:60]\R)(-[:-60]\R) }
+\\
+\\
+
+Amine oxide
+\chemfig{\blu{N}|^{\vpha^{\scriptstyle+}}(-[2,,1,1]\red{O}|^{-})(-[:210,,1]\R)(>:[:-20,,1]\R)(<[:-50,,1]\R)}
+\\
+\\
+
+
+Imine \chemfig{!\no([:-150]-\R)(=[2]\blu{N}-[:30]\R)(-[:-30]\R)}
+\\
+\\
+
+Eminamine
+\chemfig{!\no(=[:120])(-[:-120]\R)-\blu{N}(-[:60]\R)(-[:-60]\R)}
+\\
+\\
+
+Nitrile \chemfig{\R-~\blu{N}}
+\\
+\\
+
+
+\chemfig{\R-\ppl{Mg}-\vlt{X}}
+
+\chemfig{\R-\ppl{M}}
+
+
+\end{preview}
+
+
+\end{document}
+
+
+Alkane
+Alkyl
+akyl-
+-ane
+\chemfig{R{(}CH_2{)}_nH}
+\chemfig{[:30]\R-[@{op,.66}]-[@{cl,0.33}:-30]}
+\polymerdelim[height = 5pt, indice = \!\!n]{op}{cl}
+
+
+
+Alkene
+Alkenyl
+alkenyl-
+-ene
+\chemfig{R_2C=CR_2}
+\chemfig{!\no([:120]-\R)([:-120]-\R)=([:60]-\R)([:-60]-\R)}
+
+
+
+Alkyne
+Alkynyl
+alkynyl-
+-yne
+\chemfig{RC~CR}
+\chemfig{\R-~-\R}
+
+
+Arene
+Phenyl
+phenyl-
+-benzene
+\makecell{\chemfig{RC_6H_5} \\ \chemfig{RPh}}
+\chemfig{\R-**6(------)}
+
+
+\makecell{Haloalkane \\ Alkyl halide}
+Halo
+halo-
+alkyl halide
+\chemfig{RX}
+\chemfig{\R-\vlt{X}}
+
+
+
+
+Alcohol
+Hydroxyl
+hydroxy-
+-ol
+\chemfig{ROH}
+\chemfig{\R-[:30]\red{O}-[:-30]H}
+
+
+Ether
+Ether
+alkoxy-
+alkyl ether
+\chemfig{ROR}
+\chemfig{\R-[:30]\red{O}-[:-30]\R}
+
+
+Epoxide
+Ether
+epoxy-
+
+
+\chemfig{([:190]>:\R)([:230]<\R)([:60]-\red{O}?)-?([:-10]>:\R)([:-50]<\R)}
+
+
+Peroxide
+Peroxy
+peroxy-
+alkyl peroxide
+\chemfig{ROOR}
+\chemfig{\R-[:30]\red{O}-[:-30]\red{O}-[:30]\R}
+
+
+
+Aldehyde
+Carbonyl
+\makecell{formyl- (\chemfig{!\vpha-COH}) \\ oxo- (\chemfig{!\vpha=O})}
+-al
+\chemfig{RCHO}
+\chemfig{!\no([:120]-\R)=\red{O}}
+
+
+Ketone
+Carbonyl
+\makecell{-oyl- (\chemfig{!\vpha-COR}) \\ oxo- (\chemfig{!\vpha=O})}
+-one
+\chemfig{RCOR}
+\chemfig{!\no([:120]-\R)([:-120]-\R)=\red{O}}
+
+
+Acetal
+Acetal
+dialkoxy-
+-al dialkyl acetal
+\chemfig{RCH{(}OR{)(}OR{)}}
+\chemfig{([:-150]-\R)([:-30]-H)([:120]<\red{O}-[4]\R)([:60]>:\red{O}-[0]\R)}
+
+
+Ketal
+Ketal
+dialkoxy-
+-one dialkyl ketal
+\chemfig{RC{(}OR{)(}OR{)}R}
+\chemfig{([:-150]-\R)([:-30]-\R)([:120]<\red{O}-[4]\R)([:60]>:\red{O}-[0]\R)}
+
+
+Carbonate
+Carbonate ester
+(alkoxycarbonyl)oxy-
+alkyl carbonate
+\chemfig{ROCOOR}
+\chemfig{\R-[:-30]\red{O}-[:30](=[2]\red{O})(-[:-30]\red{O}-[:30]\R)}
+
+
+Carboxylic acid
+Carboxyl
+carboxy-
+-oic acid
+\chemfig{RCOOH}
+\chemfig{!\no([:-150]-\R)(=[2]\red{O})(-[:-30]\red{O}H)}
+
+
+Carboxylate
+Carboxylate
+carboxy-
+-oate
+\chemfig{RCOO^{-}}
+\chemfig{!\no([:-150]-\R)(-[2,,,,,rddbond]\chembelow[2ex]{\red{O}}{\qquad\scriptstyle-})(-[:-30,,,,,lddbond]\red{O})}
+
+
+Ester
+Carboalkoxy
+\makecell{alkanoyloxy- \\ alkoxycarbonyl}
+alkyl alkanoate
+\chemfig{RCOOR}
+\chemfig{!\no([:-150]-\R)(=[2]\red{O})(-[:-30]\red{O}-[:30]\R)}
+
+
+Anhydride
+Carboxylic anhydride
+
+anhydride
+\chemfig{R{(}CO{)}O{(}CO{)}R}
+\chemfig{!\no([:-150]-\R)(=[2]\red{O})-[:-30]\red{O}-[:30](=[2]\red{O})(-[:-30]\R)}
+
+
+Acyl halide
+Haloformyl
+carbono\M doyl-
+-oyl halide
+\chemfig{RCOX}
+\chemfig{!\no([:-150]-\R)(=[2]\red{O})(-[:-30]\vlt{X})}
+
+
+
+
+
+
+
+
+
+
+
+
+Amine
+Amine
+amino-
+-amine
+\makecell{\chemfig{R_aNH_b} \\ a+b=3}
+\chemfig{!\no\blu{N}([:120]<\R)([:-120]<\R)<\R}
+
+
+Azide
+Azide
+azido-
+alkyl azide
+\chemfig{RN_3}
+\hflipnext
+\chemfig{\chemabove{\blu{N}}{-}=\chemabove{\blu{N}}{+}=\blu{N}-[:30]\R}
+
+
+\makecell{Azo \\ compound}
+Azo (Diimide)
+azo-
+-diazene
+\chemfig{RN_2R}
+\hflipnext
+\chemfig{\R-[:30]\blu{N}=[:-30]\blu{N}-[:30]\R}
+
+
+
+Imine
+\makecell{Ketimine \\ Aldimine}
+imino-
+-imine
+\chemfig{RC{(=}NR{)}R}
+\chemfig{!\no([:-150]-\R)(=[2]\blu{N}-[:30]\R)(-[:-30]\R)}
+
+
+
+
+
+\multirow{2}{*}{Nitrile}
+\multirow{2}{*}{Nitrile}
+cyano-
+alkane (iso)nitrile
+\chemfig{RCN}
+\chemfig{\R-~\blu{N}}
+
+
+
+isocyano-
+alkyl  (iso)cyanide
+\chemfig{RNC}
+\chemfig{\R-\blu{N}~}
+
+
+
+
+\multirow{2}{*}{Cyanate}
+Cyanate
+cyanato-
+alkyl cyanate
+\chemfig{ROCN}
+\hflipnext \chemfig{\blu{N}~-\red{O}-[:30]\R}
+
+
+Isocyanate
+isocyanato-
+alkyl isocyanate
+\chemfig{RNCO}
+\hflipnext \chemfig{\red{O}=C=\blu{N}-[:30]\R}
+
+
+
+\makecell{Nitroso  \\ compound}
+Nitroso
+\makecell{nitroso- \\ nitrosyl-}
+
+\chemfig{RNO}
+\chemfig{\R-[:-30]\blu{N}=[:30]\red{O}}
+
+
+
+Nitrite
+Nitrosooxy
+nitrosooxy-
+alkyl nitrite
+\chemfig{RONO}
+\chemfig{\R-[:30]\red{O}-[:-30]\blu{N}=[:30]\red{O}}
+
+
+
+\makecell{Nitro \\ compound}
+Nitro
+nitro-
+
+\chemfig{RNO_2}
+\chemfig{!\no\chembelow[0pt]{\blu{N}}{\scriptstyle+}([:-150]-\R)(-[2,,,,,rddbond]\chembelow[2ex]{\red{O}}{\qquad\scriptstyle-})(-[:-30,,,,,lddbond]\red{O})(-[2,,,,,rddbond]\red{O})(-[:-30,,,,,lddbond]\red{O})}
+
+
+Nitrate
+Nitrate
+\makecell{ nitrooxy- \\ nitroxy- }
+alkyl nitrate
+\chemfig{RONO_2}
+\chemfig{\R-[:-30]\red{O}-[:30]\chembelow[0pt]{\blu{N}}{\scriptstyle+}(-[2,,,,,rddbond]\chembelow[2ex]{\red{O}}{\qquad\scriptstyle-})(-[:-30,,,,,lddbond]\red{O})}
+
+
+
+
+Amide
+Carboxamide
+\makecell{ carboxamido- \\ carbamoyl- }
+-amide
+\chemfig{RCONR_2}
+\chemfig{\R-[:-30]\blu{N}([6]-\R)-[:30]([2]=\red{O})-[:-30]\R}
+
+
+
+Imide
+Imide
+imido-
+-imide
+\chemfig{{(}RCO{)}_2NR}
+\chemfig{!\no([:-150]=\red{O})(=[2]\R)-[:-30]\blu{N}([6]-\R)-[:30](-[2]\R)(=[:-30]\red{O})}
+
+
+
+
+\makecell{Carbamate \\ ester}
+Carbamate
+(-carbamoyl)oxy-
+-carbamate
+\chemfig{RO{(}C{=}O{)}NR_2}
+\chemfig{\R-[:-30]\blu{N}([6]-\R)-[:30]([2]=\red{O})-[:-30]\red{O}-[:30]\R}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Thiol
+Sulfhydryl
+sulfanyl-
+-thiol
+\chemfig{RSH}
+\chemfig{\R-[:30]\brw{S}-[:-30]H}
+
+
+
+\makecell{Sulfide \\ Thioether}
+Sulfide
+\M  sulfanyl-
+di\M  sulfide
+\chemfig{RSR}
+\chemfig{\R-[:30]\brw{S}-[:-30]\R}
+
+
+
+
+Disulfide
+Disulfide
+\M  disulfanyl-
+di\M  disulfide
+\chemfig{RSSR}
+\chemfig{\R-[:30]\brw{S}-[:-30]\brw{S}-[:30]\R}
+
+
+Thial
+Carbonothioyl
+\makecell{ methanethioyl- (\chemfig{!\vpha-CSH}) \\ sulfanylidene- (\chemfig{!\vpha=S})}
+-thial
+\chemfig{RCSH}
+\chemfig{!\no([:120]-\R)=\brw{S}}
+
+
+Thioketone
+Carbonothioyl
+\makecell{-thioyl- (\chemfig{!\vpha-CSR}) \\ sulfanylidene- (\chemfig{!\vpha=S})}
+-one
+\chemfig{RCSR}
+\chemfig{!\no([:120]-\R)([:-120]-\R)=\brw{S}}
+
+
+\makecell{Thiocarboxylic \\ S-acid}
+Carbothioic S-acid
+mercaptocarbonyl-
+-thioic S-acid
+\chemfig{RC{=}OSH}
+\chemfig{!\no([:-150]-\R)(=[2]\red{O})(-[:-30]\brw{S}H)}
+
+
+\makecell{Thiocarboxylic \\ O-acid}
+Carbothioic O-acid
+hydroxy(thiocarbonyl)-
+-thioic O-acid
+\chemfig{RC{=}SOH}
+\chemfig{!\no([:-150]-\R)(=[2]\brw{S})(-[:-30]\red{O}H)}
+
+
+
+\multirow{2}{*}{Thioester}
+Thiolester
+
+S-alkyl-alkane-thioate
+\chemfig{RC{=}OSR}
+\chemfig{!\no([:-150]-\R)(=[2]\red{O})-[:-30]\brw{S}-[:30]\R}
+
+
+Thionoester
+
+O-alkyl-alkane-thioate
+\chemfig{RC{=}SOR}
+\chemfig{!\no([:-150]-\R)(=[2]\brw{S})-[:-30]\red{O}-[:30]\R}
+
+
+
+\makecell{Dithiocarboxylic \\ acid}
+Carbodithioic acid
+dithiocarboxy-
+-dithioic acid
+\chemfig{RCSSH}
+\chemfig{!\no([:-150]-\R)(=[2]\brw{S})(-[:-30]\brw{S}H)}
+
+
+\makecell{Dithiocarboxylic \\ acid ester}
+Carbodithio
+
+-dithioate
+\chemfig{RC{=}SSR}
+\chemfig{!\no([:-150]-\R)(=[2]\brw{S})-[:-30]\brw{S}-[:30]\R}
+
+
+Sulfoxide
+Sulfinyl
+-sulfinyl-
+di\M  sulfoxide
+\chemfig{RSOR}
+\chemfig{\brw{S}([:-150]-\R)(=[2]\red{O})-[:-30]\R}
+
+
+Sulfinic acid
+Sulfino
+sulfino-
+-sulfinic acid
+\chemfig{RSOOH}
+\chemfig{\brw{S}([:-150]-\R)(=[2]\red{O})(-[:-30]\red{O}H)}
+
+
+Sulfone
+Sulfonyl
+-sulfonyl-
+ di\M  sulfone
+\chemfig{RSO_2R}
+\chemfig{\brw{S}([:-150]=\red{O})([:-30]=\red{O})([:120]<\R)([:60]>:\R)}
+
+
+Sulfonic acid
+Sulfo
+sulfo-
+-sulfonic acid
+\chemfig{RSO_3H}
+\chemfig{\brw{S}([:-150]=\red{O})([:-30]=\red{O})([:120]<\R)([:60]>:\red{O}H)}
+
+
+Sulfonate ester
+Sulfo
+\makecell{ (-sulfonyl)oxy- \\ alkoxysulfonyl- }
+\M  \M -sulfonate
+\chemfig{RSO_3R}
+\chemfig{\brw{S}([:-150]=\red{O})([:-30]=\red{O})([:120]<\R)([:60]>:\red{O}-[0]\R)}
+
+
+
+\multirow{2}{*}{Thiocyanate}
+Thiocyanate
+thiocyanato-
+\M  thiocyanate
+\chemfig{RSCN}
+\hflipnext \chemfig{\blu{N}~-\brw{S}-[:30]\R}
+
+
+Isothiocyanate
+isothiocyanato-
+\M  isothiocyanate
+\chemfig{RNCS}
+\hflipnext \chemfig{\brw{S}=C=\blu{N}-[:30]\R}
+
+
+
+
+
+
+
+
+
+
+\makecell{Phosphine \\ Phosphane}
+Phosphino
+phosphanyl-
+-phosphane
+\chemfig{R_3P}
+\chemfig{!\no\grn{P}([:120]<\R)([:-120]<\R)<\R}
+
+
+\makecell{Phosphonic \\ acid}
+Phosphono
+phosphono-
+\M  phosphonic acid
+\chemfig{RP{(=}O{)(}OH{)}_2}
+\chemfig{!\no\grn{P}([:-150]-\R)([:-30]=\red{O})([:120]<H|\red{O})([:60]>:\red{O}H)}
+
+
+
+Phosphate
+Phosphate
+\makecell{phosphonooxy- \\ O-phosphono- (phospho-)}
+\M  phosphate
+\chemfig{ROP{(=}O{)(}OH{)}_2}
+\chemfig{!\no\grn{P}([:-150]-\red{O}-[4]\R)([:-30]=\red{O})([:120]<H|\red{O})([:60]>:\red{O}H)}
+
+
+
+Phosphodiester
+Phosphate
+ \makecell{[(alkoxy)hydroxyphosphoryl]oxy- \\ O-[(alkoxy)hydroxyphosphoryl]-}
+ \makecell{ di\M  hydrogen phosphate \\ phosphoric acid di\M  ester }
+\chemfig{HOPO{(}OR{)}_2}
+\chemfig{!\no\grn{P}([:-150]-\red{O}-[4]\R)([:-30]=\red{O})([:120]<H|\red{O})([:60]>:\red{O}-[0]\R)}
+
+\end{document}
+

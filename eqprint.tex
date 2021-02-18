@@ -1,0 +1,215 @@
+\documentclass[leqno,a4paper,twoside,aps,prl,preprint,10pt,notitlepage]{revtex4-1}
+\usepackage[head=12pt,includehead,inner=4cm,outer=1cm,top=1cm,bottom=1.5cm]{geometry}
+\usepackage{parskip}
+\usepackage[utf8]{inputenc}
+\usepackage{chemfig}
+\usepackage{longtable}
+\usepackage{amssymb}
+\usepackage{multirow}
+\usepackage[verbose]{wrapfig}
+\usepackage{textpos}
+\usepackage{fancyhdr}
+\usepackage{makecell}
+\usepackage{array}
+\usepackage{amsmath}
+\usepackage{ifthen}
+\usepackage{cleveref}
+%\usepackage{titlesec}
+
+\pagestyle{fancy}
+\fancyheadoffset{0pt}
+\renewcommand{\sectionmark}[1]{\markboth{#1}{}}
+\fancyhf{}
+\fancyhead[LE,RO]{\leftmark}
+\fancyhead[RE,LO]{\thepage}
+\fancypagestyle{plain}{%
+  \fancyhead{} % get rid of headers
+  \renewcommand{\headrulewidth}{0pt} % and the line
+}
+
+%\titlespacing\section{0pt}{15pt plus 4pt minus 2pt}{10pt plus 2pt minus 2pt}
+%\titlespacing\subsection{0pt}{12pt plus 4pt minus 2pt}{8pt plus 2pt minus 2pt}
+%\titlespacing\subsubsection{0pt}{8pt plus 4pt minus 2pt}{5pt plus 2pt minus 2pt}
+\setlength{\TPHorizModule}{\textwidth}
+\setlength{\TPVertModule}{\textheight}
+%\setlength{\parskip}{0cm}
+
+\let\stdsection\section
+\renewcommand\section{\newpage\stdsection}
+
+%\setlength{\parindent}{0em}
+%\setlength{\parskip}{-1ex}
+%\renewcommand{\baselinestretch}{1.0}
+
+\usepackage{color}
+\renewcommand\theequation{{{\bf{{\color{red}\arabic{equation}}}}}}
+%\usepackage{mathtools}
+%\newtagform{sq}{[}{]}
+
+\makeatletter
+\let\oldtagform@\tagform@
+\renewcommand\tagform@[1]{\maketag@@@{\ignorespaces#1\unskip\@@italiccorr}}
+\renewcommand{\eqref}[1]{\textup{\oldtagform@{\ref{#1}}}}
+\makeatother
+
+
+\usetikzlibrary{decorations.pathmorphing}
+
+
+
+\newcommand{\vpha}{\vphantom{A}}
+\newcommand{\degree}{\ensuremath{^\circ}}
+\newcommand{\chemar}[2][]{
+  \schemestart[{},#1]
+  \vpha\arrow{#2}\vpha
+  \schemestop
+}
+\newcommand{\chemeq}[3][]{
+  \chemnameinit{}
+  \noindent
+  \begin{equation}
+    \schemestart[][base]
+    #3
+    \schemestop
+    %\hskip \textwidth minus \textwidth
+    \ifthenelse{\equal{#1}{}}{}{\hskip 10mm\rm{also\ }\cref{#1}}
+    \ifthenelse{\equal{#2}{}}{}{\label{#2}}
+  \end{equation}
+}
+\newcommand{\precyc}{\vpha-[,0.1,,,draw=none]}
+
+\newcommand{\grn}[1]{\vpha{\color{green}#1}}
+\newcommand{\blu}[1]{\vpha{\color{blue}#1}}
+\newcommand{\blk}[1]{\vpha{\color{black}#1}}
+
+
+\makeatletter
+\definearrow1{s>}{%
+\ifx\@empty#1\@empty
+\expandafter\draw\expandafter[\CF@arrow@current@style,-CF](\CF@arrow@start@node)--(\CF@arrow@end@node);%
+\else
+\def\curvedarrow@style{shorten <=\CF@arrow@offset,shorten >=\CF@arrow@offset,}%
+\CF@expadd@tocs\curvedarrow@style\CF@arrow@current@style
+\expandafter\draw\expandafter[\curvedarrow@style,-CF](\CF@arrow@start@name)..controls#1..(\CF@arrow@end@name);
+\fi
+}
+\makeatother
+
+
+
+%\let\origsection\section
+%\makeatletter
+%\renewcommand{\section}[1]{%
+%
+%    \vphantom{.}
+%
+%    \vspace{-5ex}
+%    \origsection{#1}
+%    \vspace{-4ex}
+%}
+%\makeatother
+%
+%\let\origsubsection\subsection
+%\makeatletter
+%\renewcommand{\subsection}[1]{%
+%
+%    \vphantom{.}
+%
+%    \vspace{-5ex}
+%    \origsubsection{#1}
+%    \vspace{-4ex}
+%}
+%\makeatother
+%
+\let\origsubsubsection\subsubsection
+\makeatletter
+\renewcommand{\subsubsection}[1]{%
+    \vphantom{.}
+    \vspace{-5ex}
+    \origsubsubsection{\large\color{red}#1}
+    \vspace{-4ex}
+}
+\makeatother
+
+
+
+
+\begin{document}
+
+\abovedisplayskip=9pt plus 3pt minus 9pt
+\abovedisplayshortskip=0pt plus 3pt
+\belowdisplayskip=9pt plus 3pt minus 9pt
+\belowdisplayshortskip=4pt plus 3pt minus 4pt
+
+\definesubmol\no{\vpha-[,0.1,,,draw=none]}
+\definesubmol\Me[H_3C]{CH_3}
+\definesubmol\Ammonia{\Lewis{4:,N}H_3}
+\definesubmol\Cyanide{\quad\llap{${}^-$}\Lewis{4:,C}~\Lewis{0:,N}}
+\definesubmol\Hydroxide{\quad\llap{${}^-$}OH}
+\definesubmol\Water{H_2O}
+\definesubmol\Alkene{C([:120]-)([:-120]-)=C([:-60]-)([:60]-)}
+\newcommand{\X}{H}
+\newcommand{\M}{\chemabove{\N}{\X}}
+\newcommand{\K}{\chembelow{\N}{\X}}
+\definesubmol\R{ \chemskipalign{\mbox{\scriptsize R}} }
+\definesubmol{x}{(<[4]H)(<[0]O|H)}
+\definesubmol{y}{(<[0]H)(<[4]H|O)}
+\definesubmol{z}{CHOH}
+\definesubmol{Z}{{(}CHOH{)}_n}
+
+\setchemfig{atom sep=2em}
+%\setcrambond{2pt}{0.75pt}{0.75pt}
+\setchemfig{cram width = 2pt}
+\setchemfig{cram dash width = 0.75pt}
+\setchemfig{cram dash sep = 0.75pt}
+\setchemfig{arrow label sep = 1.5pt}
+\setchemfig{bond join=true}
+
+
+\section{AkJKHfjhgFJHgfjhgf JHGF jhgf }
+
+\subsection{sdfg afgdfg}
+
+\subsubsection{kjasdf jhgasdf  kjhasdf kjh asdf}
+
+
+
+\chemeq{ama2ald_1}{
+  \chemnameinit{\chemfig{!\precyc*3(2-**6(--*5(-(=O)-(-[1]OH)(-[7]OH)-(=O)-)----))}}
+  \chemname{\chemfig{NH_2-CH(-[2]R)-COOH}}
+           {amino acid}
+  \+
+  \setchemfig{atom sep=1.4em}
+  \chemname{\chemfig{!\precyc*3(2-[,,,,draw=none]**6(--*5(-(=O)-(-[1]OH)(-[7]OH)-(=O)-)----))}}
+           {ninhydrin}
+  \arrow(.mid east--.mid west) {->[pyridine]}[,1.2]
+  \setchemfig{atom sep=1.3em}
+  \chemname{\chemfig{!\precyc*3(-[,,,,draw=none]**6(--*5(-(=O)-(=N-*5(-(=O)-**6(------)--(-[,,,1]O|^{-})=))-(=O)-)----))}}
+           {Ruhemann's purple}
+  \arrow{0}[,0.25] \makecell[l]{\+ \chemfig{R-CHO}\\ \+ \chemfig{CO_2\uparrow}}
+}
+
+
+asdf \cref{ama2ald_1}
+
+
+%\begin{preview}
+%\input{body}
+%\end{preview}
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

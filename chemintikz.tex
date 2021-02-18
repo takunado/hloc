@@ -1,0 +1,59 @@
+\documentclass[preview,tikz,convert={outfile=chemintikz.svg}]{standalone}
+%\usepackage[x11names, rgb]{xcolor}
+\usepackage[utf8]{inputenc}
+%\usepackage{tikz}
+\usetikzlibrary{decorations,arrows,shapes}
+\usepackage{amsmath}
+\usepackage{chemfig}
+\usepackage{xr}
+\usepackage{cleveref}
+\usepackage{lmodern}
+
+\setchemfig{atom sep=1em}
+\setchemfig{double bond sep=1pt}
+\setchemfig{bond offset=0}
+\setchemfig{fixed length=true}
+\setchemfig{bond join=false}
+\setchemfig{angle increment=30}
+
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\setlength\PreviewBorder{0pt}
+
+\externaldocument{body}
+\externaldocument{equations}
+
+\makeatletter
+\let\oldtagform@\tagform@
+\renewcommand\tagform@[1]{\maketag@@@{\ignorespaces#1\unskip\@@italiccorr}}
+\renewcommand{\eqref}[1]{\textup{\oldtagform@{\ref{#1}}}}
+\makeatother
+
+\crefformat{equation}{#2#1#3}
+\crefmultiformat{equation}{#2#1#3}{ {} #2#1#3}{ {} #2#1#3}{ {} #2#1#3}
+\newcommand{\mcref}[1]{{\color{red}\LARGE\cref{#1}}}
+\newcommand{\mchemfig}[1]{{\chemfig{#1}}}
+
+
+\renewcommand{\>}{$\succ$}
+\newcommand{\<}{$\prec$}
+\newcommand{\vdot}{\vphantom{\cdot}}
+
+
+\begin{document}
+
+\pagestyle{empty}
+%\fontsize{7pt}{7pt}\selectfont
+
+\begin{tikzpicture}[>=latex,line join=bevel,]
+  \pgfsetlinewidth{1bp}
+  \input{chemintikz.pgf}
+  %\input{chemintikz.pgf.test}
+\end{tikzpicture}
+
+\enlargethispage{100cm}
+
+\end{document}
+%
+
+

@@ -1,0 +1,330 @@
+\documentclass{article}
+%\documentclass[twoside,aps,prl,preprint,10pt,notitlepage]{revtex4-1}
+%\usepackage[active,tightpage]{preview}
+%\usepackage[head=12pt,includehead,inner=4cm,outer=1cm,top=1cm,bottom=1.5cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{chemfig}
+\usepackage{longtable}
+\usepackage{amssymb}
+\usepackage{multirow}
+\usepackage[verbose]{wrapfig}
+\usepackage{textpos}
+%\usepackage{fancyhdr}
+\usepackage{makecell}
+\usepackage{array}
+\usepackage{amsmath}
+\usepackage{ifthen}
+\usepackage{cleveref}
+
+
+%\usepackage{titlesec}
+
+%\setlength{\TPHorizModule}{50cm}
+%\setlength{\TPVertModule}{\textheight}
+%\renewcommand{\PreviewBorder}{1in}
+%\newcommand{\Newpage}{\end{preview}\begin{preview}}
+
+
+%\pagestyle{fancy}
+%\fancyheadoffset{0pt}
+%\renewcommand{\sectionmark}[1]{\markboth{#1}{}}
+%\fancyhf{}
+%\fancyhead[LE,RO]{\leftmark}
+%\fancyhead[RE,LO]{\thepage}
+%\fancypagestyle{plain}{%
+%  \fancyhead{} % get rid of headers
+%  \renewcommand{\headrulewidth}{0pt} % and the line
+%}
+
+%\titlespacing\section{0pt}{15pt plus 4pt minus 2pt}{10pt plus 2pt minus 2pt}
+%\titlespacing\subsection{0pt}{12pt plus 4pt minus 2pt}{8pt plus 2pt minus 2pt}
+%\titlespacing\subsubsection{0pt}{8pt plus 4pt minus 2pt}{5pt plus 2pt minus 2pt}
+%\setlength{\TPHorizModule}{\textwidth}
+%\setlength{\TPVertModule}{\textheight}
+%\setlength{\parskip}{0cm}
+%\let\stdsection\section
+%\renewcommand\section{\newpage\stdsection}
+
+\newcommand{\vpha}{\vphantom{A}}
+\newcommand{\degree}{\ensuremath{^\circ}}
+\newcommand{\chemar}[2][]{
+  \schemestart[{},#1]
+  \vpha\arrow{#2}\vpha
+  \schemestop
+}
+\newcommand{\chemeq}[3][]{
+  \quad\chemnameinit{}
+  \noindent
+  \begin{equation}
+    \schemestart[][base]
+    #3
+    \schemestop
+    \hskip \textwidth minus \textwidth
+    \ifthenelse{\equal{#1}{}}{}{\cref{#1}\Leftarrow}
+    \ifthenelse{\equal{#2}{}}{}{\label{#2}}
+  \end{equation}
+}
+\newcommand{\precyc}{\vpha-[,0.1,,,draw=none]}
+\newcommand{\grn}[1]{\vpha{\color{green}#1}}
+\newcommand{\blu}[1]{\vpha{\color{blue}#1}}
+\newcommand{\blk}[1]{\vpha{\color{black}#1}}
+\newcommand{\red}[1]{\vpha{\color{red}#1}}
+\newcommand{\brw}[1]{\vpha{\color{brown}#1}}
+\newcommand{\ppl}[1]{\vpha{\color{purple}#1}}
+\newcommand{\vlt}[1]{\vpha{\color{violet}#1}}
+\definesubmol\O{\red{O}}
+\definesubmol\N{\blu{N}}
+\definesubmol\S{\brw{S}}
+\newcommand{\X}{H}
+\newcommand{\M}{\chemabove{\N}{\X}}
+\newcommand{\K}{\chembelow{\N}{\X}}
+\definesubmol\R{ \chemskipalign{\mbox{\scriptsize R}} }
+
+\usetikzlibrary{decorations}
+\pgfdeclaredecoration{ddbond}{initial}{
+  \state{initial}[width=2pt]{
+    \pgfpathlineto{\pgfpoint{4pt}{0pt}}
+    \pgfpathmoveto{\pgfpoint{1pt}{2pt}}
+    \pgfpathlineto{\pgfpoint{2pt}{2pt}}
+    \pgfpathmoveto{\pgfpoint{4pt}{0pt}}
+  }
+  \state{final}{
+    \pgfpathlineto{\pgfpointdecoratedpathlast}
+  }
+}
+\tikzset{lddbond/.style={decorate, decoration=ddbond}}
+\tikzset{rddbond/.style={decorate, decoration={ddbond, mirror}}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{document}
+
+\abovedisplayskip=9pt plus 3pt minus 9pt
+\abovedisplayshortskip=0pt plus 3pt
+\belowdisplayskip=9pt plus 3pt minus 9pt
+\belowdisplayshortskip=4pt plus 3pt minus 4pt
+
+
+
+%\setatomsep{2em}
+\setchemfig{atom sep=2.2em}
+%\setcrambond{2pt}{0.75pt}{0.75pt}
+\setchemfig{cram width = 4pt}
+\setchemfig{cram dash width = 0.75pt}
+\setchemfig{cram dash sep = 0.75pt}
+\setchemfig{arrow label sep = 1.5pt}
+\setchemfig{bond join=true}
+\setchemfig{atom style={scale=1.6}}
+%\setchemfig{bond style={thick}}
+
+
+
+
+%\begin{preview}
+
+\vphantom{\quad\chemname{\chemfig{!\precyc*6(-=(-)-=(-)-=)}}{meta-xylene}}
+\quad\chemname{\chemfig{[:-30]*3(--\O-)}}{oxirane}
+\quad\chemname{\chemfig{[:-30]*3(--\M-)}}{aziridine}
+\quad\chemname{\chemfig{[:-30]*3(--\S-)}}{thiirane}
+\qquad
+\quad\chemname{\chemfig{[:-30]*3(=-\M-)}}{azirine}
+\quad\chemname{\chemfig{[:-30]*3(=-\S-)}}{thiirene}
+\qquad
+\quad\chemname{\chemfig{[:-30]*3(-\O-\O-)}}{dioxirane}
+\quad\chemname{\chemfig{[:-30]*3(-\N=\N-)}}{diaziridine}
+\qquad
+\quad\chemname{\chemfig{*4(--\O--)}}{oxetane}
+\quad\chemname{\chemfig{*4(--\N|\X-[,,1]-)}}{azetidine}
+\quad\chemname{\chemfig{*4(--\S--)}}{thietane}
+\qquad
+\quad\chemname{\chemfig{*4(--\O-=)}}{oxetene}
+\quad\chemname{\chemfig{*4(-=\N-=)}}{azete}
+\quad\chemname{\chemfig{*4(--\S-=)}}{thiete}
+\qquad
+\quad\chemname{\chemfig{\O*4(--\O--)}}{dioxetane}
+\quad\chemname{\chemfig{\X|\N*4(--\N|\X-[,,1]-)}}{diazetidine}
+\quad\chemname{\chemfig{\S*4(--\S--)}}{dithietane}
+\quad\chemname{\chemfig{*4(-\S-\S-=)}}{dithiete}
+\qquad
+\quad\chemname{\chemfig{[:18]*5(---\O--)}}{oxolane}
+\quad\chemname{\chemfig{[:18]*5(---\M--)}}{pyrrolidine}
+\quad\chemname{\chemfig{[:18]*5(---\S--)}}{thiolane}
+\qquad
+\quad\chemname{\chemfig{[:18]*5(-=-\O-=)}}{furan}
+\quad\chemname{\chemfig{[:18]*5(-=-\M-=)}}{pyrrole}
+\quad\chemname{\chemfig{[:18]*5(-=-\S-=)}}{thiophene}
+\qquad
+\quad\chemname{\chemfig{[18]\N|\X*5([,,1]--\O---)}}{oxazolidine}
+\quad\chemname{\chemfig{[18]\N|\X*5([,,1]--\M---)}}{imidazolidine}
+\quad\chemname{\chemfig{[18]\N|\X*5([,,1]--\S---)}}{thiazolidine}
+\qquad
+\quad\chemname{\chemfig{[:18]*5(--\N|\X-[,,1]\O--)}}{isoxazolidine}
+\quad\chemname{\chemfig{[:18]*5(--\N|\X-[,,1]\M--)}}{pyrazolidine}
+\quad\chemname{\chemfig{[:18]*5(--\N|\X-[,,1]\S--)}}{isothiazolidine}
+\qquad
+\quad\chemname{\chemfig{[:18]*5(-\N=-\O-=)}}{oxazole}
+\quad\chemname{\chemfig{[:18]*5(-\N=-\M-=)}}{imidazole}
+\quad\chemname{\chemfig{[:18]*5(-\N=-\S-=)}}{thiazole}
+\qquad
+\quad\chemname{\chemfig{[:18]*5(=\N--\O--)}}{oxazoline}
+\quad\chemname{\chemfig{[:18]*5(=\N--\M--)}}{imidazoline}
+\quad\chemname{\chemfig{[:18]*5(=\N--\S--)}}{thiazoline}
+\qquad
+\quad\chemname{\chemfig{[:18]*5(-=\N-\O-=)}}{isooxazole}
+\quad\chemname{\chemfig{[:18]*5(-=\N-\M-=)}}{pyrazole}
+\quad\chemname{\chemfig{[:18]*5(-=\N-\S-=)}}{isothiazole}
+\qquad
+\quad\chemname{\chemfig{[:18]*5(-\O--\O--)}}{dioxolane}
+\quad\chemname{\chemfig{[:18]\N*5(-=\N-\M-=)}}{triazole}
+\quad\chemname{\chemfig{[:18]*5(-\S--\S--)}}{dithiolane}
+\qquad
+\quad\chemname{\chemfig{*6(----\O--)}}{oxane}
+\quad\chemname{\chemfig{*6(----\M--)}}{piperidine}
+\quad\chemname{\chemfig{*6(----\S--)}}{thiane}
+\qquad
+\quad\chemname{\chemfig{*6(-=--\O-=)}}{pyran}
+\quad\chemname{\chemfig{*6(-=-=\N-=)}}{pyridine}
+\quad\chemname{\chemfig{*6(-=--\S-=)}}{thiopyran}
+\qquad
+\quad\chemname{\chemfig{*6(-\K---\O--)}}{morpholine}
+\quad\chemname{\chemfig{*6(-\K---\M--)}}{piperazine}
+\quad\chemname{\chemfig{*6(-\K---\S--)}}{thiazinane}
+\qquad
+\quad\chemname{\chemfig{*6(-\K-=-\O-=)}}{oxazine}
+\quad\chemname{\chemfig{*6(-\N=-=\N-=)}}{pyrazine}
+\quad\chemname{\chemfig{*6(-\K-=-\S-=)}}{thiazine}
+\qquad
+\quad\chemname{\chemfig{*6(-\O---\O--)}}{dioxane}
+\quad\chemname{\chemfig{*6(-=\N-=\N-=)}}{pyrimidine}
+\quad\chemname{\chemfig{*6(-\S---\S--)}}{dithiane}
+\qquad
+\quad\chemname{\chemfig{*6(-\O-=-\O-=)}}{dioxine}
+\quad\chemname{\chemfig{*6(-=-\N=\N-=)}}{pyridazine}
+\qquad
+\quad\chemname{\chemfig{\O*6(--\O--\O--)}}{trioxane}
+\quad\chemname{\chemfig{\N*6(-=\N-=\N-=)}}{triazine}
+\quad\chemname{\chemfig{\N*6(-\N=-\N=\N-=)}}{tetrazine}
+\qquad
+\quad\chemname{\chemfig{!\precyc*6(-=-(-\vlt{X})=-=)}}{fluoro- chloro- bromo- iodo- benzene \\ (with \vlt{X} = Fl, Cl, Br and I respectively)}
+\quad\chemname{\chemfig{!\precyc*6(-=-(-)=-=)}}{toluene}
+\qquad
+\quad\chemname{\chemfig{!\precyc*6(-=-(--[:60])=-=)}}{ethylbenzene}
+\quad\chemname{\chemfig{!\precyc*6(-=-(-=[:60])=-=)}}{styrene}
+\quad\chemname{\chemfig{!\precyc*6(-=-(-(-[:60])(-[:-60]))=-=)}}{cumene}
+\qquad
+\quad\chemname{\chemfig{!\precyc*6(-=-(-)=(-)-=)}}{ortho-xylene}
+\quad\chemname{\chemfig{!\precyc*6(-=(-)-=(-)-=)}}{meta-xylene}
+\quad\chemname{\chemfig{\vpha -*6(-=-(-)=-=)}}{ortho-xylene}
+\qquad
+\quad\chemname{\chemfig{!\precyc*6(-=-(-\O H)=-=)}}{phenol}
+\quad\chemname{\chemfig{!\precyc*6(-=-(-(=[:60]\O)(-[:-60]\O H))=-=)}}{benzoic acid}
+\quad\chemname{\chemfig{!\precyc*6(-=-(-=[:60]\O)=-=)}}{benzaldehyde}
+\qquad
+\quad\chemname{\chemfig{!\precyc*6(-=-(-(=[:60]\O)(-[:-60]))=-=)}}{acetophenon}
+\quad\chemname{\chemfig{!\precyc*6(-=-(-(=[:60]\O)(-[:-60]\O-))=-=)}}{methyl benzoate}
+\quad\chemname{\chemfig{!\precyc*6(-=-(-\O-[:60])=-=)}}{anisole}
+\qquad
+\quad\chemname{\chemfig{!\precyc*6(-=-(-\N|H_2)=-=)}}{aniline}
+\quad\chemname{\chemfig{!\precyc*6(-=-(-\N(-[:60,,,,,rddbond]\O)(-[:-60,,,,,lddbond]\O))=-=)}}{nitrobenzene}
+\quad\chemname{\chemfig{!\precyc*6(-=-(-~\N)=-=)}}{benzonitrile}
+\qquad
+\quad\chemname{\chemfig{!\precyc*6(-=-(-(=[:60]\O)(-[:-60]\N|H_2))=-=)}}{benzamide}
+\quad\chemname{\chemfig{!\precyc*6(-=-(-\S(=[:90]\O)(=[:-90]\O)-\O|H)=-=)}}{benzenesulfonic acid}
+\qquad
+\quad\chemname{\chemfig{[:38.6]*7(----\O---)}}{oxepane}
+\quad\chemname{\chemfig{[:38.6]*7(----\M---)}}{azepane}
+\quad\chemname{\chemfig{[:38.6]*7(----\S---)}}{thiepane}
+\qquad
+\quad\chemname{\chemfig{*6(=-(*5(-=--))=-=-)}}{indene}
+\quad\chemname{
+  \chemfig{*6(-(-[::150,1.15]?)---?[]--)}
+  \chemfig{<[:15](>[:85,1.8]?)>[:-15]-[:60]-[:165]?-[:195]-[:240]}
+} {norbornane}
+\qquad
+\quad\chemname{\chemfig{*6(=-(*5(-=-\O-))=-=-)}}{benzofuran}
+\quad\chemname{\chemfig{*6(=-(*5(-=-\M-))=-=-)}}{indole}
+\quad\chemname{\chemfig{*6(=-(*5(-=-\S-))=-=-)}}{benzothiophene}
+\qquad
+\quad\chemname{\chemfig{*6(=-(*5(-\N=-\O-))=-=-)}}{benzoxazole}
+\quad\chemname{\chemfig{*6(=-(*5(-\N=-\M-))=-=-)}}{benzimidazole}
+\quad\chemname{\chemfig{*6(=-(*5(-\N=-\S-))=-=-)}}{benzothiazole}
+\qquad
+\quad\chemname{\chemfig{\N*6(=-(*5(-\N=-\M-))=-\N=-)}}{purine}
+\qquad
+\quad\chemname{\chemfig{*6(=-(*6(-=-=-))=-=-)}}{naphthalene}
+\quad\chemname{
+  \chemfig{*6(-(-[::90,0.58]-[::60,0.58]?)--(-[::90,0.58]?)--(-[::90,0.58]?)-)}
+  \chemfig{-[:15](-[:90]>[:60]?)-[:-15]>[:60](-[:90]?)
+           -[:195]-[:165]()(-[:90]?)<[:240]}
+} {adamantane}
+\qquad
+\quad\chemname{\chemfig{*6(=-(*6(-\N=-=-))=-=-)}}{quinoline}
+\quad\chemname{\chemfig{*6(=-(*6(-=\N-=-))=-=-)}}{isoquinoline}
+\qquad
+\quad\chemname{\chemfig{*6(=-(*6(-\N=\N-=-))=-=-)}}{cinnoline}
+\quad\chemname{\chemfig{*6(=-(*6(-\N=-=\N-))=-=-)}}{quinoxaline}
+\quad\chemname{\chemfig{*6(=-(*6(-\O-(=\O)-=-))=-=-)}}{coumarin}
+\qquad
+\quad\chemname{\chemfig{[25.7]*7(-(*5(-=--))=-=--=)}}{azulene}
+\quad\chemname{\chemfig{[:-18]*6(=-(*5(--(*6(-=-=-=))---))=-=-)}}{fluorene}
+\qquad
+\quad\chemname{\chemfig{[:-18]*6(=-(*5(-\O-(*6(-=-=-=))---))=-=-)}}{dibenzofuran}
+\quad\chemname{\chemfig{[:-18]*6(=-(*5(-\K-(*6(-=-=-=))---))=-=-)}}{carbazole}
+\qquad
+\quad\chemname{\chemfig{*6(-=(*6(-=(*6(-=-=-))-=-))-=-=)}}{anthracene}
+\quad\chemname{\chemfig{[:-30]*6(=-(*6(-=-(*6(-=-=-))=-))=-=-)}}{phenanthracene}
+\qquad
+\quad\chemname{\chemfig{*6(-=(*6(-\N=(*6(-=-=-))-=-))-=-=)}}{acridine}
+\quad\chemname{\chemfig{[:-30]*6(-=(*6(-=-(*6(-=-=\N-))=-))-=\N-=)}}{phenanthroline}
+\qquad
+\quad\chemname{\chemfig{*6(-=(*6(-\S-(*6(-=-=-))--\M-))-=-=)}}{phenothiazine}
+\quad\chemname{\chemfig{*6(-=(*6(-\O-(-*6(-=-=-=))=-(=\O)-))-=-=)}}{flavone}
+\quad\chemname{\chemfig{[:-30]*6(=-(*6(-=-(*6(-=-=(*6(-=-))-))=-))=-=-)}}{pyrene}
+\quad\chemname{\chemfig{
+  *6(--
+    (*6(---
+      (*6(-
+        (*5(---
+          (-([::60]-)-[0]-[:-60]-[0](-[:60]-[0])-[:-60](-[:-120])-[0])
+        --))
+      -([2]-)----))
+    ---))
+  -([2]-)---)}}{steroid ring system}
+
+\chemname{\chemfig{
+  -[:30]-[:-30]-[:30]-[:-30]-[:30]
+  *6(-=
+    (*6(-\O-
+        ((<[:-50])(>:[:-10]))
+        -(*6(---(-)=-))
+        --)
+    )
+  -=(-\O|H)-=)
+}}{tetrahydrocannabinol}
+
+\chemfig{O?-[:120]-[:60]-O-[:60]--[:-60]O--[:-60]-[:-120]
+         O-[:-60]-[:-120]-[:180]O-[:-120]-[:180]-[:120]O-[:180]-[:120]?}
+
+%\end{preview}
+
+\end{document}
+
+
+
+

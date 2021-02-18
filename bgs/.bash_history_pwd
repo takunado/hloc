@@ -1,0 +1,354 @@
+22019  2021-01-19_12:38:45 sudo chmod a+w .
+22020  2021-01-19_12:38:53 convert.hdri32fp -density 300 scan_maksimea_2021-01-19-11-13-18.pdf -quality 90   aa-%1d.jpg
+22021  2021-01-19_12:39:06 ll a*
+21667  2021-01-19_13:08:39 ls
+21668  2021-01-19_13:09:00 convert.hdri32fp DOC011921-01192021125210.pdf a.jpg
+21669  2021-01-19_13:13:56 ls *pdf | parallel 'convert.hdri32fp {} {.}.jpg'
+21670  2021-01-19_13:18:52 rm *jpg
+21671  2021-01-19_13:19:38 convert.hdri32fp 00000_2021-01-19-10-53-15.pdf   aa.jpg
+21672  2021-01-19_13:19:57 convert.hdri32fp -density 300 00000_2021-01-19-10-53-15.pdf   aa.jpg
+21673  2021-01-19_13:20:25 ls *pdf | parallel 'convert.hdri32fp -density 300 {} {.}.jpg'
+21673  2021-01-19_13:20:25 ls *pdf | parallel 'convert.hdri32fp -density 300 {} {.}.jpg'
+21673  2021-01-19_13:20:25 ls *pdf | parallel 'convert.hdri32fp -density 300 {} {.}.jpg'
+21674  2021-01-19_13:24:26 mkdir raw
+21675  2021-01-19_13:24:34 mv *jpg raw/
+21676  2021-01-19_13:25:23 convert raw/DOC011921-01192021125430-50.jpg tmp.jpg
+21677  2021-01-19_13:30:37 convert raw/DOC011921-01192021125430-50.jpg  -fuzz XX% -fill white -opaque '#96b9bd'  tmp.jpg
+21678  2021-01-19_13:30:46 convert raw/DOC011921-01192021125430-50.jpg  -fuzz 10% -fill white -opaque '#96b9bd'  tmp.jpg
+21679  2021-01-19_13:31:05 convert raw/DOC011921-01192021125430-50.jpg  -fuzz 20% -fill white -opaque '#96b9bd'  tmp.jpg
+21679  2021-01-19_13:31:17 convert raw/DOC011921-01192021125430-50.jpg  -fuzz 10% -fill white -opaque '#96b9bd'  tmp.jpg
+21680  2021-01-19_13:33:05 convert raw/DOC011921-01192021125430-50.jpg  -fuzz 10% -fill white -opaque '#96b9bd' -opaque '#648e9a'  tmp.jpg
+21681  2021-01-19_13:34:06 convert raw/DOC011921-01192021125430-50.jpg  -fuzz 10% -fill white -opaque '#96b9bd' -opaque '#d8f4f5'  tmp.jpg
+21681  2021-01-19_13:34:42 convert raw/DOC011921-01192021125430-50.jpg tmp.jpg
+21682  2021-01-19_13:46:52 convert raw/DOC011921-01192021125430-50.jpg  -fuzz 10% -channel green -fill white -opaque '#96b9bd' -opaque '#d8f4f5'  tmp.jpg
+21683  2021-01-19_13:47:33 convert raw/DOC011921-01192021125430-50.jpg  -fuzz 10%  -fill white -opaque '#96b9bd' -opaque '#d8f4f5'  tmp.jpg
+21684  2021-01-19_13:49:09 convert raw/DOC011921-01192021125430-50.jpg  -fuzz 10%  -fill white -opaque '#96b9bd' -opaque '#d8f4f5' -opaque '#d8f4f5'  tmp.jpg
+21685  2021-01-19_13:54:21 convert raw/DOC011921-01192021125430-50.jpg  -fuzz 10% -channel hue -fill white -opaque '#96b9bd' -opaque '#d8f4f5'  tmp.jpg
+21686  2021-01-19_13:55:57 convert raw/DOC011921-01192021125430-50.jpg  -channel hue -fuzz 10% -fill white -opaque '#96b9bd' -opaque '#d8f4f5'  tmp.jpg
+21687  2021-01-19_13:56:45 convert raw/DOC011921-01192021125430-50.jpg -fill white  -channel hue -fuzz 10% -opaque '#96b9bd' -opaque '#d8f4f5'  tmp.jpg
+21688  2021-01-19_13:59:08 convert raw/DOC011921-01192021125430-50.jpg -fill white  -channel hue -fuzz 10% -opaque '#d8f4f5'  tmp.jpg
+21689  2021-01-19_13:59:32 convert raw/DOC011921-01192021125430-50.jpg -fill white  -fuzz 10% -opaque '#d8f4f5'  tmp.jpg
+21690  2021-01-19_14:01:25 convert raw/DOC011921-01192021125430-50.jpg -fill white  -fuzz 10% -opaque hsv(184,34,66)  tmp.jpg
+21691  2021-01-19_14:01:33 convert raw/DOC011921-01192021125430-50.jpg -fill white  -fuzz 10% -opaque 'hsv(184,34,66)'  tmp.jpg
+21692  2021-01-19_14:02:01 convert raw/DOC011921-01192021125430-50.jpg -fill white  -fuzz 20% -opaque 'hsv(184,34,66)'  tmp.jpg
+21693  2021-01-19_14:03:26 convert raw/DOC011921-01192021125430-50.jpg -fill white  -fuzz 20% -opaque 'hsb(184,34,66)'  tmp.jpg
+21694  2021-01-19_14:04:46 convert raw/DOC011921-01192021125430-50.jpg -fill white  -fuzz 20% -opaque 'hsv(173,34,66)'  tmp.jpg
+21694  2021-01-19_14:05:31 convert raw/DOC011921-01192021125430-50.jpg -fill white  -fuzz 20% -opaque 'hsb(184,34,66)'  tmp.jpg
+21695  2021-01-19_14:05:39 convert raw/DOC011921-01192021125430-50.jpg -fill white  -fuzz 20% -opaque 'hsb(175,34,66)'  tmp.jpg
+21696  2021-01-19_14:06:02 convert raw/DOC011921-01192021125430-50.jpg -fill white  -fuzz 20% -opaque 'hsb(170,34,66)'  tmp.jpg
+21697  2021-01-19_14:06:15 convert raw/DOC011921-01192021125430-50.jpg -fill white  -fuzz 20% -opaque 'hsb(150,34,66)'  tmp.jpg
+21697  2021-01-19_14:06:31 convert raw/DOC011921-01192021125430-50.jpg tmp.jpg
+21697  2021-01-19_14:06:40 convert raw/DOC011921-01192021125430-50.jpg -fill white  -fuzz 20% -opaque 'hsb(150,34,66)'  tmp.jpg
+21698  2021-01-19_14:06:48 convert raw/DOC011921-01192021125430-50.jpg -fill white  -fuzz 20% -opaque 'hsb(120,34,66)'  tmp.jpg
+21699  2021-01-19_14:07:02 convert raw/DOC011921-01192021125430-50.jpg -fill white  -fuzz 20% -opaque 'hsb(100,34,66)'  tmp.jpg
+21700  2021-01-19_14:07:16 convert raw/DOC011921-01192021125430-50.jpg -fill white  -fuzz 20% -opaque 'hsb(200,34,66)'  tmp.jpg
+21701  2021-01-19_14:07:26 convert raw/DOC011921-01192021125430-50.jpg -fill white  -fuzz 20% -opaque 'hsb(180,34,66)'  tmp.jpg
+21702  2021-01-19_14:07:32 convert raw/DOC011921-01192021125430-50.jpg -fill white  -fuzz 20% -opaque 'hsb(180,54,66)'  tmp.jpg
+21703  2021-01-19_14:07:42 convert raw/DOC011921-01192021125430-50.jpg -fill white  -fuzz 20% -opaque 'hsb(180,154,66)'  tmp.jpg
+21704  2021-01-19_14:08:07 convert raw/DOC011921-01192021125430-50.jpg -fill white  -fuzz 20% -opaque 'hsb(180,154,86)'  tmp.jpg
+21705  2021-01-19_14:08:16 convert raw/DOC011921-01192021125430-50.jpg -fill white  -fuzz 20% -opaque 'hsb(180,254,86)'  tmp.jpg
+21706  2021-01-19_14:08:26 convert raw/DOC011921-01192021125430-50.jpg -fill white  -fuzz 20% -opaque 'hsb(180,254,96)'  tmp.jpg
+21707  2021-01-19_14:08:35 convert raw/DOC011921-01192021125430-50.jpg -fill white  -fuzz 20% -opaque 'hsb(180,254,196)'  tmp.jpg
+21707  2021-01-19_14:08:45 convert raw/DOC011921-01192021125430-50.jpg -fill white  -fuzz 20% -opaque 'hsb(180,254,96)'  tmp.jpg
+21708  2021-01-19_14:08:58 convert raw/DOC011921-01192021125430-50.jpg -fill white  -fuzz 20% -opaque 'hsb(0,254,96)'  tmp.jpg
+21709  2021-01-19_14:09:08 convert raw/DOC011921-01192021125430-50.jpg -fill white  -fuzz 20% -opaque 'hsb(20,254,96)'  tmp.jpg
+21710  2021-01-19_14:09:16 convert raw/DOC011921-01192021125430-50.jpg -fill white  -fuzz 20% -opaque 'hsb(50,254,96)'  tmp.jpg
+21711  2021-01-19_14:09:24 convert raw/DOC011921-01192021125430-50.jpg -fill white  -fuzz 20% -opaque 'hsb(150,254,96)'  tmp.jpg
+21712  2021-01-19_14:09:32 convert raw/DOC011921-01192021125430-50.jpg -fill white  -fuzz 20% -opaque 'hsb(10,254,96)'  tmp.jpg
+21712  2021-01-19_14:09:38 convert raw/DOC011921-01192021125430-50.jpg -fill white  -fuzz 20% -opaque 'hsb(50,254,96)'  tmp.jpg
+21712  2021-01-19_14:09:49 convert raw/DOC011921-01192021125430-50.jpg -fill white  -fuzz 20% -opaque 'hsb(150,254,96)'  tmp.jpg
+21713  2021-01-19_14:09:56 convert raw/DOC011921-01192021125430-50.jpg -fill white  -fuzz 20% -opaque 'hsb(250,254,96)'  tmp.jpg
+21714  2021-01-19_14:10:04 convert raw/DOC011921-01192021125430-50.jpg -fill white  -fuzz 20% -opaque 'hsb(350,254,96)'  tmp.jpg
+21715  2021-01-19_14:10:11 convert raw/DOC011921-01192021125430-50.jpg -fill white  -fuzz 20% -opaque 'hsb(300,254,96)'  tmp.jpg
+21716  2021-01-19_14:10:58 convert raw/DOC011921-01192021125430-50.jpg -fill white  -fuzz 20% -opaque 'hsb(360,254,96)'  tmp.jpg
+21717  2021-01-19_14:11:38 convert raw/DOC011921-01192021125430-50.jpg -fill white  -fuzz 20% -opaque 'hsb(120,254,96)'  tmp.jpg
+21717  2021-01-19_14:11:59 convert raw/DOC011921-01192021125430-50.jpg -fill white  -fuzz 20% -opaque 'hsb(120,34,66)'  tmp.jpg
+21718  2021-01-19_14:12:28 convert raw/DOC011921-01192021125430-50.jpg -fill white  -fuzz 20% -opaque 'hsb(240,34,66)'  tmp.jpg
+21719  2021-01-19_14:20:12 convert raw/DOC011921-01192021125430-50.jpg -channel hsb   -fill white  -fuzz 20% -opaque 'hsb(240,34,66)'  tmp.jpg
+21720  2021-01-19_14:23:00 vim replacecolor 
+21721  2021-01-19_14:24:41 chmod 7777 replacecolor 
+21722  2021-01-19_14:24:45 chmod 777 replacecolor 
+21723  2021-01-19_14:24:48 sudo chmod 777 replacecolor 
+21724  2021-01-19_14:25:47 ./replacecolor raw/DOC011921-01192021125430-50.jpg -i green -o white  tmp.jpg
+21725  2021-01-19_14:26:13 ./replacecolor raw/DOC011921-01192021125430-50.jpg -i green -o white  tm
+21726  2021-01-19_14:26:48 ./replacecolor 
+21726  2021-01-19_14:26:48 ./replacecolor 
+21726  2021-01-19_14:26:48 ./replacecolor 
+21726  2021-01-19_14:26:48 ./replacecolor 
+21726  2021-01-19_14:27:10 ./replacecolor raw/DOC011921-01192021125430-50.jpg -i green -o white  tm
+21727  2021-01-19_14:27:34 ./replacecolor  -i green -o white raw/DOC011921-01192021125430-50.jpg tmp.jpg 
+21727  2021-01-19_14:27:48 vim replacecolor 
+21728  2021-01-19_14:28:03 ls convert
+21729  2021-01-19_14:28:08 whereis convert
+21729  2021-01-19_14:28:17 vim replacecolor 
+21730  2021-01-19_14:29:35 ll $(whereis convert)
+21731  2021-01-19_14:29:54 ll etc/alternatives/convert
+21732  2021-01-19_14:29:58 ll /etc/alternatives/convert
+21733  2021-01-19_14:30:21 ll /etc/alternatives/mogrify
+21734  2021-01-19_14:30:45 vim replacecolor 
+21729  2021-01-19_14:31:08 update-alternatives 
+21728  2021-01-19_14:31:18 update-alternatives --help
+21729  2021-01-19_14:32:01 update-alternatives --list convert
+21730  2021-01-19_14:32:34 sudo ln -sf /usr/local/bin/convert.hdri32fp /etc/alternatives/convert
+21731  2021-01-19_14:32:53 ll /usr/bin/convert
+21731  2021-01-19_14:33:03 ll /etc/alternatives/convert
+21731  2021-01-19_14:33:14 ./replacecolor  -i green -o white raw/DOC011921-01192021125430-50.jpg tmp.jpg 
+21732  2021-01-19_14:34:45 ./replacecolor  -i 'hsb(184,34,66)' -o white raw/DOC011921-01192021125430-50.jpg tmp.jpg 
+21733  2021-01-19_14:35:57 ./replacecolor  -i '#74c5b6' -o white raw/DOC011921-01192021125430-50.jpg tmp.jpg 
+21734  2021-01-19_14:39:57 ./replacecolor  -i cyan -o white    raw/DOC011921-01192021125430-50.jpg tmp.jpg 
+21735  2021-01-19_14:40:15 rm tmp.jpg 
+21735  2021-01-19_14:40:17 ./replacecolor  -i cyan -o white    raw/DOC011921-01192021125430-50.jpg tmp.jpg 
+21735  2021-01-19_14:40:27 ls
+21736  2021-01-19_14:40:57 ./replacecolor  -i cyan -o red    raw/DOC011921-01192021125430-50.jpg tmp.jpg 
+21737  2021-01-19_14:41:30 ./replacecolor  -i cyan -o red -f 90 raw/DOC011921-01192021125430-50.jpg tmp.jpg 
+21738  2021-01-19_14:41:51 ./replacecolor  -i cyan -o red -f 180 raw/DOC011921-01192021125430-50.jpg tmp.jpg 
+21739  2021-01-19_14:42:15 ./replacecolor  -i cyan -o white -f 180 raw/DOC011921-01192021125430-50.jpg tmp.jpg 
+21740  2021-01-19_14:42:42 ./replacecolor  -i cyan -o red -g 100 raw/DOC011921-01192021125430-50.jpg tmp.jpg 
+21741  2021-01-19_14:42:59 ./replacecolor  -i cyan -o red -g 200 raw/DOC011921-01192021125430-50.jpg tmp.jpg 
+21742  2021-01-19_14:43:21 ./replacecolor  -i cyan -o red -g 10 raw/DOC011921-01192021125430-50.jpg tmp.jpg 
+21743  2021-01-19_14:44:36 ./replacecolor  -i cyan -o red -g 400 raw/DOC011921-01192021125430-50.jpg tmp.jpg 
+21744  2021-01-19_14:44:57 ./replacecolor  -i cyan -o red -g 40000 raw/DOC011921-01192021125430-50.jpg tmp.jpg 
+21745  2021-01-19_14:45:18 ./replacecolor  -i cyan -o red -g 400000 raw/DOC011921-01192021125430-50.jpg tmp.jpg 
+21746  2021-01-19_14:45:40 ./replacecolor  -i cyan -o red -g 40000000 raw/DOC011921-01192021125430-50.jpg tmp.jpg 
+21747  2021-01-19_14:48:51 ./replacecolor  -i cyan -f 90 -o red  raw/DOC011921-01192021125430-50.jpg tmp.jpg 
+21748  2021-01-19_14:49:19 ./replacecolor  -i cyan -f 120 -o red  raw/DOC011921-01192021125430-50.jpg tmp.jpg 
+21748  2021-01-19_14:49:19 ./replacecolor  -i cyan -f 120 -o red  raw/DOC011921-01192021125430-50.jpg tmp.jpg 
+21748  2021-01-19_14:49:19 ./replacecolor  -i cyan -f 120 -o red  raw/DOC011921-01192021125430-50.jpg tmp.jpg 
+21749  2021-01-19_14:50:24 ./replacecolor  -i "#39AC35" -o red -f 40 -g 50   raw/DOC011921-01192021125430-50.jpg tmp.jpg 
+21750  2021-01-19_14:50:45 ./replacecolor  -i "#39AC35" -o red -f 40 -g 500000   raw/DOC011921-01192021125430-50.jpg tmp.jpg 
+21751  2021-01-19_14:51:30 ./replacecolor  -i "#96b9bd" -o red -f 40 -g 500000   raw/DOC011921-01192021125430-50.jpg tmp.jpg 
+21752  2021-01-19_14:51:51 ./replacecolor  -i "#96b9bd" -o white -f 40 -g 500000   raw/DOC011921-01192021125430-50.jpg tmp.jpg 
+21753  2021-01-19_14:52:25 ./replacecolor  -i "#9bb" -o white -f 40 -g 500000   raw/DOC011921-01192021125430-50.jpg tmp.jpg 
+21754  2021-01-19_14:53:02 ./replacecolor  -i "#74c5b6" -o white -f 40 -g 500000   raw/DOC011921-01192021125430-50.jpg tmp.jpg 
+21755  2021-01-19_14:53:22 ./replacecolor  -i "#74c5b6" -o red -f 40 -g 500000   raw/DOC011921-01192021125430-50.jpg tmp.jpg 
+21756  2021-01-19_14:53:41 ./replacecolor  -i "#74c5b6" -o red -f 90 -g 500000   raw/DOC011921-01192021125430-50.jpg tmp.jpg 
+21756  2021-01-19_14:57:39 convert -h
+21756  2021-01-19_14:57:46 whereis convert
+21756  2021-01-19_14:57:46 whereis convert
+22161  2021-01-19_14:58:18 ./replacecolor  -i "#74c5b6" -o red -f 90 -g 500000   raw/DOC011921-01192021125430-50.jpg tmp.jpg 
+22159  2021-01-19_14:58:35 update-alternatives --all
+22160  2021-01-19_14:59:08 sudo update-alternatives --all
+22160  2021-01-19_14:59:08 sudo update-alternatives --all
+22160  2021-01-19_14:59:08 sudo update-alternatives --all
+22160  2021-01-19_14:59:08 sudo update-alternatives --all
+22160  2021-01-19_15:01:58 ./replacecolor  -i "#74c5b6" -o red -f 90 -g 500000   raw/DOC011921-01192021125430-50.jpg tmp.jpg 
+22160  2021-01-19_15:01:58 ./replacecolor  -i "#74c5b6" -o red -f 90 -g 500000   raw/DOC011921-01192021125430-50.jpg tmp.jpg 
+22160  2021-01-19_15:01:58 ./replacecolor  -i "#74c5b6" -o red -f 90 -g 500000   raw/DOC011921-01192021125430-50.jpg tmp.jpg 
+22160  2021-01-19_15:02:24 sudo update-alternatives --all
+22160  2021-01-19_15:03:43 ./replacecolor  -i "#74c5b6" -o red -f 90 -g 500000   raw/DOC011921-01192021125430-50.jpg tmp.jpg 
+22161  2021-01-19_15:03:55 identify  raw/DOC011921-01192021125430-50.jpg tmp.jpg 
+22162  2021-01-19_15:04:03 convert  raw/DOC011921-01192021125430-50.jpg tmp.jpg 
+22162  2021-01-19_15:04:03 convert  raw/DOC011921-01192021125430-50.jpg tmp.jpg 
+22159  2021-01-19_15:04:40 vim replacecolor 
+21756  2021-01-19_15:06:24 sudo ln -sf /usr/local/bin/convert.hdri32fp /etc/alternatives/convert
+21757  2021-01-19_15:06:45 ./replacecolor  -i "#74c5b6" -o red -f 90 -t 20%   raw/DOC011921-01192021125430-50.jpg tmp.jpg 
+21758  2021-01-19_15:07:24 ./replacecolor  -i cyane -o red -f 90 -t 20%   raw/DOC011921-01192021125430-50.jpg tmp.jpg 
+21759  2021-01-19_15:07:46 ./replacecolor  -i cyan -o red -f 90 -t 20%   raw/DOC011921-01192021125430-50.jpg tmp.jpg 
+21760  2021-01-19_15:08:04 ./replacecolor  -i cyan -o white -f 90 -t 20%   raw/DOC011921-01192021125430-50.jpg tmp.jpg 
+21761  2021-01-19_15:08:25 ./replacecolor  -i cyan -o white -f 40 -t 20%   raw/DOC011921-01192021125430-50.jpg tmp.jpg 
+21762  2021-01-19_15:08:48 ./replacecolor  -i cyan -o white -f 40 -t 20% -g 400  raw/DOC011921-01192021125430-50.jpg tmp.jpg 
+21763  2021-01-19_15:09:04 ./replacecolor  -i cyan -o white -f 40 -t 20% -g 40000  raw/DOC011921-01192021125430-50.jpg tmp.jpg 
+21764  2021-01-19_15:09:23 ./replacecolor  -i cyan -o white -f 40 -t 30% -g 40000  raw/DOC011921-01192021125430-50.jpg tmp.jpg 
+21765  2021-01-19_15:09:42 ./replacecolor  -i cyan -o white -f 20 -t 30% -g 40000  raw/DOC011921-01192021125430-50.jpg tmp.jpg 
+21766  2021-01-19_15:10:01 ./replacecolor  -i cyan -o white -f 10 -t 40% -g 40000  raw/DOC011921-01192021125430-50.jpg tmp.jpg 
+21767  2021-01-19_15:10:20 ./replacecolor  -i cyan -o white -f 10 -t 40% -g 400000  raw/DOC011921-01192021125430-50.jpg tmp.jpg 
+21768  2021-01-19_15:10:39 ./replacecolor  -i cyan -o white -f 10 -t 40% -g 10  raw/DOC011921-01192021125430-50.jpg tmp.jpg 
+21769  2021-01-19_15:10:58 ./replacecolor  -i cyan -o white -f 5 -t 40% -g 10  raw/DOC011921-01192021125430-50.jpg tmp.jpg 
+21770  2021-01-19_15:11:14 ./replacecolor  -i cyan -o white -f 5 -t 50% -g 10  raw/DOC011921-01192021125430-50.jpg tmp.jpg 
+21771  2021-01-19_15:11:32 ./replacecolor  -i cyan -o white -f 5 -t 45% -g 10  raw/DOC011921-01192021125430-50.jpg tmp.jpg 
+21772  2021-01-19_15:11:48 ./replacecolor  -i cyan -o white -f 1 -t 45% -g 10  raw/DOC011921-01192021125430-50.jpg tmp.jpg 
+21773  2021-01-19_15:12:30 ./replacecolor  -i cyan -o white -f 1 -t 45% -g 1  raw/DOC011921-01192021125430-50.jpg tmp.jpg 
+21774  2021-01-19_15:12:52 ./replacecolor  -i cyan -o white -f -10 -t 45% -g 1  raw/DOC011921-01192021125430-50.jpg tmp.jpg 
+21775  2021-01-19_15:13:15 ./replacecolor  -i cyan -o white -f 90 -t 45% -g 1  raw/DOC011921-01192021125430-50.jpg tmp.jpg 
+21776  2021-01-19_15:13:39 ./replacecolor  -i cyan -o white -f 180 -t 45% -g 1  raw/DOC011921-01192021125430-50.jpg tmp.jpg 
+21777  2021-01-19_15:14:40 convert   raw/DOC011921-01192021125430-50.jpg tmp.jpg 
+21778  2021-01-19_15:15:52 convert   /home/imbl/Documents/chemwork/bgs/raw/DOC011921-01192021125430-14.jpg  tmp.jpg 
+21779  2021-01-19_15:16:15 ./replacecolor  -i cyan -o white -f 180 -t 45% -g 1  raw/DOC011921-01192021125430-14.jpg  tmp.jpg 
+21780  2021-01-19_15:18:12 ./replacecolor  -i cyan -o white -f 1 -t 45% -g 1  raw/DOC011921-01192021125430-14.jpg  tmp.jpg 
+22160  2021-01-19_16:14:08 gmic
+22160  2021-01-19_16:14:08 gmic
+22160  2021-01-19_16:14:08 gmic
+22161  2021-01-19_16:17:32 man gmic
+22162  2021-01-19_16:17:53 gmic mrpl
+22162  2021-01-19_16:17:53 gmic mrpl
+21806  2021-01-19_16:21:44 ls
+21806  2021-01-19_16:21:50 vim a
+21803  2021-01-19_16:21:56 rm a
+21803  2021-01-19_16:23:32 gmic
+21803  2021-01-19_16:24:25 man gmic
+21576  2021-01-19_16:30:02 cd ..
+21781  2021-01-19_15:47:36 gimp --verbose --console-messages
+21781  2021-01-19_15:47:36 gimp --verbose --console-messages
+21782  2021-01-19_16:33:14 gmic  raw/DOC011921-01192021125430-14.jpg  fx_select_color 9,19,0.54,16,49,255,238,255,4,255,255,255,255,0,50,50   -o tmp.jpg 
+21782  2021-01-19_16:33:14 gmic  raw/DOC011921-01192021125430-14.jpg  fx_select_color 9,19,0.54,16,49,255,238,255,4,255,255,255,255,0,50,50   -o tmp.jpg 
+21782  2021-01-19_16:33:14 gmic  raw/DOC011921-01192021125430-14.jpg  fx_select_color 9,19,0.54,16,49,255,238,255,4,255,255,255,255,0,50,50   -o tmp.jpg 
+21782  2021-01-19_16:33:14 gmic  raw/DOC011921-01192021125430-14.jpg  fx_select_color 9,19,0.54,16,49,255,238,255,4,255,255,255,255,0,50,50   -o tmp.jpg 
+21783  2021-01-19_16:42:35 gmic  raw/DOC011921-01192021125430-14.jpg   fx_select_color 9,20,1,0,49,255,238,255,4,255,255,255,255,0,50,50  fx_select_color 9,11,0,0,255,0,4,255,4,255,255,255,255,0,50,50  -o tmp.jpg 
+21784  2021-01-19_16:43:28 gmic  /home/imbl/Documents/chemwork/bgs/raw/DOC011921-01192021125946-42.jpg    fx_select_color 9,20,1,0,49,255,238,255,4,255,255,255,255,0,50,50  fx_select_color 9,11,0,0,255,0,4,255,4,255,255,255,255,0,50,50  -o tmp.jpg 
+21785  2021-01-19_16:45:20 mkdir proced
+21786  2021-01-19_16:52:04 ls raw/*jpg | parallel --bar ' gmic raw/{}  fx_select_color 9,20,1,0,49,255,238,255,4,255,255,255,255,0,50,50  fx_select_color 9,11,0,0,255,0,4,255,4,255,255,255,255,0,50,50  -o proced/{} > /dev/null ' 
+21786  2021-01-19_16:52:04 ls raw/*jpg | parallel --bar ' gmic raw/{}  fx_select_color 9,20,1,0,49,255,238,255,4,255,255,255,255,0,50,50  fx_select_color 9,11,0,0,255,0,4,255,4,255,255,255,255,0,50,50  -o proced/{} > /dev/null ' 
+21786  2021-01-19_16:52:04 ls raw/*jpg | parallel --bar ' gmic raw/{}  fx_select_color 9,20,1,0,49,255,238,255,4,255,255,255,255,0,50,50  fx_select_color 9,11,0,0,255,0,4,255,4,255,255,255,255,0,50,50  -o proced/{} > /dev/null ' 
+21786  2021-01-19_16:52:04 ls raw/*jpg | parallel --bar ' gmic raw/{}  fx_select_color 9,20,1,0,49,255,238,255,4,255,255,255,255,0,50,50  fx_select_color 9,11,0,0,255,0,4,255,4,255,255,255,255,0,50,50  -o proced/{} > /dev/null ' 
+21787  2021-01-19_16:52:21 ls raw/*jpg | parallel --bar ' gmic {}  fx_select_color 9,20,1,0,49,255,238,255,4,255,255,255,255,0,50,50  fx_select_color 9,11,0,0,255,0,4,255,4,255,255,255,255,0,50,50  -o proced/{/} > /dev/null ' 
+21787  2021-01-19_16:52:21 ls raw/*jpg | parallel --bar ' gmic {}  fx_select_color 9,20,1,0,49,255,238,255,4,255,255,255,255,0,50,50  fx_select_color 9,11,0,0,255,0,4,255,4,255,255,255,255,0,50,50  -o proced/{/} > /dev/null ' 
+21787  2021-01-19_16:52:21 ls raw/*jpg | parallel --bar ' gmic {}  fx_select_color 9,20,1,0,49,255,238,255,4,255,255,255,255,0,50,50  fx_select_color 9,11,0,0,255,0,4,255,4,255,255,255,255,0,50,50  -o proced/{/} > /dev/null ' 
+21787  2021-01-19_16:52:21 ls raw/*jpg | parallel --bar ' gmic {}  fx_select_color 9,20,1,0,49,255,238,255,4,255,255,255,255,0,50,50  fx_select_color 9,11,0,0,255,0,4,255,4,255,255,255,255,0,50,50  -o proced/{/} > /dev/null ' 
+21788  2021-01-19_16:59:52 mkdir mono
+21789  2021-01-19_17:00:28 convert proced/DOC011921-01192021125946-42.jpg tmp.jpg
+21790  2021-01-19_17:00:32 ll tmp.jpg 
+21791  2021-01-19_17:00:37 ll -h tmp.jpg 
+21792  2021-01-19_17:00:55 convert -threshold 50%  proced/DOC011921-01192021125946-42.jpg tmp.jpg
+21792  2021-01-19_17:00:58 ll -h tmp.jpg 
+21577  2021-01-19_16:33:57 krita
+21577  2021-01-19_16:33:57 krita
+21577  2021-01-19_16:33:57 krita
+21577  2021-01-19_16:33:57 krita
+21577  2021-01-19_16:33:57 krita
+21577  2021-01-19_16:33:57 krita
+21577  2021-01-19_16:33:57 krita
+21577  2021-01-19_16:33:57 krita
+21577  2021-01-19_16:33:57 krita
+21577  2021-01-19_16:33:57 krita
+21793  2021-01-19_17:01:37 convert -threshold 10%  proced/DOC011921-01192021125946-42.jpg tmp.jpg
+21794  2021-01-19_17:01:54 convert -threshold 90%  proced/DOC011921-01192021125946-42.jpg tmp.jpg
+21794  2021-01-19_17:02:14 convert -threshold 10%  proced/DOC011921-01192021125946-42.jpg tmp.jpg
+21794  2021-01-19_17:02:30 convert -threshold 50%  proced/DOC011921-01192021125946-42.jpg tmp.jpg
+21795  2021-01-19_17:02:41 convert -threshold 40%  proced/DOC011921-01192021125946-42.jpg tmp.jpg
+21796  2021-01-19_17:02:49 convert -threshold 30%  proced/DOC011921-01192021125946-42.jpg tmp.jpg
+21796  2021-01-19_17:02:59 convert -threshold 40%  proced/DOC011921-01192021125946-42.jpg tmp.jpg
+21797  2021-01-19_17:03:34 convert -threshold 40% -monochrome  proced/DOC011921-01192021125946-42.jpg tmp.jpg
+21798  2021-01-19_17:03:55 convert -threshold 40% -monochrome  proced/DOC011921-01192021125946-42.jpg tmp.bmp
+21798  2021-01-19_17:04:06 convert -threshold 40% -monochrome  proced/DOC011921-01192021125946-42.jpg tmp.jpg
+21799  2021-01-19_17:04:19 convert -threshold 40% -monochrome  proced/DOC011921-01192021125946-42.jpg -invert tmp.jpg
+21800  2021-01-19_17:04:27 convert -threshold 40% -monochrome  proced/DOC011921-01192021125946-42.jpg -negate tmp.jpg
+21800  2021-01-19_17:04:27 convert -threshold 40% -monochrome  proced/DOC011921-01192021125946-42.jpg -negate tmp.jpg
+21800  2021-01-19_17:04:27 convert -threshold 40% -monochrome  proced/DOC011921-01192021125946-42.jpg -negate tmp.jpg
+21801  2021-01-19_17:05:08 vim ../atoms/qw.sh 
+21802  2021-01-19_17:05:28 convert -threshold 40% -monochrome  proced/DOC011921-01192021125946-42.jpg -negate -trim +repage  tmp.jpg
+21803  2021-01-19_17:05:46 convert -threshold 50% -monochrome  proced/DOC011921-01192021125946-42.jpg -negate -trim +repage  tmp.jpg
+21803  2021-01-19_17:05:59 convert -threshold 40% -monochrome  proced/DOC011921-01192021125946-42.jpg -negate -trim +repage  tmp.jpg
+21803  2021-01-19_17:05:59 convert -threshold 40% -monochrome  proced/DOC011921-01192021125946-42.jpg -negate -trim +repage  tmp.jpg
+21803  2021-01-19_17:05:59 convert -threshold 40% -monochrome  proced/DOC011921-01192021125946-42.jpg -negate -trim +repage  tmp.jpg
+21804  2021-01-19_17:06:55 convert -threshold 40% -monochrome  /home/imbl/Documents/chemwork/bgs/proced/DOC011921-01192021125946-47.jpg  -negate -trim +repage  tmp.jpg
+21804  2021-01-19_17:06:55 convert -threshold 40% -monochrome  /home/imbl/Documents/chemwork/bgs/proced/DOC011921-01192021125946-47.jpg  -negate -trim +repage  tmp.jpg
+21805  2021-01-19_17:07:17 convert  -monochrome  /home/imbl/Documents/chemwork/bgs/proced/DOC011921-01192021125946-47.jpg  -negate -trim +repage  tmp.jpg
+21806  2021-01-19_17:07:38 convert  -monochrome  /home/imbl/Documents/chemwork/bgs/proced/DOC011921-01192021125946-47.jpg   -trim +repage  tmp.jpg
+21807  2021-01-19_17:09:35 convert -colorspace HSL -channel lightness -equalize -colorspace Gray -monochrome  /home/imbl/Documents/chemwork/bgs/proced/DOC011921-01192021125946-47.jpg   -trim +repage  tmp.jpg
+21808  2021-01-19_17:10:04 convert -colorspace HSL -channel lightness -equalize -colorspace Gray -threshold 40  /home/imbl/Documents/chemwork/bgs/proced/DOC011921-01192021125946-47.jpg   -trim +repage  tmp.jpg
+21809  2021-01-19_17:10:15 convert -colorspace HSL -channel lightness -equalize -colorspace Gray -threshold 40%  /home/imbl/Documents/chemwork/bgs/proced/DOC011921-01192021125946-47.jpg   -trim +repage  tmp.jpg
+21810  2021-01-19_17:10:27 convert -colorspace HSL -channel lightness -equalize -colorspace Gray -threshold 20%  /home/imbl/Documents/chemwork/bgs/proced/DOC011921-01192021125946-47.jpg   -trim +repage  tmp.jpg
+21811  2021-01-19_17:10:38 convert -colorspace HSL -channel lightness -equalize -colorspace Gray -threshold 10%  /home/imbl/Documents/chemwork/bgs/proced/DOC011921-01192021125946-47.jpg   -trim +repage  tmp.jpg
+21812  2021-01-19_17:10:49 convert -colorspace HSL -channel lightness -equalize -colorspace Gray -threshold 1%  /home/imbl/Documents/chemwork/bgs/proced/DOC011921-01192021125946-47.jpg   -trim +repage  tmp.jpg
+21813  2021-01-19_17:11:03 convert -colorspace HSL -channel lightness -equalize -colorspace rgb -threshold 40%  /home/imbl/Documents/chemwork/bgs/proced/DOC011921-01192021125946-47.jpg   -trim +repage  tmp.jpg
+21814  2021-01-19_17:11:22 convert -colorspace HSL -channel lightness -equalize -colorspace rgb -threshold 10%  /home/imbl/Documents/chemwork/bgs/proced/DOC011921-01192021125946-47.jpg   -trim +repage  tmp.jpg
+21815  2021-01-19_17:12:24 convert -colorspace HSL -channel lightness -equalize -colorspace rgb -threshold 40%  /home/imbl/Documents/chemwork/bgs/proced/DOC011921-01192021125946-47.jpg   -trim +repage  -monochrome tmp.jpg
+21815  2021-01-19_17:12:24 convert -colorspace HSL -channel lightness -equalize -colorspace rgb -threshold 40%  /home/imbl/Documents/chemwork/bgs/proced/DOC011921-01192021125946-47.jpg   -trim +repage  -monochrome tmp.jpg
+21815  2021-01-19_17:12:53 convert -threshold 40% -monochrome  /home/imbl/Documents/chemwork/bgs/proced/DOC011921-01192021125946-47.jpg  -negate -trim +repage  tmp.jpg
+21816  2021-01-19_17:13:19 convert -threshold 20% -monochrome  /home/imbl/Documents/chemwork/bgs/proced/DOC011921-01192021125946-47.jpg  -negate -trim +repage  tmp.jpg
+21817  2021-01-19_17:13:33 convert -threshold 10% -monochrome  /home/imbl/Documents/chemwork/bgs/proced/DOC011921-01192021125946-47.jpg  -negate -trim +repage  tmp.jpg
+21818  2021-01-19_17:13:46 convert -threshold 5% -monochrome  /home/imbl/Documents/chemwork/bgs/proced/DOC011921-01192021125946-47.jpg  -negate -trim +repage  tmp.jpg
+21818  2021-01-19_17:14:01 convert -threshold 10% -monochrome  /home/imbl/Documents/chemwork/bgs/proced/DOC011921-01192021125946-47.jpg  -negate -trim +repage  tmp.jpg
+21818  2021-01-19_17:14:14 convert -threshold 40% -monochrome  /home/imbl/Documents/chemwork/bgs/proced/DOC011921-01192021125946-47.jpg  -negate -trim +repage  tmp.jpg
+21818  2021-01-19_17:14:14 convert -threshold 40% -monochrome  /home/imbl/Documents/chemwork/bgs/proced/DOC011921-01192021125946-47.jpg  -negate -trim +repage  tmp.jpg
+21819  2021-01-19_17:15:30 ls proced/*jpg | parallel --bar ' convert -threshold 40% -monochrome -negate -trim +repage {} mono/{/}  ' 
+21819  2021-01-19_17:21:19 convert -threshold 20% -monochrome  /home/imbl/Documents/chemwork/bgs/proced/DOC011921-01192021125946-47.jpg  -negate -trim +repage  tmp.jpg
+21819  2021-01-19_17:21:19 convert -threshold 20% -monochrome  /home/imbl/Documents/chemwork/bgs/proced/DOC011921-01192021125946-47.jpg  -negate -trim +repage  tmp.jpg
+21819  2021-01-19_17:21:19 convert -threshold 20% -monochrome  /home/imbl/Documents/chemwork/bgs/proced/DOC011921-01192021125946-47.jpg  -negate -trim +repage  tmp.jpg
+21819  2021-01-19_17:21:19 convert -threshold 20% -monochrome  /home/imbl/Documents/chemwork/bgs/proced/DOC011921-01192021125946-47.jpg  -negate -trim +repage  tmp.jpg
+21820  2021-01-19_17:22:33 convert -threshold 240% -monochrome  proced/DOC011921-01192021125946-42.jpg -negate -trim +repage  tmp.jpg
+21820  2021-01-19_17:22:42 convert -threshold 20% -monochrome  /home/imbl/Documents/chemwork/bgs/proced/DOC011921-01192021125946-47.jpg  -negate -trim +repage  tmp.jpg
+21820  2021-01-19_17:22:42 convert -threshold 20% -monochrome  /home/imbl/Documents/chemwork/bgs/proced/DOC011921-01192021125946-47.jpg  -negate -trim +repage  tmp.jpg
+21820  2021-01-19_17:22:42 convert -threshold 20% -monochrome  /home/imbl/Documents/chemwork/bgs/proced/DOC011921-01192021125946-47.jpg  -negate -trim +repage  tmp.jpg
+21820  2021-01-19_17:22:42 convert -threshold 20% -monochrome  /home/imbl/Documents/chemwork/bgs/proced/DOC011921-01192021125946-47.jpg  -negate -trim +repage  tmp.jpg
+21821  2021-01-19_17:23:31 convert -threshold 20% -monochrome  proced/DOC011921-01192021125946-42.jpg -negate -trim +repage  tmp.jpg
+21822  2021-01-19_17:24:01 ls proced/*jpg | parallel --bar ' convert -threshold 20% -monochrome -negate -trim +repage {} mono/{/}  ' 
+21822  2021-01-19_17:24:01 ls proced/*jpg | parallel --bar ' convert -threshold 20% -monochrome -negate -trim +repage {} mono/{/}  ' 
+21822  2021-01-19_17:24:01 ls proced/*jpg | parallel --bar ' convert -threshold 20% -monochrome -negate -trim +repage {} mono/{/}  ' 
+21822  2021-01-19_17:24:01 ls proced/*jpg | parallel --bar ' convert -threshold 20% -monochrome -negate -trim +repage {} mono/{/}  ' 
+21822  2021-01-19_17:41:27 convert -threshold 20% -monochrome  proced/DOC011921-01192021125946-42.jpg -negate -trim +repage  tmp.jpg
+21822  2021-01-19_17:41:41 identify tmp.jpg 
+21823  2021-01-19_17:41:50 convert -threshold 20% -monochrome  proced/DOC011921-01192021125946-42.jpg -negate -trim +repage  tmp.gif
+21824  2021-01-19_17:42:05 identify tmp.gif
+21825  2021-01-19_17:42:12 convert -threshold 20% -monochrome  proced/DOC011921-01192021125946-42.jpg -negate -trim +repage  tmp.png
+21825  2021-01-19_17:42:20 identify tmp.gif
+21826  2021-01-19_17:42:24 identify tmp.png
+21827  2021-01-19_17:43:37 convert -threshold 20% -monochrome  proced/DOC011921-01192021125946-42.jpg -negate -trim +repage -type bilevel  tmp.png
+21827  2021-01-19_17:43:50 identify tmp.png
+21828  2021-01-19_17:43:56 convert -threshold 20% -monochrome  proced/DOC011921-01192021125946-42.jpg -negate -trim +repage -type bilevel  tmp.jpg
+21829  2021-01-19_17:44:10 convert -threshold 20% -monochrome  proced/DOC011921-01192021125946-42.jpg -negate -trim +repage -type bilevel  tmp.gif
+21830  2021-01-19_17:44:27 convert -threshold 20% -monochrome  proced/DOC011921-01192021125946-42.jpg -negate -trim +repage -type bilevel  tmp.bmp
+21831  2021-01-19_17:44:42 identify tmp.*
+21831  2021-01-19_17:44:42 identify tmp.*
+21831  2021-01-19_17:44:42 identify tmp.*
+21831  2021-01-19_17:44:42 identify tmp.*
+21832  2021-01-19_17:44:57 mkdir bw
+21832  2021-01-19_17:44:57 mkdir bw
+21832  2021-01-19_17:44:57 mkdir bw
+21833  2021-01-19_17:45:31 ls mono/*jpg | parallel --bar ' convert {} -type bilevel bw/{/.}.bmp  ' 
+21834  2021-01-19_17:47:18 convert -threshold 20% -monochrome  proced/DOC011921-01192021125946-42.jpg -negate -trim +repage -type bilevel  bmp3:tmp.bmp
+21834  2021-01-19_17:47:38 identify tmp.*
+21835  2021-01-19_17:48:57 convert -threshold 20% -monochrome  proced/DOC011921-01192021125946-42.jpg -negate -trim +repage -type bilevel  tmp.tif
+21835  2021-01-19_17:49:13 identify tmp.*
+21835  2021-01-19_17:49:13 identify tmp.*
+21835  2021-01-19_17:49:13 identify tmp.*
+21835  2021-01-19_17:49:13 identify tmp.*
+21835  2021-01-19_17:49:13 identify tmp.*
+21835  2021-01-19_17:49:13 identify tmp.*
+21836  2021-01-19_17:51:18 rm bw/*
+21837  2021-01-19_17:51:25 ls mono/*jpg | parallel --bar ' convert {} -type bilevel bw/{/.}.png  ' 
+21837  2021-01-19_17:51:25 ls mono/*jpg | parallel --bar ' convert {} -type bilevel bw/{/.}.png  ' 
+21837  2021-01-19_17:51:25 ls mono/*jpg | parallel --bar ' convert {} -type bilevel bw/{/.}.png  ' 
+21837  2021-01-19_17:51:25 ls mono/*jpg | parallel --bar ' convert {} -type bilevel bw/{/.}.png  ' 
+21837  2021-01-19_17:51:25 ls mono/*jpg | parallel --bar ' convert {} -type bilevel bw/{/.}.png  ' 
+21838  2021-01-19_18:28:58 ls proced/*jpg | parallel --bar ' convert -threshold 60% -monochrome -negate -trim +repage {} -type bilevel   bw/{/.}.png ' 
+21838  2021-01-19_18:28:58 ls proced/*jpg | parallel --bar ' convert -threshold 60% -monochrome -negate -trim +repage {} -type bilevel   bw/{/.}.png ' 
+21838  2021-01-19_18:28:58 ls proced/*jpg | parallel --bar ' convert -threshold 60% -monochrome -negate -trim +repage {} -type bilevel   bw/{/.}.png ' 
+21838  2021-01-19_18:28:58 ls proced/*jpg | parallel --bar ' convert -threshold 60% -monochrome -negate -trim +repage {} -type bilevel   bw/{/.}.png ' 
+21611  2021-01-19_18:29:03 cd ..
+21613  2021-01-19_18:29:18 rm bw/*
+21613  2021-01-19_18:29:23 ls proced/*jpg | parallel --bar ' convert -threshold 60% -monochrome -negate -trim +repage {} -type bilevel   bw/{/.}.png ' 
+21613  2021-01-19_18:29:23 ls proced/*jpg | parallel --bar ' convert -threshold 60% -monochrome -negate -trim +repage {} -type bilevel   bw/{/.}.png ' 
+21613  2021-01-19_18:29:23 ls proced/*jpg | parallel --bar ' convert -threshold 60% -monochrome -negate -trim +repage {} -type bilevel   bw/{/.}.png ' 
+21613  2021-01-19_18:30:13 rm bw/*
+21614  2021-01-19_18:30:23 ls proced/*jpg | parallel --bar ' convert -threshold 10% -monochrome -negate -trim +repage {} -type bilevel   bw/{/.}.png ' 
+21614  2021-01-19_18:30:23 ls proced/*jpg | parallel --bar ' convert -threshold 10% -monochrome -negate -trim +repage {} -type bilevel   bw/{/.}.png ' 
+21614  2021-01-19_18:30:23 ls proced/*jpg | parallel --bar ' convert -threshold 10% -monochrome -negate -trim +repage {} -type bilevel   bw/{/.}.png ' 
+21614  2021-01-19_18:30:23 ls proced/*jpg | parallel --bar ' convert -threshold 10% -monochrome -negate -trim +repage {} -type bilevel   bw/{/.}.png ' 
+21614  2021-01-19_18:30:23 ls proced/*jpg | parallel --bar ' convert -threshold 10% -monochrome -negate -trim +repage {} -type bilevel   bw/{/.}.png ' 
+21615  2021-01-19_18:35:57 gmic  raw/DOC011921-01192021125946-34.jpg     fx_select_color 9,20,1,0,49,255,238,255,4,255,255,255,255,0,50,50  fx_select_color 9,11,0,0,255,0,4,255,4,255,255,255,255,0,50,50  -o tmp.jpg 
+21616  2021-01-19_18:36:25 gmic  raw/DOC011921-01192021125946-34.jpg     fx_select_color 9,20,1,0,49,255,238,255,4,255,255,255,255,0,50,50  fx_select_color 9,5,0,0,255,0,4,255,4,255,255,255,255,0,50,50  -o tmp.jpg 
+21616  2021-01-19_18:36:25 gmic  raw/DOC011921-01192021125946-34.jpg     fx_select_color 9,20,1,0,49,255,238,255,4,255,255,255,255,0,50,50  fx_select_color 9,5,0,0,255,0,4,255,4,255,255,255,255,0,50,50  -o tmp.jpg 
+21616  2021-01-19_18:36:25 gmic  raw/DOC011921-01192021125946-34.jpg     fx_select_color 9,20,1,0,49,255,238,255,4,255,255,255,255,0,50,50  fx_select_color 9,5,0,0,255,0,4,255,4,255,255,255,255,0,50,50  -o tmp.jpg 
+21617  2021-01-19_18:37:43 gmic  raw/DOC011921-01192021125210-32.jpg      fx_select_color 9,20,1,0,49,255,238,255,4,255,255,255,255,0,50,50  fx_select_color 9,5,0,0,255,0,4,255,4,255,255,255,255,0,50,50  -o tmp.jpg 
+21618  2021-01-19_18:38:25 gmic  raw/DOC011921-01192021125210-32.jpg      fx_select_color 9,18,1,0,49,255,238,255,4,255,255,255,255,0,50,50  fx_select_color 9,5,0,0,255,0,4,255,4,255,255,255,255,0,50,50  -o tmp.jpg 
+21618  2021-01-19_18:38:25 gmic  raw/DOC011921-01192021125210-32.jpg      fx_select_color 9,18,1,0,49,255,238,255,4,255,255,255,255,0,50,50  fx_select_color 9,5,0,0,255,0,4,255,4,255,255,255,255,0,50,50  -o tmp.jpg 
+21618  2021-01-19_18:38:25 gmic  raw/DOC011921-01192021125210-32.jpg      fx_select_color 9,18,1,0,49,255,238,255,4,255,255,255,255,0,50,50  fx_select_color 9,5,0,0,255,0,4,255,4,255,255,255,255,0,50,50  -o tmp.jpg 
+21618  2021-01-19_18:38:25 gmic  raw/DOC011921-01192021125210-32.jpg      fx_select_color 9,18,1,0,49,255,238,255,4,255,255,255,255,0,50,50  fx_select_color 9,5,0,0,255,0,4,255,4,255,255,255,255,0,50,50  -o tmp.jpg 
+21619  2021-01-19_18:39:20 convert -threshold 10% -monochrome -negate -trim +repage {} -type bilevel tmp.jpg tmp.png
+21620  2021-01-19_18:39:55 convert -threshold 20% -monochrome -negate -trim +repage {} -type bilevel tmp.jpg tmp.png
+21621  2021-01-19_18:40:20 convert -threshold 30% -monochrome -negate -trim +repage {} -type bilevel tmp.jpg tmp.png
+21622  2021-01-19_18:40:37 convert -threshold 30% -monochrome -negate -trim +repage -type bilevel tmp.jpg tmp.png
+21623  2021-01-19_18:40:55 convert -threshold 20% -monochrome -negate -trim +repage -type bilevel tmp.jpg tmp.png
+21623  2021-01-19_18:41:24 convert -threshold 30% -monochrome -negate -trim +repage -type bilevel tmp.jpg tmp.png
+21624  2021-01-19_18:42:32 gmic  raw/DOC011921-01192021125626-29.jpg      fx_select_color 9,18,1,0,49,255,238,255,4,255,255,255,255,0,50,50  fx_select_color 9,5,0,0,255,0,4,255,4,255,255,255,255,0,50,50  -o tmp.jpg 
+21625  2021-01-19_18:43:38 gmic  raw/DOC011921-01192021125430-42.jpg      fx_select_color 9,18,1,0,49,255,238,255,4,255,255,255,255,0,50,50  fx_select_color 9,5,0,0,255,0,4,255,4,255,255,255,255,0,50,50  -o tmp.jpg 
+21625  2021-01-19_18:44:10 convert -threshold 30% -monochrome -negate -trim +repage -type bilevel tmp.jpg tmp.png
+21625  2021-01-19_18:44:41 convert -threshold 20% -monochrome -negate -trim +repage -type bilevel tmp.jpg tmp.png
+21625  2021-01-19_18:44:41 convert -threshold 20% -monochrome -negate -trim +repage -type bilevel tmp.jpg tmp.png
+21625  2021-01-19_18:44:41 convert -threshold 20% -monochrome -negate -trim +repage -type bilevel tmp.jpg tmp.png
+21625  2021-01-19_18:44:41 convert -threshold 20% -monochrome -negate -trim +repage -type bilevel tmp.jpg tmp.png
+21626  2021-01-19_18:46:33 ls raw/*jpg | parallel --bar ' gmic {}  fx_select_color 9,18,1,0,49,255,238,255,4,255,255,255,255,0,50,50  fx_select_color 9,5,0,0,255,0,4,255,4,255,255,255,255,0,50,50  -o proced/{/} > /dev/null ; convert -threshold 20% -monochrome -negate -trim +repage -type bilevel proced/{/} bw/{/.}.png  ' 
+22356  2021-01-28_10:08:32 rm *png
+22356  2021-01-28_10:08:32 rm *png
+22356  2021-01-28_10:08:32 rm *png
+22356  2021-01-28_10:08:32 rm *png
+22356  2021-01-28_10:08:32 rm *png
+22356  2021-01-28_10:08:32 rm *png
+22418  2021-01-31_19:57:38 ifconfig
+21433  2021-02-09_14:02:50 git push
+21433  2021-02-09_14:02:50 git push
+21433  2021-02-09_14:02:50 git push
+21433  2021-02-09_14:02:50 git push
+20745  2021-02-18_15:23:09 git clone https://ztakunado@github.com/ztakunado/hloc.git
+20745  2021-02-18_15:23:09 git clone https://ztakunado@github.com/ztakunado/hloc.git
