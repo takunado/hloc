@@ -285,7 +285,7 @@
 18047  2020-05-07_20:42:42 vim dot2tex
 18048  2020-05-07_20:43:17 cat chemintikz.dot  | ./dot2tex  --tikzedgelabels -f pgf --figonly -c -o chemintikz.pgf -t raw
 18049  2020-05-07_20:43:50 vim dot2tex\
-18250  2020-05-09_09:34:01 ssh -Y antonmx@localhost
+18250  2020-05-09_09:34:01 ssh -Y imbl@localhost
 18248  2020-05-13_19:34:44 reboot-windows 
 17999  2020-08-03_15:11:46 git pull
 17999  2020-08-03_15:11:46 git pull
@@ -874,7 +874,7 @@
 18077  2020-08-25_14:19:01 neato chem.neato -Goverlap=... -Gsplines=true -Gsep=0.3  -Tpdf -n2  > chem.pdf
 18077  2020-08-25_14:19:01 neato chem.neato -Goverlap=... -Gsplines=true -Gsep=0.3  -Tpdf -n2  > chem.pdf
 18077  2020-08-25_14:21:52 neato chem.neato -Goverlap=... -Gsplines=false -Gsep=0.3  -Txdot -n2  | sed ':a;N;$!ba;s/\\\n//g'  | dot2tex  --tikzedgelabels -f pgf --figonly -c -o chemintikz.pgf -t raw ; pdflatex -halt-on-error chemintikz.tex ;  pdflatex -halt-on-error chemintikz.tex ;
-18725  2020-08-25_14:30:40 ssh -Y antonmx@localhost
+18725  2020-08-25_14:30:40 ssh -Y imbl@localhost
 18077  2020-08-25_14:50:30 neato chem.neato -Goverlap=... -Gsplines=true -Gsep=0.3  -Tpdf -n2  > chem.pdf
 18077  2020-08-25_14:50:30 neato chem.neato -Goverlap=... -Gsplines=true -Gsep=0.3  -Tpdf -n2  > chem.pdf
 18078  2020-08-25_18:12:03 git add chemintikz.cdr 
@@ -3425,9 +3425,6 @@
   541  2021-01-01_00:32:11 exit
 22282  2021-01-23_18:25:00 sudo apt autoclean
 22266  2021-01-23_18:25:08 sudo apt autoremove
-22347  2021-01-25_11:27:07 ssh -Y imbl@10.123.41.6
-22350  2021-01-25_17:29:01 ssh -Y antonmx@localhost
-22350  2021-01-25_17:29:01 ssh -Y antonmx@localhost
 22354  2021-01-25_17:39:51 pdfunite allV_97_ex.pdf  allV_95_ex.pdf allV_ex.pdf  allV_vb_ex.pdf  allV_v_95_ex.pdf  allV_v_ex.pdf  printme.pdf 
 22354  2021-01-25_17:39:51 pdfunite allV_97_ex.pdf  allV_95_ex.pdf allV_ex.pdf  allV_vb_ex.pdf  allV_v_95_ex.pdf  allV_v_ex.pdf  printme.pdf 
 22354  2021-01-25_17:39:51 pdfunite allV_97_ex.pdf  allV_95_ex.pdf allV_ex.pdf  allV_vb_ex.pdf  allV_v_95_ex.pdf  allV_v_ex.pdf  printme.pdf 
@@ -3495,3 +3492,22 @@
 22761  2021-02-25_17:37:21 git config --global user
 22762  2021-02-25_17:37:24 git config --global user.name
 22761  2021-02-25_17:37:30 git config --global user.email
+22461  2021-02-25_17:37:48 git commit -a
+22462  2021-02-25_17:37:55 git push]
+22216  2021-02-25_17:37:58 git push
+22216  2021-02-25_17:37:58 git push
+22216  2021-02-25_17:37:58 git push
+22607  2021-03-10_15:25:30 ls
+22397  2021-03-10_15:25:37 git pull
+22396  2021-03-10_15:26:40 git config user.name ZeTakunado
+22397  2021-03-10_15:27:09 git config user.email z.takunado@protonmail.com
+22294  2021-03-10_15:27:14 git diff
+22260  2021-03-10_15:27:36 vim .bash_history_pwd 
+22261  2021-03-10_15:29:58 mkdir src
+22262  2021-03-10_15:30:07 git mv *tex src
+22262  2021-03-10_15:30:09 ls
+22263  2021-03-10_15:30:49 git mv chem* src
+22264  2021-03-10_15:31:00 git mv polishMap.py src
+22264  2021-03-10_15:31:02 ls
+22264  2021-03-10_15:31:33 git diff
+22264  2021-03-10_15:31:33 git diff
