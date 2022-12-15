@@ -3531,3 +3531,28 @@
 10219  2022-12-15_16:53:15 git commit -a
 10220  2022-12-15_16:53:29 git config --global user.email "_"
 10221  2022-12-15_16:53:34 git config --global user.name "_"
+10221  2022-12-15_16:53:36 git commit -a
+10212  2022-12-15_16:53:52 vim .git/config 
+10213  2022-12-15_16:54:09 vim ~/usr/src/ctas/.git/config 
+10213  2022-12-15_16:54:23 git push
+10214  2022-12-15_16:56:43 GIT_SSH_COMMAND='ssh -i ~/.ssh/id_ed25519.pub' git push
+10215  2022-12-15_16:57:08 chmod 600 ~/.ssh/id_ed25519.pub
+10216  2022-12-15_16:57:11 ll ~/.ssh/id_ed25519.pub
+10216  2022-12-15_16:57:14 GIT_SSH_COMMAND='ssh -i ~/.ssh/id_ed25519.pub' git push
+10217  2022-12-15_16:57:47 ssh-keygen -C "takunado@proton.me"
+10218  2022-12-15_16:58:29 cat /home/imbl/.ssh/takunado_id_rsa
+10198  2022-12-15_16:58:38 q
+10199  2022-12-15_16:58:43 cat /home/imbl/.ssh/takunado_id_rsa.pub 
+10200  2022-12-15_17:00:29 GIT_SSH_COMMAND='ssh -i ~/.ssh/takunado_id_rsa.pub' git push
+10201  2022-12-15_17:00:39 chmod 6 .ssh/takunado_id_rsa.pub
+10202  2022-12-15_17:00:47 chmod 6 ~/.ssh/takunado_id_rsa.pub
+10203  2022-12-15_17:00:54 ll ~/.ssh/takunado_id_rsa.pub
+10203  2022-12-15_17:00:58 GIT_SSH_COMMAND='ssh -i ~/.ssh/takunado_id_rsa.pub' git push
+10204  2022-12-15_17:01:09 chmod 600 ~/.ssh/takunado_id_rsa.pub
+10204  2022-12-15_17:01:19 GIT_SSH_COMMAND='ssh -i ~/.ssh/takunado_id_rsa.pub' git push
+10205  2022-12-15_17:01:24 GIT_SSH_COMMAND='ssh -i ~/.ssh/takunado_id_rsa' git push
+10205  2022-12-15_17:01:24 GIT_SSH_COMMAND='ssh -i ~/.ssh/takunado_id_rsa' git push
+10205  2022-12-15_17:01:24 GIT_SSH_COMMAND='ssh -i ~/.ssh/takunado_id_rsa' git push
+10208  2022-12-15_17:14:37 pdftoppm -png -r 300 bb_7.pdf  bb.png
+10208  2022-12-15_17:14:37 pdftoppm -png -r 300 bb_7.pdf  bb.png
+10209  2022-12-15_17:15:52 mv bb.png-1.png fly-7.png 

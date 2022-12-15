@@ -12,3 +12,9 @@
 22102  2021-02-21_12:30:26 make
 22102  2021-02-21_12:30:26 make
 22104  2021-02-21_14:16:27 mv template.pdf abstr.pdf
+10205  2022-12-15_17:01:24 GIT_SSH_COMMAND='ssh -i ~/.ssh/takunado_id_rsa' git push
+10205  2022-12-15_17:01:24 GIT_SSH_COMMAND='ssh -i ~/.ssh/takunado_id_rsa' git push
+10208  2022-12-15_17:14:37 pdftoppm -png -r 300 bb_7.pdf  bb.png
+10208  2022-12-15_17:14:37 pdftoppm -png -r 300 bb_7.pdf  bb.png
+10209  2022-12-15_17:15:52 mv bb.png-1.png fly-7.png 
+10209  2022-12-15_17:15:52 mv bb.png-1.png fly-7.png 
